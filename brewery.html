@@ -1,0 +1,2884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link
+            href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css"
+            rel="stylesheet"
+    />
+</head>
+<body>
+<div id="wrapper"></div>
+
+<script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
+<script>new gridjs.Grid({
+    columns: [{
+        id: 'name',
+        name: 'Name'
+    }, {
+        id: 'follower_count',
+        name: 'Followers'
+    }, {
+        id: 'rating_score',
+        name: 'Rating'
+    },{
+        id: 'popularity_this_week',
+        name: 'Popularity This Week'
+    }],
+    sort: true,
+    data: [
+        {
+            "csv_name": "Fraugruber",
+            "name": "FrauGruber Brewing",
+            "brewery_id": 287279,
+            "follower_count": 1417,
+            "total_votes": 242275,
+            "rating_score": 3.894,
+            "popularity_this_week": 720,
+            "location_city": "Gundelfingen a.d.Donau",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-287279_2ce5f_hd.jpeg",
+            "beers": [
+                {
+                    "csv_name": "Weak As I Am",
+                    "name": "Weak As I Am",
+                    "abv": 8.6,
+                    "description": "Hops: Citra BBC, Strata, Galaxy, Citra Spectrum",
+                    "beer_id": 4431107,
+                    "rating_score": 4.32333,
+                    "rating_count": 15,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4431107_800ca_hd.jpeg"
+                },
+                {
+                    "csv_name": "Art Of Work",
+                    "name": "Art of Work",
+                    "abv": 8.4,
+                    "description": "Hops: Citra Incognito, Citra BBC, Talus, Idaho7",
+                    "beer_id": 4156487,
+                    "rating_score": 3.96008,
+                    "rating_count": 784,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4156487_51e59_hd.jpeg"
+                },
+                {
+                    "csv_name": "Covered in Sunshine",
+                    "name": "Covered In Sunshine",
+                    "abv": 4.5,
+                    "description": "Hops: Citra BBC, Talus, Simcoe, Strata",
+                    "beer_id": 4375274,
+                    "rating_score": 3.73374,
+                    "rating_count": 246,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4375274_5c16e_hd.jpeg"
+                },
+                {
+                    "csv_name": "Fruits on Dope",
+                    "name": "Fruits On Dope (2021)",
+                    "abv": 8.6,
+                    "description": "Hops: Citra Incognito, Mosaic Incognito, Mosaic Spectrum, Galaxy, Enigma, Motueka",
+                    "beer_id": 4375277,
+                    "rating_score": 4.09252,
+                    "rating_count": 481,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4375277_29388_hd.jpeg"
+                },
+                {
+                    "csv_name": "Pils",
+                    "name": "Pils",
+                    "abv": 4.8,
+                    "description": "Hops: Hallertauer Mittelfr\u00fch, Hallertauer Select, Tettnanger, Opal",
+                    "beer_id": 4409644,
+                    "rating_score": 3.78293,
+                    "rating_count": 41,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4409644_618ee_hd.jpeg"
+                },
+                {
+                    "csv_name": "Fraugruber x Sauve & Sons",
+                    "data": "couldn't locate on untappd"
+                }
+            ]
+        },
+        {
+            "csv_name": "Apex",
+            "name": "Apex Brewing Company",
+            "brewery_id": 363333,
+            "follower_count": 1916,
+            "total_votes": 179413,
+            "rating_score": 4.045,
+            "popularity_this_week": 937,
+            "location_city": "Nora",
+            "brewery_img": "",
+            "beers": [
+                {
+                    "csv_name": "Doomrider",
+                    "name": "Doomrider DIPA",
+                    "abv": 8,
+                    "description": "Doomrider DIPA is a new double dry hopped double IPA with a bit more restrained sweetness and a pronounced citrus peel-like bitterness. Built on a foundation of @crispmaltings outstanding Extra Pale Ale malt and pillowy Naked Oats, we then hopped this beast with a trifecta of the finest and juiciest hops we could find; Mosaic, Moutere & Vic Secret.\r\n\r\nMalts:\r\nExtra Pale Ale, Naked Oats, Torrefied Oats\r\n\r\nHops:\r\nMosaic, Moutere & Vic Secret\r\n\r\nYeast:\r\nWLP066 London Fog",
+                    "beer_id": 4308507,
+                    "rating_score": 4.1577,
+                    "rating_count": 1169,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4308507_84ab0_hd.jpeg"
+                },
+                {
+                    "csv_name": "New Pyramids",
+                    "name": "New Pyramids DIPA",
+                    "abv": 8,
+                    "description": "This monolithic procurement of hop-devilry began with our trusted Asmodeus-grist bill and then we dry-hopped it lavishly with Citra, Simcoe and Cashmere hops (in amounts equivalent to treasures found in a pharaoh\u2019s tomb). The result is an exquisite bouquet of mandarin, papaya and sweet cantaloupe as well as fresh cut, perfectly ripe mango. Comes with free \u2018build your own grandiloquent grave\u2019 cut out label.\r\n\r\nMalts:\r\nMaris Otter Extra Pale, Flaked Wheat & Chit Malt\r\n\r\nHops:\r\nCitra, Cashmere & Simcoe\r\n\r\nYeast:\r\nWLP066 London Fog",
+                    "beer_id": 4308980,
+                    "rating_score": 4.16751,
+                    "rating_count": 1182,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4308980_89257_hd.jpeg"
+                },
+                {
+                    "csv_name": "Clair Obscure",
+                    "name": "Clair Obscur DIPA",
+                    "abv": 8,
+                    "description": "For this double dry hopped double IPA we went for a \u201dchiaroscuro\u201d approach. Bright vivid citrus notes and dank, pungent, ripe mango aromas. Biscuity, malty sweetness and bitter piney resin. We brewed this DIPA with our favorite British heritage malt, backed up by heaps of oats and raw wheat. Hopped in the kettle with fresh Mosaic hops and then dry hopped with loads of Australian Galaxy and Vic Secret. Consider your day made.\r\n\r\nMalts:\r\nMaris Otter Extra Pale, Naked Oats, Torrefied Oats & Flaked Wheat \r\n\r\nHops:\r\nGalaxy, Mosaic & Vic Secret\r\n\r\nYeast:\r\nWLP066 London Fog\r\n",
+                    "beer_id": 4320809,
+                    "rating_score": 4.18854,
+                    "rating_count": 890,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4320809_df4bb_hd.jpeg"
+                },
+                {
+                    "csv_name": "Trident",
+                    "name": "Trident IPA",
+                    "abv": 6.5,
+                    "description": "The trident, the Chief Rebel Angel\u2019s pitchfork is often associated with mischief, defiance and grim and frostbitten darkness. From now on it will also be associated with zesty citrus, sweet ripe stonefruits, candied oranges, and faint notes of coconut.\r\n\r\nMalts:\r\nMaris Otter Extra Pale, Flaked Wheat, Chit Malt, Torrefied Oats & Maltodextrin\r\n\r\nHops:\r\nSabro, Citra & Mosaic\r\n\r\nYeast:\r\nWLP066 London Fog",
+                    "beer_id": 4260527,
+                    "rating_score": 4.01066,
+                    "rating_count": 2612,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4260527_ee227_hd.jpeg"
+                },
+                {
+                    "csv_name": "NE Mosaic Simcoe",
+                    "name": "NE Mosaic & Simcoe IPA",
+                    "abv": 6.5,
+                    "description": "We loaded this hazy delight with a king\u2019s ransom of Mosaic, Simcoe and Citra hops, yielding lovely notes of citrus, mango and ripe tropical fruits. Pairs most excellent with late nights and pretentious record collections.\r\n\r\nMalts: \r\nMaris Otter Extra Pale, Dextrin, Flaked Oats & Torrefied Wheat\r\n\r\nHops:\r\nMagnum, Citra, Mosaic & Simcoe\r\n\r\nYeast: \r\nWLP066 London Fog",
+                    "beer_id": 2822994,
+                    "rating_score": 3.91269,
+                    "rating_count": 10368,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2822994_84acb_hd.jpeg"
+                },
+                {
+                    "csv_name": "Culmination",
+                    "name": "Culmination DIPA",
+                    "abv": 8,
+                    "description": "[The Northbound Gravity Sessions No: 04]\r\n\r\nThe thirst for knowledge, litterateur, fine arts (and big bold flavored DIPAs) drove us into a more poetic approach to dry hopping for the fourth installment in the Northbound Gravity Sessions series - and so the \u201ceverything in moderation, including moderation\u201d dry hopping method was born. Hidden in this DIPA\u2019s hazy depths, courtesy of large portions of naked oat malt, torrefied wheat and flaked oats, lies absurd amounts of Simcoe and Vic Secret hops. Expect tropical fruits, ripe stone fruits, citrus and all other buzz words associated with the style - we\u2019ve more or less ticked all the boxes on the aroma chart with this one. C\u00fclmination DIPA will only be available in 440ml cans.",
+                    "beer_id": 3758871,
+                    "rating_score": 4.25826,
+                    "rating_count": 2046,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3758871_32592_hd.jpeg"
+                },
+                {
+                    "csv_name": "Asmodeus",
+                    "name": "Asmodeus DIPA",
+                    "abv": 8,
+                    "description": "This DIPA is the G.O.A.T. Literally. A trve A.B.C tour de force and so damn metal we\u2019re afraid it will rust. It\u2019s a liquid blast beat to your palette with ungodly amounts of Colvmbvs, Vic Secret and Mosaic hops over a smooth oats- and wheat-heavy malt bill. Horns up metalheads! (Note to tickers: the yellow colored goat is not a misprint and there will be more than 1000 cans available).\r\n\r\nMalts:\r\nMaris Otter Extra Pale, Naked Oats, Torrefied Oats & Torrefied Wheat\r\n\r\nHops:\r\nColumbus, Mosaic & Vic Secret\r\n\r\nYeast:\r\nWLP066 London Fog",
+                    "beer_id": 3496558,
+                    "rating_score": 4.11306,
+                    "rating_count": 10379,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3496558_98384_hd.jpeg"
+                },
+                {
+                    "csv_name": "Vertigo",
+                    "name": "Vertigo DIPA",
+                    "abv": 8,
+                    "description": "The hop growing wizards of Middle Earth (a.k.a New Zealand) presented us with their latest crop - the finest Nelson Sauvin, Moutere and Rakau one could find - straight out of Hobbiton. Expect creamy tropical fruits, balanced piney bitterness, fresh stone fruits and gooseberry.\r\n\r\nMalts:\r\nMaris Otter Extra Pale, Flaked Wheat, Naked Oats & Chit malt\r\n\r\nHops:\r\nMoutere, Rakau, Nelson Sauvin\r\n\r\nYeast:\r\nWLP066 London Fog",
+                    "beer_id": 3966971,
+                    "rating_score": 4.11883,
+                    "rating_count": 1431,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3966971_e7d1a_hd.jpeg"
+                }
+            ]
+        },
+        {
+            "csv_name": "\u00c5ben",
+            "name": "\u00c5BEN",
+            "brewery_id": 344882,
+            "follower_count": 198,
+            "total_votes": 30120,
+            "rating_score": 3.589,
+            "popularity_this_week": 145,
+            "location_city": "Kolding",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-344882_f2e9e_hd.jpeg",
+            "beers": [
+                {
+                    "csv_name": "Max Q",
+                    "name": "Max Q",
+                    "abv": 8.4,
+                    "description": "A full-bodied and generously hopped New England Double IPA hitting 8.4%.\u2060 \u2060\r\n\u2060\r\nMax Q is the stage of a rocket launch, where there is maximum dynamic pressure on the rocket, putting it at high risk of exploding if not made properly. This absolutely characterises this brand new fresh and fruity NEDIPA, which is definitely something special.\u2060",
+                    "beer_id": 3920226,
+                    "rating_score": 3.9527,
+                    "rating_count": 1187,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3920226_03f5f_hd.jpeg"
+                },
+                {
+                    "csv_name": "Cloudless",
+                    "name": "Cloudless",
+                    "abv": 7.1,
+                    "description": "Refreshing west coast IPA. Crisp and with a lot of hop bitterness.",
+                    "beer_id": 3629858,
+                    "rating_score": 3.60039,
+                    "rating_count": 1159,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3629858_2ad94_hd.jpeg"
+                },
+                {
+                    "csv_name": "Scattering of Light",
+                    "name": "Scattering of Light",
+                    "abv": 4,
+                    "description": "Scattering of Light is part of the reflection series of NEIPA's. All of the beers in the series are based on the same malt profile but vary in hops. Scattering of Light is made with Idaho7, Citra, and Azzaca. ",
+                    "beer_id": 4355939,
+                    "rating_score": 3.34826,
+                    "rating_count": 86,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4355939_a5da5_hd.jpeg"
+                },
+                {
+                    "csv_name": "4 Year Anniversary",
+                    "name": "4 Year Anniversary",
+                    "abv": 6,
+                    "description": "A crisp american style IPA with a beautiful straw-like colour. Expect some bitterness and a refreshing taste. This particular west coast IPA is a SMASH IPA (Signe Hop And Singe Malt), meaning that only pilsner malt and citra hops has been used.\r\n",
+                    "beer_id": 4354524,
+                    "rating_score": 3.57211,
+                    "rating_count": 147,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4354524_38b56_hd.jpeg"
+                },
+                {
+                    "csv_name": "Focal Point",
+                    "name": "Focal Point",
+                    "abv": 5.5,
+                    "description": "Focal Point is part of the reflection series of NEIPA's. All of the beers in the series are based on the same malt profile but vary in hops. \ufeffFocal Point is made with Citra, Wai-iti and Moutere. ",
+                    "beer_id": 4355899,
+                    "rating_score": 3.68639,
+                    "rating_count": 147,
+                    "beer_img": ""
+                },
+                {
+                    "csv_name": "Diffuse",
+                    "name": "Diffuse Light",
+                    "abv": 8,
+                    "description": "Diffuse Light is part of the reflection series of NEIPA's. All of the beers in the series are based on the same malt profile but vary in hops. \ufeffDiffuse Light is made with Citra, Azacca, Waimea and Cryo Azacca. ",
+                    "beer_id": 4363621,
+                    "rating_score": 3.87467,
+                    "rating_count": 229,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4363621_69d4e_hd.jpeg"
+                },
+                {
+                    "csv_name": "Bryg 61",
+                    "name": "Bryg 61",
+                    "abv": 5.5,
+                    "description": "Our first ever beer. It is called Bryg nr. 61 (brew no. 61), as it took 60 attempts before ending up with \"Bryg nr. 61 - IPA\". It is a fruity and hazy New England Pale Ale made primarily with Citra and Mosiac. Only very modest bitterness but high aroma of exotic fruits. Delicious for a summer day or a drink in the bar. It has now become a classic for us. ",
+                    "beer_id": 2208808,
+                    "rating_score": 3.65172,
+                    "rating_count": 2300,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2208808_39601_hd.jpeg"
+                },
+                {
+                    "csv_name": "Specular",
+                    "name": "Specular",
+                    "abv": 10,
+                    "description": "Specular is part of the reflection series of NEIPA's. All of the beers in the series are based on the same malt profile but vary in hops. Specular\ufeff is made with Citra, Nectaron, Mosaic and Cryo Citra. ",
+                    "beer_id": 4363584,
+                    "rating_score": 4.07896,
+                    "rating_count": 259,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4363584_2a80c_hd.jpeg"
+                }
+            ]
+        },
+        {
+            "csv_name": "Whiplash",
+            "name": "Whiplash",
+            "brewery_id": 259639,
+            "follower_count": 950,
+            "total_votes": 148976,
+            "rating_score": 3.858,
+            "popularity_this_week": 510,
+            "location_city": "Dublin",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-259639_ccdc0_hd.jpeg",
+            "beers": [
+                {
+                    "csv_name": "Setting Sun",
+                    "name": "Setting Sun",
+                    "abv": 8,
+                    "description": "DIPA w/ Citra, BRU-1 , El Dorado",
+                    "beer_id": 2994774,
+                    "rating_score": 4.11627,
+                    "rating_count": 2831,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2994774_5ebd1_hd.jpeg"
+                },
+                {
+                    "csv_name": "Its No Spirit",
+                    "name": "It's No Spirit",
+                    "abv": 10.5,
+                    "description": "MARIS OTTER, WHEAT MALT, OAT MALT, NELSON SAUVIN, AMARILLO",
+                    "beer_id": 4408959,
+                    "rating_score": 4.3125,
+                    "rating_count": 12,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4408959_39f49_hd.jpeg"
+                },
+                {
+                    "csv_name": "Reckoner",
+                    "name": "Reckoner",
+                    "abv": 6.3,
+                    "description": "A hop we\u2019ve been excited to work with for some time now is Strata. There\u2019s no better way to properly get to know a new hop than just doing a single hop IPA job on it and giving it all the room in the world to shine, and this is that beer.\r\nReckoner is works our usual base of Maris, Oat and Wheat with an added touch of Carapils and then focuses all of it\u2019s energy at harnessing the big aromas and flavours of this new belter of a hop cone. We added a light touch of bitterness to our whirlpool process, fermented on London Ale III then gave this banger a double dry hop addition of Strata in two equal proportions of 10g/L building to a final of 20g/L total.\r\nThis is a great showcase for such an exciting hop. The nose is heavy sticky pineapple, passionfruit and white grape, the flavour delivers the same with added dank and heft, big sweetness and light noble hop spice.\r\nThis is bloody great.",
+                    "beer_id": 3745507,
+                    "rating_score": 3.90287,
+                    "rating_count": 2089,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3745507_71f20_hd.jpeg"
+                },
+                {
+                    "csv_name": "Water Jump",
+                    "name": "Water Jump",
+                    "abv": 6.8,
+                    "description": "Built on our usual base suspects of Pale, Wheat and Oats and rocking a slightly harder water profile to push some crispness this silly beer gets a big dirty charge of El Dorado and Columbus in the whirlpool before pushing off for a ferment on London Fog yeast. Water Jump is dry hopped to a tame 18g/L in two big stages first getting heavy lashings of its low end in Ekuanot then a second helping of Galaxy and Strata for that second green washing of Galaxy and Strata.\r\n\r\nThis is a big nose of nectarines, passionfruit, white peach, gobstoppers and goddam dank and a juice body to beat the band.",
+                    "beer_id": 3936562,
+                    "rating_score": 3.96083,
+                    "rating_count": 1030,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3936562_9d282_hd.jpeg"
+                },
+                {
+                    "csv_name": "Walk the Night",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "Prisoner of Love",
+                    "name": "Prisoner of Love",
+                    "abv": 5.2,
+                    "description": "Cascade Pale Ale. Inspired by the top quality Cascade we've been seeing, it was only right to brew a beer specifically to let it shine. Normally reserved and revered for IPAs and West Coast IPAs, we decided to crack on and do a Pale instead. \r\nInitial nose is floral, bright, lemon, rosewater, cedar and orange zest. Body is round, lightly sweet and oozes orange juice, pine, light notes of grapefruit and a bag full of floral to beat the band. \u2800\r\n",
+                    "beer_id": 4277578,
+                    "rating_score": 3.96531,
+                    "rating_count": 552,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4277578_1c133_hd.jpeg"
+                },
+                {
+                    "csv_name": "Doom City",
+                    "name": "Doom City",
+                    "abv": 8,
+                    "description": "MARIS OTTER, WHEAT MALT, OAT MALT, VIC SECRET, MOTUEKA",
+                    "beer_id": 4408955,
+                    "rating_score": 4.04688,
+                    "rating_count": 16,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4408955_34825_hd.jpeg"
+                },
+                {
+                    "csv_name": "Northern Lights",
+                    "name": "Northern Lights",
+                    "abv": 2.8,
+                    "description": "2.8% Micro IPA w/ Mosaic & Vic Secret",
+                    "beer_id": 2577515,
+                    "rating_score": 3.76826,
+                    "rating_count": 7161,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2577515_22f66_hd.jpeg"
+                }
+            ]
+        },
+        {
+            "csv_name": "Zagovor",
+            "name": "Zagovor Brewery",
+            "brewery_id": 135208,
+            "follower_count": 3429,
+            "total_votes": 304988,
+            "rating_score": 4.027,
+            "popularity_this_week": 900,
+            "location_city": "Moscow",
+            "brewery_img": "",
+            "beers": [
+                {
+                    "csv_name": "Indwell",
+                    "name": "Indwell",
+                    "abv": 6.5,
+                    "description": "New England style IPA with the most citrusy hops strains Citra and Citra Incognito, paired with Simcoe and Simcoe Cryo.",
+                    "beer_id": 4043344,
+                    "rating_score": 4.02824,
+                    "rating_count": 2546,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4043344_a9dd8_hd.jpeg"
+                },
+                {
+                    "csv_name": "Prozess",
+                    "name": "Prozess",
+                    "abv": 6.5,
+                    "description": "New England style IPA, dry hopped with super tropical hops: Strata, Galaxy and Mosaic. Fermented with the new kveik yeast strain for extra flavour tones. \r\n\r\nDedicated to one of the greatest novels of a mankind.",
+                    "beer_id": 4212676,
+                    "rating_score": 4.05131,
+                    "rating_count": 1952,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4212676_7b35e_hd.jpeg"
+                },
+                {
+                    "csv_name": "Overhype: Proper Hops",
+                    "name": "Overhype: Proper Hops",
+                    "abv": 8,
+                    "description": "The freshest edition of Overhype is dedicated to the hops. It might be one of the hoppiest beer, or maybe even the hoppiest beer ever brewed in Russia. While preparing the Overhype we\u2019d sampled the big aroma strains such as Strata, Cashmere, Citra and Talus in all kind of different forms and shapes such as traditional pellets, cryo lupulin, incognito hop oil, high aroma lupomax and cryo pop blend. ",
+                    "beer_id": 4381141,
+                    "rating_score": 4.20534,
+                    "rating_count": 1292,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4381141_bca8e_hd.jpeg"
+                },
+                {
+                    "csv_name": "Sadwave",
+                    "name": "Sadwave IPA",
+                    "abv": 6.5,
+                    "description": "Sadwave IPA is juicy NE IPA with a radical amount of Mosaic hops all the way, and  this release is collaboration with  online music web zine Sadwave.com\r\n\r\nSadwave is a website, publishing house and a small tour agency that has grown up from the experience of international underground DIY/punk scene. A small, but very interesting world where we have no intermediate links between the author, the reader and musicians.  Sadwave from 2011 overviews music and various cultural events of Russian and international scenes and remains our hiding place among the deafening info-noise of modern times, a harbor, which always has something to listen to and to read for those who love punk, hardcore, ska, indie, reggae, oi! and other musical genres, the existence of which becomes possible due to the passion and altruism of the participants of the scene all over the world.",
+                    "beer_id": 2446110,
+                    "rating_score": 4.01023,
+                    "rating_count": 5663,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2446110_a1880_hd.jpeg"
+                },
+                {
+                    "csv_name": "Revival Never goes out of Style",
+                    "name": "Revival never goes out of Style",
+                    "abv": 8,
+                    "description": "Bitter classics meets modern aroma within a glass of west coast style Double IPA \r\n\r\nHops of all ages: Centennial / Chinook / Cascade / Strata / Simcoe Cryo  / Idaho7 Cryo ",
+                    "beer_id": 4344607,
+                    "rating_score": 3.96265,
+                    "rating_count": 1154,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4344607_e42dd_hd.jpeg"
+                }
+            ]
+        },
+        {
+            "csv_name": "Arpus",
+            "name": "\u0100rpus Brewing Co.",
+            "brewery_id": 380185,
+            "follower_count": 642,
+            "total_votes": 115480,
+            "rating_score": 3.957,
+            "popularity_this_week": 857,
+            "location_city": "Eimuri",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-380185_3a7db_hd.jpeg",
+            "beers": [
+                {
+                    "csv_name": "DDH Idaho 7 DIPA",
+                    "name": "DDH Idaho 7 DIPA",
+                    "abv": 8,
+                    "description": "",
+                    "beer_id": 4351620,
+                    "rating_score": 4.02683,
+                    "rating_count": 643,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4351620_fbafd_hd.jpeg"
+                },
+                {
+                    "csv_name": "DDH Nelson x Vic Secret IPA",
+                    "name": "DDH Nelson x Vic Secret IPA",
+                    "abv": 6.5,
+                    "description": "",
+                    "beer_id": 4351622,
+                    "rating_score": 4.06011,
+                    "rating_count": 786,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4351622_6755a_hd.jpeg"
+                },
+                {
+                    "csv_name": "DDH Citra x Belma Pale Ale",
+                    "name": "DDH Citra x Belma Pale Ale",
+                    "abv": 5.5,
+                    "description": "",
+                    "beer_id": 4330428,
+                    "rating_score": 3.98247,
+                    "rating_count": 636,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4330428_d11c8_hd.jpeg"
+                },
+                {
+                    "csv_name": "DDH Nelson x Galaxy TIPA",
+                    "name": "DDH Nelson x Galaxy TIPA",
+                    "abv": 10,
+                    "description": "",
+                    "beer_id": 4369317,
+                    "rating_score": 4.01918,
+                    "rating_count": 662,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4369317_f22e0_hd.jpeg"
+                },
+                {
+                    "csv_name": "DDH TRI2304CR Cryo DIPA",
+                    "name": "DDH TRI2304CR Cryo DIPA",
+                    "abv": 8,
+                    "description": "",
+                    "beer_id": 4367600,
+                    "rating_score": 4.04502,
+                    "rating_count": 562,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4367600_0e13e_hd.jpeg"
+                },
+                {
+                    "csv_name": "DDH Mosaic x Citra Lupomax IPA",
+                    "name": "DDH Mosaic Cryo x Citra Lupomax IPA",
+                    "abv": 6.5,
+                    "description": "",
+                    "beer_id": 4356079,
+                    "rating_score": 3.97275,
+                    "rating_count": 701,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4356079_aedb5_hd.jpeg"
+                },
+                {
+                    "csv_name": "DDH Citra Spectrum x Strata QIPA",
+                    "name": "DDH Citra Spectrum x Strata QIPA",
+                    "abv": 12,
+                    "description": "",
+                    "beer_id": 4387887,
+                    "rating_score": 4.24349,
+                    "rating_count": 806,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4387887_67423_hd.jpeg"
+                },
+                {
+                    "csv_name": "DDH Galaxy Pale Ale",
+                    "name": "DDH Galaxy Pale Ale",
+                    "abv": 5.5,
+                    "description": "",
+                    "beer_id": 4367579,
+                    "rating_score": 3.95701,
+                    "rating_count": 528,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4367579_ec0d0_hd.jpeg"
+                }
+            ]
+        },
+        {
+            "csv_name": "Stigberts",
+            "name": "Stigbergets Bryggeri",
+            "brewery_id": 56652,
+            "follower_count": 5539,
+            "total_votes": 698027,
+            "rating_score": 3.791,
+            "popularity_this_week": 1964,
+            "location_city": "Gothenburg",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-56652_8bc63_hd.jpeg",
+            "beers": [
+                {
+                    "csv_name": "Non Plus Ultra",
+                    "name": "Amazing Haze Non Plus Ultra",
+                    "abv": 7.5,
+                    "description": "",
+                    "beer_id": 4357812,
+                    "rating_score": 3.86315,
+                    "rating_count": 2030,
+                    "beer_img": ""
+                },
+                {
+                    "csv_name": "Existens Essens Transcendens",
+                    "name": "Existens Essens Transcendens",
+                    "abv": 5.9,
+                    "description": "",
+                    "beer_id": 4080143,
+                    "rating_score": 3.81369,
+                    "rating_count": 11530,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4080143_7316a_hd.jpeg"
+                },
+                {
+                    "csv_name": "Barnaby Pils",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "Api Lairepmi",
+                    "name": "API Lairepmi",
+                    "abv": 8,
+                    "description": "When released, a 100% organic DIPA. From November 2017 re-released as a DIPA Lanoitnevnoc",
+                    "beer_id": 1753570,
+                    "rating_score": 3.95988,
+                    "rating_count": 4186,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-1753570_53313_hd.jpeg"
+                },
+                {
+                    "csv_name": "DDH WC",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "Just as Amazing",
+                    "name": "Just As Amazing Haze",
+                    "abv": 3.5,
+                    "description": "",
+                    "beer_id": 3822984,
+                    "rating_score": 3.67019,
+                    "rating_count": 1597,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3822984_bc8ab_hd.jpeg"
+                },
+                {
+                    "csv_name": "Children's Village",
+                    "name": "Children\u2019s Village",
+                    "abv": 8,
+                    "description": "",
+                    "beer_id": 4433860,
+                    "rating_score": 3.825,
+                    "rating_count": 36,
+                    "beer_img": ""
+                },
+                {
+                    "csv_name": "Margeaux",
+                    "name": "Margeux",
+                    "abv": 4.5,
+                    "description": "",
+                    "beer_id": 4416765,
+                    "rating_score": 3.46408,
+                    "rating_count": 71,
+                    "beer_img": ""
+                }
+            ]
+        },
+        {
+            "csv_name": "Warpigs",
+            "name": "WarPigs Brewpub",
+            "brewery_id": 186232,
+            "follower_count": 858,
+            "total_votes": 374087,
+            "rating_score": 3.829,
+            "popularity_this_week": 683,
+            "location_city": "Copenhagen",
+            "brewery_img": "",
+            "beers": [
+                {
+                    "csv_name": "Frank the Tank",
+                    "name": "Frank the Tank",
+                    "abv": 5.3,
+                    "description": "",
+                    "beer_id": 1952959,
+                    "rating_score": 3.8587,
+                    "rating_count": 8405,
+                    "beer_img": ""
+                },
+                {
+                    "csv_name": "Mo'saic Mo Problems",
+                    "name": "Mo'saic Mo' Problems",
+                    "abv": 6.8,
+                    "description": "",
+                    "beer_id": 1383094,
+                    "rating_score": 3.83565,
+                    "rating_count": 5708,
+                    "beer_img": ""
+                },
+                {
+                    "csv_name": "IPA - American",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "Angle of Repose",
+                    "name": "Angle of Repose",
+                    "abv": 6,
+                    "description": "",
+                    "beer_id": 4355695,
+                    "rating_score": 3.84,
+                    "rating_count": 60,
+                    "beer_img": ""
+                }
+            ]
+        },
+        {
+            "csv_name": "To \u00d8l",
+            "name": "To \u00d8l",
+            "brewery_id": 2241,
+            "follower_count": 24005,
+            "total_votes": 1584991,
+            "rating_score": 3.705,
+            "popularity_this_week": 2204,
+            "location_city": "Copenhagen",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-2241_5115f_hd.jpeg",
+            "beers": [
+                {
+                    "csv_name": "Amarilload",
+                    "name": "Amarilload",
+                    "abv": 6,
+                    "description": "",
+                    "beer_id": 4352578,
+                    "rating_score": 3.71223,
+                    "rating_count": 94,
+                    "beer_img": ""
+                },
+                {
+                    "csv_name": "Dank A Roo Doo",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "Hazy Answe",
+                    "name": "Hazy Answer",
+                    "abv": 5.8,
+                    "description": "IPA with Strata, Idaho 7, Mosaic and Citra",
+                    "beer_id": 4321080,
+                    "rating_score": 3.75909,
+                    "rating_count": 55,
+                    "beer_img": ""
+                },
+                {
+                    "csv_name": "House of Haze",
+                    "name": "House of Haze",
+                    "abv": 5.5,
+                    "description": "House Of Haze is a beer we have been looking forward to for a while here at Brus.\r\nThis beer is the first one, featuring a lot of Idaho 7 hops that we flew to America in 2019, to select specifically.\r\n\r\nOf all the lots we were presented, this was by far the best.\r\nAlong with a solid base of Pilsner, Wheat and Oats, it is backed with a bit of Centennial and Amarillo.\r\n\r\nThis lot of Idaho 7 has a huge aroma of pineapple and mango. We absolutely love this hop and you can expect to see much more of it soon!",
+                    "beer_id": 3934287,
+                    "rating_score": 3.70205,
+                    "rating_count": 731,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3934287_62a34_hd.jpeg"
+                }
+            ]
+        },
+        {
+            "csv_name": "Pomona Island",
+            "name": "Pomona Island Brew Co.",
+            "brewery_id": 371306,
+            "follower_count": 820,
+            "total_votes": 152487,
+            "rating_score": 3.919,
+            "popularity_this_week": 657,
+            "location_city": "Salford",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-371306_cf54f_hd.jpeg",
+            "beers": [
+                {
+                    "csv_name": "My Name Is Carnival",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "Plastic Palace Alice",
+                    "name": "PLASTIC PALACE ALICE",
+                    "abv": 7.2,
+                    "description": "Hurry, you\u2019ve got to get in line. Cryo Mosaic, Citra, Zappa and Hallertau Blanc might start to shine. And Orange blossom... the whole eternal life.",
+                    "beer_id": 4432054,
+                    "rating_score": 0,
+                    "rating_count": 3,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4432054_a2004_hd.jpeg"
+                },
+                {
+                    "csv_name": "Pie for Maureen Round her Shed",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "HMS Thunder Child",
+                    "name": "HMS THUNDER CHILD",
+                    "abv": 10,
+                    "description": "The Triple IPA was lit by Cryo Mosaic, Idaho 7, Enigma and Citra; and no one and nothing was left to fight them. The Earth belonged to Pomona.",
+                    "beer_id": 4432057,
+                    "rating_score": 0,
+                    "rating_count": 2,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4432057_fe96d_hd.jpeg"
+                },
+                {
+                    "csv_name": "Very Eavy, Very Umble",
+                    "name": "VERY EAVY, VERY UMBLE",
+                    "abv": 8.2,
+                    "description": "If I\u2019m a Double IPA. It\u2019s all because of Cryo Simcoe, Citra, Mosaic and Enigma. Still walking in your shadow, looking for DIPAs to vibe.",
+                    "beer_id": 4422342,
+                    "rating_score": 0,
+                    "rating_count": 8,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4422342_cc9ec_hd.jpeg"
+                },
+                {
+                    "csv_name": "Choose The Ball",
+                    "name": "CHOOSE THE BALL",
+                    "abv": 6.5,
+                    "description": "Choose the DDH IPA and you will join me. Choose Cryo Simcoe and Vic Secret and you will join Pomona... in joy. You don\u2019t understand my words... but you must choose.",
+                    "beer_id": 4422346,
+                    "rating_score": 4.04762,
+                    "rating_count": 42,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4422346_f6d75_hd.jpeg"
+                },
+                {
+                    "csv_name": "Too Weird to Live, Too Rare to Die",
+                    "name": "TOO WEIRD TO LIVE, TOO RARE TO DIE",
+                    "abv": 8,
+                    "description": "Here we go. One of God\u2019s own prototypes. A high powered Wild Cherry and Blackcurrant Sour DIPA with Grapefruit Tea, never even considered for mass production. Too weird to live, too rare to die.",
+                    "beer_id": 4432053,
+                    "rating_score": 0,
+                    "rating_count": 4,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4432053_fc42f_hd.jpeg"
+                },
+                {
+                    "csv_name": "Alpha Beta Psychedelic Funkin'",
+                    "name": "ALPHA BETA PSYCHEDELIC FUNKIN'",
+                    "abv": 8.5,
+                    "description": "Who is dis? Doin\u2019 this synthetic type of Cryo Citra, Mosaic, Bru-1 and Azacca Sour DIPA.\r\n",
+                    "beer_id": 4380950,
+                    "rating_score": 4.08831,
+                    "rating_count": 278,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4380950_1ed08_hd.jpeg"
+                }
+            ]
+        },
+        {
+            "csv_name": "Mikkeller Brewpub London",
+            "name": "Mikkeller Brewpub London",
+            "brewery_id": 470168,
+            "follower_count": 48,
+            "total_votes": 4101,
+            "rating_score": 3.742,
+            "popularity_this_week": 57,
+            "location_city": "City of London",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-470168_b6204_hd.jpeg",
+            "beers": [
+                {
+                    "csv_name": "What a Time to be Alive",
+                    "name": "What A Time To Be Alive",
+                    "abv": 6.2,
+                    "description": "6.2% Hazy IPA.\r\n\r\nHopped with Citra, El Dorado and Motueka.\r\n\r\nBrewed by Mikkeller Brewpub London at Exmouth Market, London.",
+                    "beer_id": 4374241,
+                    "rating_score": 4.09444,
+                    "rating_count": 45,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4374241_da0c8_hd.jpeg"
+                },
+                {
+                    "csv_name": "Behold Frostillicus",
+                    "name": "Behold Frostillicus",
+                    "abv": 6.5,
+                    "description": "6.5% DDH Hazy IPA.\r\n\r\nHopped with Cryo Pop, Citra and Strata.\r\n\r\nAromas of peach, mango, grapefruit and melon.\r\n\r\nBrewed by Mikkeller Brewpub London at Exmouth Market.",
+                    "beer_id": 4408588,
+                    "rating_score": 3.92941,
+                    "rating_count": 34,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4408588_35427_hd.jpeg"
+                },
+                {
+                    "csv_name": "Risk Assessment",
+                    "name": "Risk Assessment",
+                    "abv": 8.3,
+                    "description": "8.3% Double IPA.\r\n\r\nHopped with Citra Spectrum, Galaxy and Vic Secret. \r\n\r\nBrewed by Mikkeller Brewpub London at Exmouth Market.",
+                    "beer_id": 4342855,
+                    "rating_score": 3.99906,
+                    "rating_count": 53,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4342855_95783_hd.jpeg"
+                },
+                {
+                    "csv_name": "Moon Mist",
+                    "name": "Moon Mist",
+                    "abv": 10,
+                    "description": "10.0% Triple IPA.\r\n\r\nWith Cryo Pop, Citra and Galaxy.\r\n\r\nBrewed by Mikkeller Brewpub London at Exmouth Market, London.",
+                    "beer_id": 4374237,
+                    "rating_score": 3.99167,
+                    "rating_count": 36,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4374237_feefa_hd.jpeg"
+                }
+            ]
+        },
+        {
+            "csv_name": "Verdant",
+            "name": "Verdant Brewing Co",
+            "brewery_id": 211325,
+            "follower_count": 4514,
+            "total_votes": 519171,
+            "rating_score": 4.063,
+            "popularity_this_week": 1580,
+            "location_city": "Penryn",
+            "brewery_img": "",
+            "beers": [
+                {
+                    "csv_name": "Cornish Creatives: Mudwig Has a Beef System",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "Planets Don't Twinkle",
+                    "name": "Planets Don't Twinkle - Galaxy Single Hop DIPA",
+                    "abv": 8,
+                    "description": "Planets Don\u2019t Twinkle has been upgraded to DIPA status! Brace yourselves for intensely tropical pineapple notes alongside bright citrus and short but bittersweet bursts of berry. Quite possibly the most impenetrably opaque beer we\u2019ve produced to date, and it\u2019s boasting the sumptuous mouthfeel to match!\u2063",
+                    "beer_id": 3573999,
+                    "rating_score": 4.13143,
+                    "rating_count": 1096,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3573999_42abf_hd.jpeg"
+                },
+                {
+                    "csv_name": "Unlike Stars",
+                    "name": "Unlike Stars",
+                    "abv": 6.5,
+                    "description": "Mosaic & Galaxy IPA. \r\n\r\nUnlike stars, planets don't twinkle. Stars are so distant that they appear as pinpoints of light in the night sky. Our Milky Way galaxy is home to at least 100 billion alien planets, and possibly many more.\r\nThe galaxy is located 3.8 billion light years away, and there is not the slightest chance of observing these planets directly, not even with the best telescope one can imagine. \r\n\r\nMalts: Golden Promise, Extra Pale Ale, Wheat, Oats, Flaked Wheat\r\nHops: Mosaic, Galaxy\r\nYeast: London Ale III",
+                    "beer_id": 2674229,
+                    "rating_score": 4.20265,
+                    "rating_count": 2600,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2674229_c0eb1_hd.jpeg"
+                },
+                {
+                    "csv_name": "Transient Comfort Object",
+                    "name": "Transient Comfort Object",
+                    "abv": 8,
+                    "description": "A fluffy little number in our house DIPA style. Strewn in abundance with pineapple heavy hops, and like confetti at a wedding, this too signals a match made in flavour heaven.",
+                    "beer_id": 4443298,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
+                }
+            ]
+        },
+        {
+            "csv_name": "Boxcar",
+            "name": "BOXCAR",
+            "brewery_id": 334149,
+            "follower_count": 206,
+            "total_votes": 22774,
+            "rating_score": 3.824,
+            "popularity_this_week": 122,
+            "location_city": "Bethnal Green",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-334149_f4603_hd.jpeg",
+            "beers": [
+                {
+                    "csv_name": "Ekuanot Meditations",
+                    "name": "Ekuanot Meditations",
+                    "abv": 8,
+                    "description": "",
+                    "beer_id": 4402695,
+                    "rating_score": 3.70823,
+                    "rating_count": 79,
+                    "beer_img": ""
+                },
+                {
+                    "csv_name": "Dark Mild",
+                    "name": "Dark Mild",
+                    "abv": 3.6,
+                    "description": "Fruit, chocolate and nut flavours are expressed from the malt, hops and yeast. Water and yeast have been manipulated to enhance mouthfeel and body.",
+                    "beer_id": 3088413,
+                    "rating_score": 3.63637,
+                    "rating_count": 1508,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3088413_f7922_hd.jpeg"
+                },
+                {
+                    "csv_name": "Emerald Sky",
+                    "name": "Emerald Sky",
+                    "abv": 4.6,
+                    "description": "What a fresh feeling, seeing a glittering sky of emeralds and diamonds, so far up above the forest. \r\n\r\nThis beer is pale and it's most certainly an ale. Wow, what more is there to say?",
+                    "beer_id": 3865937,
+                    "rating_score": 3.81552,
+                    "rating_count": 348,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3865937_7448f_hd.jpeg"
+                },
+                {
+                    "csv_name": "Grapefruit IPA",
+                    "name": "IPA Grapefruit #8",
+                    "abv": 3.5,
+                    "description": "\u042d\u043a\u0441\u043f\u0435\u0440\u0438\u043c\u0435\u043d\u0442\u0430\u043b\u044c\u043d\u044b\u0439 \u043b\u0451\u0433\u043a\u0438\u0439 IPA, \u0441\u0432\u0430\u0440\u0435\u043d\u043d\u0430\u044f \u0441 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d\u0438\u0435\u043c \u043f\u044e\u0440\u0435 \u0438\u0437 \u0433\u0440\u0435\u0439\u043f\u0444\u0440\u0443\u0442\u0430. \u0421\u043e\u043b\u043e\u0434\u0430: Pale ale,Cara Clair, Munich Light, Melano Light, Caramel Extra Dark. \u0425\u043c\u0435\u043b\u044c: Centennial, Simcoe.",
+                    "beer_id": 1390411,
+                    "rating_score": 0,
+                    "rating_count": 5,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-1390411_5d4a8_hd.jpeg"
+                }
+            ]
+        },
+        {
+            "csv_name": "Bundobust",
+            "name": "Bundobust Brewery",
+            "brewery_id": 469642,
+            "follower_count": 6,
+            "total_votes": 780,
+            "rating_score": 3.678,
+            "popularity_this_week": 40,
+            "location_city": "Manchester",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-469642_11547_hd.jpeg",
+            "beers": [
+                {
+                    "csv_name": "East is East",
+                    "name": "East Is East",
+                    "abv": 6.5,
+                    "description": "Soft and juicy New England style IPA showcasing ever-changing combinations of the freshest hops.",
+                    "beer_id": 4399392,
+                    "rating_score": 3.85392,
+                    "rating_count": 153,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4399392_4e5d3_hd.jpeg"
+                },
+                {
+                    "csv_name": "West is West",
+                    "name": "West Is West",
+                    "abv": 6.5,
+                    "description": "Dank and bitter IPA. Piny and resinous, brewed with a rotating selection of the choicest hops.",
+                    "beer_id": 4433484,
+                    "rating_score": 3.70286,
+                    "rating_count": 35,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4433484_60e21_hd.jpeg"
+                },
+                {
+                    "csv_name": "Peela",
+                    "name": "Peela",
+                    "abv": 4,
+                    "description": "Easy drinking hazy Pale Ale, brewed with Azacca and Ekuanot hops. Loads of tropical fruit flavour.",
+                    "beer_id": 4366843,
+                    "rating_score": 3.68944,
+                    "rating_count": 213,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4366843_5df9d_hd.jpeg"
+                },
+                {
+                    "csv_name": "Andhera",
+                    "data": "couldn't locate on untappd"
+                }
+            ]
+        },
+        {
+            "csv_name": "Track",
+            "name": "Track Brewing Company",
+            "brewery_id": 182149,
+            "follower_count": 1168,
+            "total_votes": 176417,
+            "rating_score": 3.95,
+            "popularity_this_week": 354,
+            "location_city": "Manchester",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-182149_9ce32_hd.jpeg",
+            "beers": [
+                {
+                    "csv_name": "Meet me in the Middle // Gold Top",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "Another Lifetime: Gold Top",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "Dreaming of Big Skies",
+                    "name": "Dreaming of Big Skies",
+                    "abv": 6.5,
+                    "description": "This refreshing, zippy little number has got all of the usual favourites - Citra, Simcoe, Mosaic & a generous heap of Amarillo for those Curacao orange peel vibes. Get you board shorts on and your favourite pair of plimsoles and have a bask in this beautiful lagoon of dreams. Rich with tropical pineapple, grapefruit and kumquat. A smooth base of soft soft malty goodness underpins the beautifully blissful fruit avalanche, soft finish and delicious aftertaste.",
+                    "beer_id": 4175968,
+                    "rating_score": 4.1143,
+                    "rating_count": 437,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4175968_2b642_hd.jpeg"
+                },
+                {
+                    "csv_name": "Lost on the Way",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "Changing Tides",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "Cask // Sonoma",
+                    "data": "couldn't locate on untappd"
+                }
+            ]
+        },
+        {
+            "csv_name": "Buxton",
+            "name": "Buxton Brewery",
+            "brewery_id": 3461,
+            "follower_count": 12719,
+            "total_votes": 732411,
+            "rating_score": 3.859,
+            "popularity_this_week": 773,
+            "location_city": "Buxton",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-3461_88fe2_hd.jpeg",
+            "beers": [
+                {
+                    "csv_name": "Axe Edge",
+                    "name": "Axe Edge",
+                    "abv": 6.8,
+                    "description": "Our flagship India Pale Ale brewed relentlessly hoppy since 2011.",
+                    "beer_id": 48269,
+                    "rating_score": 3.81003,
+                    "rating_count": 28893,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-48269_d2645_hd.jpeg"
+                },
+                {
+                    "csv_name": "English Hop Development",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "Summer Ale",
+                    "name": "Summer Ale",
+                    "abv": 3.8,
+                    "description": "",
+                    "beer_id": 3765188,
+                    "rating_score": 0,
+                    "rating_count": 2,
+                    "beer_img": ""
+                },
+                {
+                    "csv_name": "King Slayer",
+                    "name": "King Slayer",
+                    "abv": 8,
+                    "description": "New recipe King Slayer released in 2019. ",
+                    "beer_id": 3146976,
+                    "rating_score": 3.92651,
+                    "rating_count": 11173,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3146976_3c504_hd.jpeg"
+                }
+            ]
+        },
+        {
+            "csv_name": "Kirkstall",
+            "name": "Kirkstall Brewery",
+            "brewery_id": 11609,
+            "follower_count": 1059,
+            "total_votes": 81857,
+            "rating_score": 3.616,
+            "popularity_this_week": 200,
+            "location_city": "Leeds",
+            "brewery_img": "",
+            "beers": [
+                {
+                    "csv_name": "Virtuous",
+                    "name": "Virtuous",
+                    "abv": 4.5,
+                    "description": "Our gluten-free, vegan friendly session IPA has a clean citrus aroma that gives way to a fruity hop flavour. Flavours of tropical and citrus fruits, with hints of pine and blueberry are perfectly balanced by its complex malt base, giving it a flavoursome yet refreshing profile.",
+                    "beer_id": 2251095,
+                    "rating_score": 3.52206,
+                    "rating_count": 8911,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2251095_f9544_hd.jpeg"
+                },
+                {
+                    "csv_name": "Perpetuous",
+                    "name": "Perpetuous",
+                    "abv": 4.2,
+                    "description": "This is the latest iteration of Kirkstall's rotating hop session IPA series, combining Citra, Centennial and Simcoe. With lashings of tropical notes in the aroma, which carries into the first sip, developing with flavours of pine. With a slight bitter finish this is an easy-drinking pillowy IPA.",
+                    "beer_id": 3122697,
+                    "rating_score": 3.53111,
+                    "rating_count": 6386,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3122697_52e1b_hd.jpeg"
+                },
+                {
+                    "csv_name": "Providence",
+                    "name": "Providence",
+                    "abv": 5.2,
+                    "description": "A New England pale ale with Citra, Amarillo and Ekaunot cryo hops.",
+                    "beer_id": 2577009,
+                    "rating_score": 3.70412,
+                    "rating_count": 7350,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2577009_e2c00_hd.jpeg"
+                },
+                {
+                    "csv_name": "Impunity",
+                    "name": "Impunity DDH IPA",
+                    "abv": 7.4,
+                    "description": "",
+                    "beer_id": 4101222,
+                    "rating_score": 3.87737,
+                    "rating_count": 137,
+                    "beer_img": ""
+                }
+            ]
+        },
+        {
+            "csv_name": "Amity",
+            "name": "Amity Brew Co",
+            "brewery_id": 466245,
+            "follower_count": 106,
+            "total_votes": 7866,
+            "rating_score": 3.721,
+            "popularity_this_week": 54,
+            "location_city": "Leeds",
+            "brewery_img": "",
+            "beers": [
+                {
+                    "csv_name": "Survival",
+                    "name": "Survival",
+                    "abv": 10,
+                    "description": "Happy - 1st - Birthday\r\n\r\nThey say the first year in business is the hardest. We have survived cuckoo brewing, building the brewery and pub, three lockdowns and a whole host of pandemic challenges. This big old juice bomb gives a powerful punch to knock you into our next birthday",
+                    "beer_id": 4391304,
+                    "rating_score": 4.27941,
+                    "rating_count": 17,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4391304_405dd_hd.jpeg"
+                },
+                {
+                    "csv_name": "Infinite Loop",
+                    "name": "Infinite Loop",
+                    "abv": 6.5,
+                    "description": "Citrus - Bitter - Classic\r\n\r\nA second brew to celebrate our 1st birthday, we teamed up with our amazing friends from Round Corner Brewing for the return journey of our collaboration - celebrating one of our favourite beer styles - the classic West Coast IPA. A clear, bitter classic with loads of citrus and grapefruit notes, but with a drinkable crispy pale backbone.",
+                    "beer_id": 4391293,
+                    "rating_score": 4,
+                    "rating_count": 11,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4391293_e3be9_hd.jpeg"
+                },
+                {
+                    "csv_name": "Amity IPA v2",
+                    "name": "Amity IPA - V2 - Evolving Series",
+                    "abv": 5.4,
+                    "description": "Citrus - Berries - Herby",
+                    "beer_id": 4343029,
+                    "rating_score": 3.97642,
+                    "rating_count": 53,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4343029_c3593_hd.jpeg"
+                },
+                {
+                    "csv_name": "Chorusses",
+                    "name": "Chorusses",
+                    "abv": 8,
+                    "description": "Citrus - Papaya - Floral\r\n\r\nTwo Leeds breweries headed by two Russ's. We had to name the beer \"ChoRUSSes\".\r\n\r\nFrom attending the NMBCo launch at the Sparrow Bier Cafe to inviting us to pour at Hop City 2021, this beer is a celebration of the community support we have here in West Yorkshire.",
+                    "beer_id": 4407703,
+                    "rating_score": 4.31778,
+                    "rating_count": 45,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4407703_a6f87_hd.jpeg"
+                }
+            ]
+        },
+        {
+            "csv_name": "Overtone",
+            "name": "Overtone Brewing Co",
+            "brewery_id": 400105,
+            "follower_count": 859,
+            "total_votes": 90215,
+            "rating_score": 3.936,
+            "popularity_this_week": 565,
+            "location_city": "Glasgow",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-400105_31838_hd.jpeg",
+            "beers": [
+                {
+                    "csv_name": "Pearl Clouds",
+                    "name": "Pearl Clouds",
+                    "abv": 10.5,
+                    "description": "A Citra dominated TIPA loaded with oats and lactose for a velvety, smooth mouthfeel. Huge flavours of citrus, juicy passion fruit, soft peaches and ripe mango.\r\n\r\nHops: Citra, Citra Cryo, Mosaic, Galaxy\r\nContains Lactose\r\n",
+                    "beer_id": 4375473,
+                    "rating_score": 4.42136,
+                    "rating_count": 529,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4375473_57d3a_hd.jpeg"
+                },
+                {
+                    "csv_name": "Chufft",
+                    "name": "Chufft",
+                    "abv": 8,
+                    "description": "We brewed a batch of OOFT and a batch of Chancer, then blended them together for this ultimate hop bomb of a beer. Velvety smooth and rich with sweet pineapple and ripe mango flavours\r\n\r\nHops: Citra Incognito & T90, Mosaic Incognito & T90\r\n",
+                    "beer_id": 4396630,
+                    "rating_score": 4.21885,
+                    "rating_count": 305,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4396630_6eea7_hd.jpeg"
+                },
+                {
+                    "csv_name": "Plur",
+                    "name": "PLUR",
+                    "abv": 8,
+                    "description": "Modern life is rubbish, but this beer makes it worthwhile. This 5 hop combo (Galaxy, Citra, Azacca, Simcoe, Chinook) will give you endless layers of tropical fruit combined with creamy earthy notes.",
+                    "beer_id": 4149103,
+                    "rating_score": 4.23132,
+                    "rating_count": 1057,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4149103_f9818_hd.jpeg"
+                },
+                {
+                    "csv_name": "Ella-Mentary",
+                    "name": "Ella - Mentary IPA",
+                    "abv": 7,
+                    "description": "\u201cWhat one man can invent; another can discover.\u201d \u2014 Sherlock Holmes\r\n\r\nThis big Hazy IPA is hopped with Ella, Galaxy and Citra creating a Floral IPA balanced with Citrus notes, Orange peel and overtones of soft spice.\r\n",
+                    "beer_id": 4081286,
+                    "rating_score": 4.05981,
+                    "rating_count": 703,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4081286_f1c87_hd.jpeg"
+                },
+                {
+                    "csv_name": "Smash It!",
+                    "name": "Smash It",
+                    "abv": 5.5,
+                    "description": "Whether it\u2019s from a pint or a can, we\u2019re all still craving that juicy sessionable IPA to smash. Hazy, easy drinking, lots of tropical, berry and citrus fruit flavours. Just smash it! \r\n\r\nHops: Meridian, Citra\r\n",
+                    "beer_id": 4412952,
+                    "rating_score": 3.93196,
+                    "rating_count": 158,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4412952_c92c2_hd.jpeg"
+                }
+            ]
+        },
+        {
+            "csv_name": "Zapato",
+            "name": "Zapato",
+            "brewery_id": 201451,
+            "follower_count": 83,
+            "total_votes": 5265,
+            "rating_score": 3.703,
+            "popularity_this_week": 6,
+            "location_city": "Kirklees",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-201451_060f2_hd.jpeg",
+            "beers": [
+                {
+                    "csv_name": "Zapatapale - Motueka",
+                    "name": "Zapatapale Motueka",
+                    "abv": 5.5,
+                    "description": "Motueka pale ale single hop ",
+                    "beer_id": 4397187,
+                    "rating_score": 3.45345,
+                    "rating_count": 29,
+                    "beer_img": ""
+                },
+                {
+                    "csv_name": "Oco",
+                    "name": "OCO",
+                    "abv": 6.5,
+                    "description": "West Coast IPA",
+                    "beer_id": 4422921,
+                    "rating_score": 0,
+                    "rating_count": 8,
+                    "beer_img": ""
+                },
+                {
+                    "csv_name": "Zapatapale - Ekuanot BBC",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "Delegate Zero",
+                    "name": "Delegate Zero",
+                    "abv": 6.3,
+                    "description": "",
+                    "beer_id": 1075264,
+                    "rating_score": 3.66525,
+                    "rating_count": 354,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-1075264_8d623_hd.jpeg"
+                },
+                {
+                    "csv_name": "Shoom",
+                    "name": "Shoom",
+                    "abv": 4.5,
+                    "description": "UK vs US hops \r\n\r\nPale Ale",
+                    "beer_id": 3868649,
+                    "rating_score": 3.57,
+                    "rating_count": 145,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3868649_c982c_hd.jpeg"
+                }
+            ]
+        },
+        {
+            "csv_name": "Northern Monk",
+            "name": "Northern Monk",
+            "brewery_id": 71828,
+            "follower_count": 8081,
+            "total_votes": 1114759,
+            "rating_score": 3.867,
+            "popularity_this_week": 2656,
+            "location_city": "",
+            "brewery_img": "",
+            "beers": [
+                {
+                    "csv_name": "Glory",
+                    "name": "Glory 2021",
+                    "abv": 10.5,
+                    "description": "This Triple IPA is our annual salute to the glory of the hop, and this year\u2019s version we\u2019ve really stripped back the recipe and reassembled something which showcases all of our favourite elements from our IPA brewing this year. A hefty 28g/l dry hop with a headline assembly of Citra, Idaho 7, Strata and Mosaic results in distinct aromas of passion fruit, cantaloupe melon and lime, with more tropical fruit and a peppery dankness coming through on the palate.",
+                    "beer_id": 4344541,
+                    "rating_score": 4.31051,
+                    "rating_count": 1066,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4344541_0c9c4_hd.jpeg"
+                },
+                {
+                    "csv_name": "Faith",
+                    "name": "Faith",
+                    "abv": 5.4,
+                    "description": "A Modern Hazy Pale Ale packed with soft fruit flavours. Smooth, tropical and juicy. You\u2019ve got to have Faith.",
+                    "beer_id": 970642,
+                    "rating_score": 3.75045,
+                    "rating_count": 52383,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-970642_d744b_hd.jpeg"
+                },
+                {
+                    "csv_name": "Heathen",
+                    "name": "Heathen",
+                    "abv": 7.2,
+                    "description": "A bold yet balanced New England IPA. Soft, resinous and tropical. For the Heathens.\r\n\r\nThe American-bred Citra hops made its splash into the industry with a bang, taking over the craft brewing scene by storm with its otherworldly tropical fruit flavour and aroma. Our take on this juicy hop takes the best of its exceptional characteristics to brew a bold yet balanced IPA. A simple base of British pale malt is coloured by small kettle additions of our UK and US hops blend for a soft, fruity bitterness. Come dry hopping time, we hit high gear with 16kg of Citra spread over three additions, layering them into the beer for the ultimate juicy, resinous taste experience and an aroma of tropical fruit that lures your olfactory sense from across the room.",
+                    "beer_id": 1514437,
+                    "rating_score": 3.92871,
+                    "rating_count": 22170,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-1514437_6fb47_hd.jpeg"
+                },
+                {
+                    "csv_name": "Hop City // The Resurrection",
+                    "name": "Hop City - The Resurrection // New England IPA (2021)",
+                    "abv": 7.4,
+                    "description": "Beer festival\u2019s return! We missed celebrating all things hops with everyone last year, and the collaboration and friendship that runs alongside. Although many of our international friends will not be able to attend this year with restrictions still in place, we wanted to highlight how international friendships have kept up despite the distance involved. We invited Zagovor and Other Half to represent the European and US contingents that make up the festival, and with the support and exciting new hop varieties of festival sponsor Yakima Chief, we put together this DDH IPA packed with tropical and orchard stone fruit aromas alongside twists of lime and lemon and an underlying layer of piney dankness from a hop bill including Cryo Pop\u2122, Talus\u2122 and the still experimental HBC 586 variety.",
+                    "beer_id": 4377054,
+                    "rating_score": 4.16162,
+                    "rating_count": 2096,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4377054_d5b3e_hd.jpeg"
+                },
+                {
+                    "csv_name": "OFS046",
+                    "name": "OFS046 // EAST COAST IPA // EAST COAST",
+                    "abv": 5.1,
+                    "description": "Starting right at the top of the East Coast and getting stuck into the classics \u2013 a traditional New England IPA with all the murk, haze, and juice associated with the style. Hop-heavy yet easy-drinking thanks to sturdy, smooth, wheat-forward base, we\u2019ve used FruitBowl yeast for \u2013 you guessed it \u2013 fruity esters, amped up with a classic juice combo of Citra, Amarillo, and El Dorado. ",
+                    "beer_id": 4440082,
+                    "rating_score": 0,
+                    "rating_count": 4,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4440082_258b2_hd.jpeg"
+                },
+                {
+                    "csv_name": "OFS047",
+                    "name": "OFS017",
+                    "abv": 6,
+                    "description": "This easy-drinking 6% IPA combines the intense pineapple and coconut notes of Sabro Incognito with the fresh tropical juice punch of the Australian variety Galaxy. Silky smooth and packed with a cocktail of exotic fruit flavours.",
+                    "beer_id": 3991690,
+                    "rating_score": 4.01795,
+                    "rating_count": 1061,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3991690_03441_hd.jpeg"
+                },
+                {
+                    "csv_name": "OFS048",
+                    "name": "OFS018",
+                    "abv": 3.5,
+                    "description": "A sour offering pure refreshment and showcasing\r\na fruit that we\u2019ve been wanting to explore for a\r\nwhile, watermelon. Over a wheat-led base, lime\r\nbrings zesty acidity while the mint, a natural\r\naccompaniment in any context, provides an aromatic\r\ncounter to the juicy flavours of the watermelon. ",
+                    "beer_id": 4027797,
+                    "rating_score": 3.46379,
+                    "rating_count": 914,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4027797_5ce22_hd.jpeg"
+                },
+                {
+                    "csv_name": "Fresh IPA 003",
+                    "name": "FRESH IPA 003 // TIPA",
+                    "abv": 11.9,
+                    "description": "This month\u2019s Fresh release brings a pairing of Talus and Cashmere hops to the fore, the former already well known for its punchy grapefruit juice flavour despite being a relative newcomer to the brewing world and the latter one of our favourite, underrated varieties brimming with lemon and lime zing and some orange and mango undertones. We accentuate all these flavours with hot side additions of Idaho 7 and Sabro incognito whilst Citra ups the tropical fruit array in the dry hop.",
+                    "beer_id": 4430853,
+                    "rating_score": 4.42199,
+                    "rating_count": 141,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4430853_43806_hd.jpeg"
+                },
+                {
+                    "csv_name": "The Awakening",
+                    "name": "Patrons Project 31.02 // Smug // The Awakening // DDH DIPA",
+                    "abv": 8.6,
+                    "description": "It was always going to be tough to top the first installment in our Smug Patrons series, but we think we might just have managed it - and at a more modest ABV, no less!\r\n\r\nA mix of classic and more modern hops - from Citra to Citra Incognito, Mosaic to Sabro - is joined by the newest of the new, Cryopop\u2122. The latest innovation form hop kings Yakima Chief, Cryopop\u2122 is designed to withstand even the most rigorous brewing processes while retaining a huge tropical-fruit aroma at the forefront, with a hint of fresh-squeezed orange juice courtesy of El Dorado. That hardy Cryopop\u2122 and Citra goes into the whirlpool, followed by a three-stage dry-hop process - including the experimental practice of hopping mid-fermentation to introduce bio-transformational flavour profiles from those hops - all in all, the equivalent of 38g/l . What results is the hallmarks of a textbook DDH DIPA - mouth-watering stone fruit, juicy mango and berries - with glimmering citrus and an uncharacteristically herbal top-notes.",
+                    "beer_id": 4398793,
+                    "rating_score": 4.16333,
+                    "rating_count": 514,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4398793_dc21c_hd.jpeg"
+                },
+                {
+                    "csv_name": "Crowd for the Summer",
+                    "name": "Patrons Project 27.03 // British Culture Archive // Crowd For The Summer // Wylam Brewery // DDH IPA",
+                    "abv": 7.4,
+                    "description": "For the third installment of our British Culture Archive series that showcases British hops, we brought in Geordie beer legends Wylam - a no-brainer considering their reputation for a midas touch with all things hop-forward. We dialed the dry-hop up to an equivalent of 32 g/l and, with some gentle support from Citra Incognito, El Dorado, and Amarillo for their distinct orange juice and pineapple notes, but ensuring to put the under-appreciated UK hop Ernest in the spotlight. Ernest combines notes of apricot with a distinctively British spice character.",
+                    "beer_id": 4419825,
+                    "rating_score": 4.0496,
+                    "rating_count": 377,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4419825_9d922_hd.jpeg"
+                },
+                {
+                    "csv_name": "OFS043",
+                    "name": "OFS043 // INDIA PALE LAGER // INDIA",
+                    "abv": 5.4,
+                    "description": "A combination of legacy brewing techniques and modern tastes. Sabro and Citra in the kettle and the dry-hop gives strong coconut and lime character, making for a dry, spritzy lager with the juicy refreshment of an NEIPA. Equally suited to Ideal for hot Summers in India, or an Indian Summer of our own.",
+                    "beer_id": 4404491,
+                    "rating_score": 3.7836,
+                    "rating_count": 186,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4404491_694b6_hd.jpeg"
+                },
+                {
+                    "csv_name": "OFS044",
+                    "name": "OFS044 // BANANA MANGO LASSI IPA // INDIA",
+                    "abv": 4.5,
+                    "description": "We are very familiar with Mango Lassi, and have certainly brewed one or two interpretations ourselves but for our second OFS India brew, we give a nod to some more traditional Indian lassi flavours by leading with banana. This brings a higher perceived thickness and contributes to a more fruit bowl-like flavour which is accentuate by whirlpool hopping with Huell Melon and Idaho 7.",
+                    "beer_id": 4419827,
+                    "rating_score": 3.64385,
+                    "rating_count": 187,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4419827_07118_hd.jpeg"
+                },
+                {
+                    "csv_name": "Honour",
+                    "name": "Honour 2021 // West Coast TIPA",
+                    "abv": 10.5,
+                    "description": "We decided to rebrew one of our favourite seasonal\u2019s of recent years in the shape of this dank, sticky and resinous triple West Coast IPA. We updated the hop bill bringing Bru-1 and Strata into the mix which bring some more modern tinned pineapple and passion fruit flavours to the mix whilst still brimming the beer with pine, orange and lime zest character, all riding over a long, resinous citrus bitterness.",
+                    "beer_id": 4419826,
+                    "rating_score": 4.025,
+                    "rating_count": 120,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4419826_bfd3f_hd.jpeg"
+                },
+                {
+                    "csv_name": "West Coast Routes #3",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "Ubuntu, WDYTM?",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "Cask // Faith",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "Cask // Striding Edge",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "Cask // Mangoes on with Faith",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "Cask // Scafell",
+                    "data": "couldn't locate on untappd"
+                }
+            ]
+        },
+        {
+            "csv_name": "Donzoko",
+            "name": "Donzoko Brewing Company",
+            "brewery_id": 357805,
+            "follower_count": 140,
+            "total_votes": 16209,
+            "rating_score": 3.754,
+            "popularity_this_week": 25,
+            "location_city": "Hartlepool",
+            "brewery_img": "",
+            "beers": [
+                {
+                    "csv_name": "Northern Helles",
+                    "name": "Northern Helles",
+                    "abv": 4.2,
+                    "description": "Northern Helles is our flagship lager. We use German malt and ferment cold with a Swiss lager yeast strain, for a clean malt backbone with notes of sweet crusty bread. Our unique house acid culture is added in the brewhouse to control the pH level of the beer and achieve a crisp, refreshing finish after fermentation.\r\n\r\nWe top it all off by moderately hopping with New Zealand hops for hints of floral fruit, complementing the crispness perfectly.\r\n\r\nNorthern Helles is hazy, served unfiltered, and perfect for cracking open with friends.",
+                    "beer_id": 2326253,
+                    "rating_score": 3.63643,
+                    "rating_count": 3884,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2326253_05a89_hd.jpeg"
+                },
+                {
+                    "csv_name": "Gravity Keg // Northern Helles",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "Gravity Keg // Big Foam",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "Bigger Foam",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "Brett A Manger",
+                    "name": "Brett A Manger",
+                    "abv": 4.7,
+                    "description": "Lager aged with brettanomyces for 9 months in stainless",
+                    "beer_id": 4021269,
+                    "rating_score": 3.45247,
+                    "rating_count": 365,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4021269_9246e_hd.jpeg"
+                },
+                {
+                    "csv_name": "Letting the days go by Cherry",
+                    "name": "Letting the Days Go By Double Cherry",
+                    "abv": 6.1,
+                    "description": "This mixed fermentation saison was brewed with local spelt, aged hops and fermented with a mix of cultures. Fruited with sweet cherries in 2019 and sour cherries im 2020",
+                    "beer_id": 4105078,
+                    "rating_score": 3.90729,
+                    "rating_count": 96,
+                    "beer_img": ""
+                },
+                {
+                    "csv_name": "Tied Vines",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "Cloud Beer",
+                    "name": "Cloud Beer White Ale",
+                    "abv": 4.6,
+                    "description": "",
+                    "beer_id": 4425086,
+                    "rating_score": 3.53857,
+                    "rating_count": 35,
+                    "beer_img": ""
+                }
+            ]
+        },
+        {
+            "csv_name": "Future State",
+            "name": "FutureState ",
+            "brewery_id": 441896,
+            "follower_count": 21,
+            "total_votes": 472,
+            "rating_score": 3.968,
+            "popularity_this_week": 0,
+            "location_city": "",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-441896_f5eda_hd.jpeg",
+            "beers": [
+                {
+                    "csv_name": "Ballroom on Glass",
+                    "data": "couldn't locate on untappd"
+                }
+            ]
+        },
+        {
+            "csv_name": "Newtown Park",
+            "name": "Newtown Park Brewing Co.",
+            "brewery_id": 484135,
+            "follower_count": 34,
+            "total_votes": 3489,
+            "rating_score": 3.799,
+            "popularity_this_week": 68,
+            "location_city": "Bristol",
+            "brewery_img": "",
+            "beers": [
+                {
+                    "csv_name": "Five Point Six",
+                    "name": "Five Point Six",
+                    "abv": 5.6,
+                    "description": "",
+                    "beer_id": 4215044,
+                    "rating_score": 3.7614,
+                    "rating_count": 215,
+                    "beer_img": ""
+                }
+            ]
+        },
+        {
+            "csv_name": "Neon Raptor",
+            "name": "Neon Raptor Brewing Co.",
+            "brewery_id": 267674,
+            "follower_count": 1619,
+            "total_votes": 133797,
+            "rating_score": 4.015,
+            "popularity_this_week": 326,
+            "location_city": "Nottingham",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-267674_2c6ba_hd.jpeg",
+            "beers": [
+                {
+                    "csv_name": "Rob's Shoes",
+                    "name": "Rob's Shoes",
+                    "abv": 5.1,
+                    "description": "Two things you can rely on at Neon Raptor: Hazy, crushable, citrusy pale ales and the omnipresence of Rob's Shoes. Citra Cryo, El Dorado, Vic Secret and Chinook are the stars here.\r\n\r\n5.1% ABV.\r\n\r\nIngredients: Water, Barley (Gluten), Oats, Wheat (Gluten), Hops, Yeast\r\n\r\nAllergens: Barley (Gluten), Oats, Wheat (Gluten)",
+                    "beer_id": 4413883,
+                    "rating_score": 3.80628,
+                    "rating_count": 207,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4413883_4126e_hd.jpeg"
+                },
+                {
+                    "csv_name": "Naughty Luggage",
+                    "name": "Naughty Luggage",
+                    "abv": 6.8,
+                    "description": "Naughty Luggage is a New England style IPA. It contains vast amounts of oats, a soft water profile, LOADS!! of fruity hops and is fermented with our carefully selected yeast strains. This leads to a very hazy, super juicy and incredibly drinkable beverage!",
+                    "beer_id": 2100976,
+                    "rating_score": 4.05643,
+                    "rating_count": 3617,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2100976_b753e_hd.jpeg"
+                },
+                {
+                    "csv_name": "Use it or Lose It",
+                    "name": "Use It Or Lose It",
+                    "abv": 7.2,
+                    "description": "A Pineapple and Lime Fruited Sour IPA brewed in collaboration with Brew Cavern for Indie Beer Shop Day 2021. The fruit blends with Sabro Cryo, Citra Cryo and Idaho 7 hops for a huge beery cocktail explosion. Use It Or Lose It!",
+                    "beer_id": 4400235,
+                    "rating_score": 4.08987,
+                    "rating_count": 153,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4400235_a34b9_hd.jpeg"
+                },
+                {
+                    "csv_name": "Open the Door",
+                    "name": "Open the Door",
+                    "abv": 10,
+                    "description": "For our 5th birthday we have gone with a trio of big flavoursome beers. Open The Door to this juicy and fruity Triple IPA for bags and bags of Simcoe, Nelson Sauvin, Mosaic and Columbus Cryo hops. Boom boom acka-lacka lacka boom!\r\n\r\nABV. 10%\r\n\r\nIngredients: Water, Barley (Gluten), Oats, Wheat (Gluten), Hops, Yeast\r\n\r\nAllergens: Barley (Gluten), Oats, Wheat (Gluten)",
+                    "beer_id": 4435337,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4435337_e41a4_hd.jpeg"
+                }
+            ]
+        },
+        {
+            "csv_name": "Deya",
+            "name": "DEYA Brewing Company",
+            "brewery_id": 220918,
+            "follower_count": 2453,
+            "total_votes": 303794,
+            "rating_score": 4.034,
+            "popularity_this_week": 961,
+            "location_city": "Cheltenham",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-220918_678f9_hd.jpeg",
+            "beers": [
+                {
+                    "csv_name": "Steady Rolling Man",
+                    "name": "Steady Rolling Man",
+                    "abv": 5.2,
+                    "description": "Steady Rolling Man. Our pale ale. Inspired by the ridiculously tasty hoppy beers we discovered, we got brewing our own versions, over and over again, while listening to the blues greats. The heady concoction of old time blues records and juicy American hops transfixed us from the start and the rolling man was born in these sessions! Incredibly soft and delicate with intense tropical fruit hop aromatics and saturation, this is our vision of the perfect pale ale. ",
+                    "beer_id": 1202873,
+                    "rating_score": 4.01762,
+                    "rating_count": 24171,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-1202873_93c9d_hd.jpeg"
+                },
+                {
+                    "csv_name": "I do this all the Time",
+                    "name": "I Do This All the Time",
+                    "abv": 4.5,
+                    "description": "White Beer with Rhubarb and Coriander\r\n\r\nThis is a fruity, spicy, white beer with Saphir hops and a complex character. Background flavours of rhubarb and coriander.",
+                    "beer_id": 4411608,
+                    "rating_score": 3.52321,
+                    "rating_count": 112,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4411608_fdfa5_hd.jpeg"
+                },
+                {
+                    "csv_name": "Saturated Simcoe",
+                    "name": "Saturated In Simcoe",
+                    "abv": 8,
+                    "description": "Single hop Simcoe DIPA ",
+                    "beer_id": 2561698,
+                    "rating_score": 4.21941,
+                    "rating_count": 4279,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2561698_8fb3b_hd.jpeg"
+                },
+                {
+                    "csv_name": "Momentary Bliss",
+                    "name": "Momentary Bliss",
+                    "abv": 8,
+                    "description": "Brewed in collaboration with Glasshouse. Juicy, orangey, piney and delicious DIPA bursting with Citra, Mosaic and Nelson.\r\n\r\n2021 rebrew hopped with Citra, Idaho 7, Motueka & Rakau",
+                    "beer_id": 2521927,
+                    "rating_score": 4.24514,
+                    "rating_count": 1112,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2521927_0c4c9_hd.jpeg"
+                },
+                {
+                    "csv_name": "Sunshine",
+                    "name": "Sunshine",
+                    "abv": 6,
+                    "description": "A tropical delight of an IPA. Carrying on from where My Life In The Sunshine left off - bright, juicy, tropical deliciousness.\r\n\r\nDrawing inspiration from our collaboration with Other Half. Sunshine is a tropical IPA with Citra, Idaho 7 and Sabro.",
+                    "beer_id": 3784617,
+                    "rating_score": 4.14835,
+                    "rating_count": 3451,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3784617_ce9d1_hd.jpeg"
+                },
+                {
+                    "csv_name": "Brett Pils",
+                    "name": "Brett Pils",
+                    "abv": 4.8,
+                    "description": "Brett Pils is our house Pilsner conditioned for 3 months in 500L oak barrels with Brettanomyces. Funky, clean and effervescent with lemon, hay and elderflower coming to the fore - Brett Pils is a deliciously simple yet complex thirst quencher.\r\n\r\nHops: Saphir and Hersbrucker ",
+                    "beer_id": 3790357,
+                    "rating_score": 3.97697,
+                    "rating_count": 241,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3790357_152f9_hd.jpeg"
+                },
+                {
+                    "csv_name": "Something Good 15",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "Cask // Man is the Most Secret Animal on Earth",
+                    "data": "couldn't locate on untappd"
+                }
+            ]
+        },
+        {
+            "csv_name": "Mash Gang",
+            "name": "Mash Gang",
+            "brewery_id": 473602,
+            "follower_count": 15,
+            "total_votes": 330,
+            "rating_score": 3.388,
+            "popularity_this_week": 11,
+            "location_city": "City of London",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-473602_5c418_hd.jpeg",
+            "beers": [
+                {
+                    "csv_name": "Stoop Lager",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "Spirritual Journey",
+                    "name": "Spiritual Journey",
+                    "abv": 0.5,
+                    "description": "SPRITUAL JOURNEY // DDH PALE // 0.5%\r\n\r\nFluffy, hazy, funky, a bit chewy, hoppy.\r\n\r\nIdaho 7, Citra Cryo, and like a gazillion other hops.",
+                    "beer_id": 4296062,
+                    "rating_score": 3.59396,
+                    "rating_count": 91,
+                    "beer_img": ""
+                },
+                {
+                    "csv_name": "Dead Mall",
+                    "name": "Dead Mall - Mango Milkshake IPA",
+                    "abv": 0.5,
+                    "description": "Exotic Tonka beans, which are illegal in the USA, so no exporting, their flavour similar to vanilla, cherry, a touch of cinnamon, almond, caramel (also used to Hoodoo and Voodoo potions for love) fine bourbon and Tahitian vanilla pods and finally we dose with a hefty amount of sweet and chewy milk sugar (thick, creamy). A real sweet treat",
+                    "beer_id": 4322508,
+                    "rating_score": 4.08333,
+                    "rating_count": 21,
+                    "beer_img": ""
+                },
+                {
+                    "csv_name": "Terp City",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "Tahiti Treat",
+                    "name": "Tahiti Treat",
+                    "abv": 0.5,
+                    "description": "\"This is barely a beer,\" I can already heat the sound of purists choking on waves of sweet and spicy island vibes. \n\nMango and pineapple.\nRun punch and sunburn. \nOvertones of SPF50 and a BBQ drifting on the breeze. ",
+                    "beer_id": 4020081,
+                    "rating_score": 0,
+                    "rating_count": 5,
+                    "beer_img": ""
+                }
+            ]
+        },
+        {
+            "csv_name": "Alpha Delta",
+            "name": "Alpha Delta Brewing",
+            "brewery_id": 446842,
+            "follower_count": 326,
+            "total_votes": 41623,
+            "rating_score": 3.907,
+            "popularity_this_week": 177,
+            "location_city": "Newburn",
+            "brewery_img": "",
+            "beers": [
+                {
+                    "csv_name": "Achlys",
+                    "name": "Achlys",
+                    "abv": 8.2,
+                    "description": "Citra DIPA 8.2% \r\n\r\nVEGAN",
+                    "beer_id": 3526905,
+                    "rating_score": 4.15189,
+                    "rating_count": 2699,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3526905_281ac_hd.jpeg"
+                },
+                {
+                    "csv_name": "Erebus",
+                    "name": "Erebus",
+                    "abv": 8.5,
+                    "description": "A hoppy black chunky double ipa",
+                    "beer_id": 4421648,
+                    "rating_score": 3.73696,
+                    "rating_count": 23,
+                    "beer_img": ""
+                },
+                {
+                    "csv_name": "Pontus",
+                    "name": "Pontus",
+                    "abv": 6.5,
+                    "description": "",
+                    "beer_id": 4426468,
+                    "rating_score": 3.48036,
+                    "rating_count": 28,
+                    "beer_img": ""
+                },
+                {
+                    "csv_name": "Methe",
+                    "name": "Methe",
+                    "abv": 11,
+                    "description": "",
+                    "beer_id": 4424268,
+                    "rating_score": 4.06406,
+                    "rating_count": 32,
+                    "beer_img": ""
+                }
+            ]
+        },
+        {
+            "csv_name": "Floc",
+            "name": "Floc. Brewing Project",
+            "brewery_id": 478259,
+            "follower_count": 31,
+            "total_votes": 1372,
+            "rating_score": 3.871,
+            "popularity_this_week": 3,
+            "location_city": "Margate",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-478259_04366_hd.jpeg",
+            "beers": [
+                {
+                    "csv_name": "Easy Way Out",
+                    "name": "Easy Way Out",
+                    "abv": 8,
+                    "description": "DIPA brewed with Amarillo, Galaxy and Simcoe hops dancing across a soft delicious light malt base.",
+                    "beer_id": 4090445,
+                    "rating_score": 3.96932,
+                    "rating_count": 44,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4090445_b6bd7_hd.jpeg"
+                },
+                {
+                    "csv_name": "If We Were",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "Ever So",
+                    "data": "couldn't locate on untappd"
+                }
+            ]
+        },
+        {
+            "csv_name": "North Brewing Co.",
+            "name": "North Brewing Co.",
+            "brewery_id": 202720,
+            "follower_count": 3066,
+            "total_votes": 426304,
+            "rating_score": 3.872,
+            "popularity_this_week": 799,
+            "location_city": "Leeds",
+            "brewery_img": "",
+            "beers": [
+                {
+                    "csv_name": "Watching Light Move",
+                    "name": "Watching Light Move",
+                    "abv": 8,
+                    "description": "A fresh and juicy DIPA made a heap of tangy hops. Our signature fluffy cloud malt base bearing Yakima Chief : Cryo Pop\u2122 Blend, taking the lead with its sherberty fizz of candy sweet and overripe mango. A big dose of Nelson Sauvin brings gooseberry and sweet chardonnay tones whilst a sprinkle of Talus propping up the affair with vanilla, coconut and lime.",
+                    "beer_id": 4396729,
+                    "rating_score": 4.06562,
+                    "rating_count": 333,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4396729_84503_hd.jpeg"
+                },
+                {
+                    "csv_name": "Fading Frontier",
+                    "name": "Fading Frontier",
+                    "abv": 8.4,
+                    "description": "Gummy gummy gummy we\u2019ve got love in our tummies! Hitting you with another DIPA whammy Fading Frontier builds sky high atop our recent release, Sea of The Curve.\r\n\r\nChewy, full of umptious gulpability with HBC 630 and Mosaic on the exchange bringing sweet bouncy gummy bear goodness, lots of cherry berry cream and zips of pink grapefruit zings!",
+                    "beer_id": 4419037,
+                    "rating_score": 4.06149,
+                    "rating_count": 161,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4419037_05800_hd.jpeg"
+                },
+                {
+                    "csv_name": "The Eighth Chamber",
+                    "name": "The Eighth Chamber",
+                    "abv": 7,
+                    "description": "Let's take it back to the late noughties, when a wave of new and exciting beer from the USA began to trickle into the UK and North Bar were at the forefront of bringing them to the people of Leeds! Transparent and hoppy IPA, session IPA, barrel aged stouts, wheat ale and barley wines! - what a time to be alive! \r\n\r\nIntense hop aroma and lean malt balance shake hands and balance in The Eighth Chamber. A robust malt backbone made with cara and extra pale creates a slightly sweet clean biscuit base. Nothing but fresh Centennial hops added throughout the duration of the boil, whirlpool and in the dry hop make for a classic American IPA, bitter and laden with fruity esters, gorgeous zesty grapefruit, aromatic pine, sticky resin and dancing floral aroma.",
+                    "beer_id": 4361424,
+                    "rating_score": 3.7742,
+                    "rating_count": 471,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4361424_bed40_hd.jpeg"
+                },
+                {
+                    "csv_name": "Springwell Pils",
+                    "name": "Springwell Pils",
+                    "abv": 4.5,
+                    "description": "Close your eyes and imagine for a second: You\u2019re here with us at our new home, Springwell. You\u2019re outside with your friends, music is playing, the sun is shining, you\u2019re drinking Springwell Pils fresh from the tank. A picture soon to be a reality, but for now, we\u2019re staying safe and drinking at home. Crisp, light and rounded. Springwell Pils is an unfiltered lager lightly hopped with Callista and MittelFruh ",
+                    "beer_id": 4140433,
+                    "rating_score": 3.66936,
+                    "rating_count": 1281,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4140433_582c8_hd.jpeg"
+                },
+                {
+                    "csv_name": "Transmission",
+                    "name": "Transmission",
+                    "abv": 6.9,
+                    "description": "An award-winning IPA and our core range headliner. Tropical aroma balanced with bright and bittersweet resinous flavours. Hazy orange appearance and soft, juicy mouthfeel.\r\nAwarded the SIBA Overall Champion Keg Beer 2018. ",
+                    "beer_id": 1083661,
+                    "rating_score": 3.82539,
+                    "rating_count": 23611,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-1083661_9574e_hd.jpeg"
+                }
+            ]
+        },
+        {
+            "csv_name": "Pipeline",
+            "name": "Pipeline Brewing Co",
+            "brewery_id": 375922,
+            "follower_count": 134,
+            "total_votes": 5593,
+            "rating_score": 3.977,
+            "popularity_this_week": 28,
+            "location_city": "Saint Agnes",
+            "brewery_img": "",
+            "beers": [
+                {
+                    "csv_name": "Galaxy Dreams",
+                    "name": "Galaxy Dreams",
+                    "abv": 5.6,
+                    "description": "A thick and hazy new England style IPA, drenched in Citra and Galaxy.",
+                    "beer_id": 4375360,
+                    "rating_score": 3.95696,
+                    "rating_count": 79,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4375360_ee4e1_hd.jpeg"
+                },
+                {
+                    "csv_name": "Citra Deluxe",
+                    "name": "Citra Deluxe",
+                    "abv": 6.2,
+                    "description": "A full on Citra experience, paired with the fruity Amarillo hop,\u2013 dry hopped  at 25g/l  - expect dank tropical fruit with citrus",
+                    "beer_id": 4391009,
+                    "rating_score": 4.10163,
+                    "rating_count": 92,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4391009_71059_hd.jpeg"
+                },
+                {
+                    "csv_name": "Cryo Pop",
+                    "name": "Cryo Pop Double IPA",
+                    "abv": 8,
+                    "description": "A DIPA brewed for Hop City in Leeds using our soft water and all the Cryo Pop hop blend from Yakima we could squeeze into the fermenter.",
+                    "beer_id": 4387873,
+                    "rating_score": 4.12907,
+                    "rating_count": 86,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4387873_cc913_hd.jpeg"
+                },
+                {
+                    "csv_name": "Hyperdrive",
+                    "name": "Hyperdrive IPA",
+                    "abv": 7.2,
+                    "description": "Citra, Idaho 7, Sabro",
+                    "beer_id": 4413639,
+                    "rating_score": 3.97609,
+                    "rating_count": 23,
+                    "beer_img": ""
+                }
+            ]
+        },
+        {
+            "csv_name": "Rivington",
+            "name": "Rivington Brewing Co",
+            "brewery_id": 211176,
+            "follower_count": 227,
+            "total_votes": 22929,
+            "rating_score": 3.856,
+            "popularity_this_week": 131,
+            "location_city": "Chorley",
+            "brewery_img": "",
+            "beers": [
+                {
+                    "csv_name": "Never Known Fog Like It",
+                    "name": "Never Known Fog Like It",
+                    "abv": 5.2,
+                    "description": "Murky, Juicy, Fruity, Hopped with Citra, Mosaic, Simcoe & Chinook.",
+                    "beer_id": 2111377,
+                    "rating_score": 4.02365,
+                    "rating_count": 2148,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2111377_32332_hd.jpeg"
+                },
+                {
+                    "csv_name": "The Guy Was an Interior Designer",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "They Live",
+                    "name": "They Live",
+                    "abv": 8,
+                    "description": "A Double IPA brewed with Citra, Strata & Citra Cryo",
+                    "beer_id": 4433779,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4433779_f99c9_hd.jpeg"
+                },
+                {
+                    "csv_name": "Way Before Nirvana",
+                    "name": "Way Before Nirvana",
+                    "abv": 6.2,
+                    "description": "A Dank DDH IPA brewed with our mates Chain House with Mosaic, Idaho 7, Citra, Mosaic Cryo & Idaho 7 Cryo.",
+                    "beer_id": 4400242,
+                    "rating_score": 4.17865,
+                    "rating_count": 178,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4400242_f2a26_hd.jpeg"
+                },
+                {
+                    "csv_name": "Cask // Beach House",
+                    "data": "couldn't locate on untappd"
+                }
+            ]
+        },
+        {
+            "csv_name": "Pollys",
+            "name": "Polly's Brew Co.",
+            "brewery_id": 373345,
+            "follower_count": 1744,
+            "total_votes": 316150,
+            "rating_score": 3.991,
+            "popularity_this_week": 898,
+            "location_city": "Mold",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-373345_1ae90_hd.jpeg",
+            "beers": [
+                {
+                    "csv_name": "DDH Spur",
+                    "name": "DDH Spur",
+                    "abv": 10,
+                    "description": "Here it is, the big one. We\u2019ve always had it in the back of our minds that a TIPA would be a natural progression after nailing down our DIPA game, but never knew where to wrangle it into our plans. The biggest beer we\u2019ve ever brewed by a country mile; in-house favourite Spur is amplified to the max, with an insane 60kg of Azacca, Simcoe and Citra thrown in for a dry hop rate of 29g/l giving massive amounts of stone fruit, peach, mango, and passionfruit flavours bursting throughout. A beer perfect for our new water profile directly influenced by the profile used at Other Half NYC, and fermented with our house strain of LA3 for maximum suspension. Expect juice to the nines, complimented by a soft but full bodied mouthfeel",
+                    "beer_id": 3858304,
+                    "rating_score": 4.4652,
+                    "rating_count": 1303,
+                    "beer_img": ""
+                },
+                {
+                    "csv_name": "High Speed Soul",
+                    "name": "High Speed Soul",
+                    "abv": 7.9,
+                    "description": "After three and a half years of nudging and pleading with our hop supplier, the golden goose is finally starting to bear some fruit \u2013 the South Pacific hops are finally starting to drop with abundance here at Polly\u2019s HQ! What better way to celebrate than going all in with an all-Aussie DIPA? High Speed Soul is the first of what we hope to be an absolute tidal wave of next-level Polly\u2019s IPAs and DIPAs; reinforcing why South Pacific hops are amongst the highest demand and sought after varietals in the world. Galaxy brings a whole host of passionfruit, peach and citrus fruit notes initially, before Vic Secret cuts in with huge notes of clean pineapple, balanced out with those pine and herbal notes from this incredible hop varietal. Thick, juicy, dank, and 100% Polly\u2019s.",
+                    "beer_id": 4423250,
+                    "rating_score": 4.08561,
+                    "rating_count": 66,
+                    "beer_img": ""
+                },
+                {
+                    "csv_name": "Extra Scene",
+                    "name": "Extra Scene",
+                    "abv": 6.7,
+                    "description": "Citra and Mosaic is a pretty Champions League hop combo in our opinion. One that has followed us all the way from the humble beginnings of the brewery all the way up to now \u2013 we\u2019ve even named our brewery dog after the former. How do you improve on a Champions League hop pairing though? Easy \u2013 make it a three way dance of Stateside smashers, and introduce a little Idaho 7 into proceedings. A hop varietal that we feel is sorely underused, Idaho 7 brings super sticky marmalade notes along with just a tickling of herbal complexity to the already high juice punchbowl of tropical, juicy notes from that world beating base pairing. With everything wrapped up in a big warm hug of our bespoke LA3 yeast strain, this is a beer that is mega hazy, mega juicy, and mega Polly\u2019s.",
+                    "beer_id": 4436255,
+                    "rating_score": 4.22917,
+                    "rating_count": 12,
+                    "beer_img": ""
+                },
+                {
+                    "csv_name": "Made For Light",
+                    "name": "Made For Flight",
+                    "abv": 5.5,
+                    "description": "It\u2019s a technique that\u2019s become almost synonymous with Polly\u2019s \u2013 our patented pyramid dry-hopping technique brings, in our opinion, our beers completely to life. By going big and gradually tapering down the dry-hop bill we\u2019re able to accentuate each individual flavour profile of these incredible varietals; creating what we feel to be a much more complex and enjoyable drinking experience. We\u2019ve adapted this technique again in Made For Flight; the same basic technique employed \u2013 a three hop line up gradually decreasing, but we\u2019ve gone bigger on the base layer \u2013 Mosaic offers a huge wide hug of tangerine, berry, and mango notes, before herbal crisp lemon notes come to the fore from Columbus, before rounding off with huge grapefruit notes from big C hop Comet.",
+                    "beer_id": 4423186,
+                    "rating_score": 3.95464,
+                    "rating_count": 97,
+                    "beer_img": ""
+                }
+            ]
+        },
+        {
+            "csv_name": "Wylam",
+            "name": "Wylam",
+            "brewery_id": 9187,
+            "follower_count": 4833,
+            "total_votes": 448116,
+            "rating_score": 3.921,
+            "popularity_this_week": 326,
+            "location_city": "Newcastle upon Tyne",
+            "brewery_img": "",
+            "beers": [
+                {
+                    "csv_name": "Tango Till They're Sore",
+                    "name": "Tango Till They're Sore",
+                    "abv": 7,
+                    "description": "TANGO TILL THEY\u2019RE SORE - AMARILLO WHEAT IPA 7.0%\r\n\r\nA wheat driven India Pale Ale brewed to utilise this years fresh batch AMARILLO hop.\r\n\r\nBarmy, brazen and bold due to an impenetrable double dry hop schedule. \r\n\r\nSmoothie slick with a clean flushed veneer of trademark AMARILLO. Floral, tropical and ripened over layer upon layer of resinous myrcece orange splash\u2026",
+                    "beer_id": 4408612,
+                    "rating_score": 4.07286,
+                    "rating_count": 105,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4408612_c7593_hd.jpeg"
+                },
+                {
+                    "csv_name": "Betty the Bat",
+                    "name": "Betty the Bat",
+                    "abv": 10.5,
+                    "description": "A no nonsense bruiser Imperial IPA brewed with strategic unction, wallop and clout. Compounded, bashed and beaten into submission, releasing relentless clods of immeasurable tropical baddoo. CRYO POP, SIMCOE, AMARILLO, CITRA and IDAHO 7 haemorrhage and spurt a decadent ooze of over ripened hog plum, mango, pineapple, custard apple, blood orange and pink grapefruit. All swaddled together in a subtropical pi\u00f1ata awaiting your disfigurement and ruination\u2026 ",
+                    "beer_id": 4440129,
+                    "rating_score": 0,
+                    "rating_count": 6,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4440129_bb2d2_hd.jpeg"
+                },
+                {
+                    "csv_name": "Smush",
+                    "name": "Smush ",
+                    "abv": 8.8,
+                    "description": "SMUSH \u00a9 - Seasonal Core DIPA\r\n\r\nA macerated, pulverised, pulping bruiser of a double IPA. Mangled, masticated and oozing with zhooshing tropical zoot smash. A nauseating dose of CITRA, STRATA and IDAHO 7 are administered, providing a liquefying grope of pressed pineapple, brayed mango, flayed papaya and pulverised watermelon scrunch together, cheek by jowl with scoop upon scoop of acidulous, zingy bitter citrus. ",
+                    "beer_id": 4384993,
+                    "rating_score": 4.21004,
+                    "rating_count": 234,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4384993_9a575_hd.jpeg"
+                },
+                {
+                    "csv_name": "Crying The Neck",
+                    "name": "Crying the Neck",
+                    "abv": 8,
+                    "description": "CRYING THE NECK - WHEAT DIPA w/ VERDANT BREW Co 8.0%\r\n\r\nA collaborative, ritualistic WHEAT DIPA plotted, forged and cooked up with Falmouth\u2019s Herculean VERDANT BREW Co.\r\n\r\nA Pilsner malt base is churned and choked up with 40% of wheat variation.\r\n\r\nFull bodied, foamy and fat with a balanced wheat imparted dry tartness. \r\n\r\nCITRA, NELSON and MOTUEKA take rank over rank, drilling up a tropically charged cool whip of intoxicating fresh fruit smash.  ",
+                    "beer_id": 4419844,
+                    "rating_score": 4.11364,
+                    "rating_count": 77,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4419844_f36ac_hd.jpeg"
+                },
+                {
+                    "csv_name": "Cask // Jakehead",
+                    "data": "couldn't locate on untappd"
+                }
+            ]
+        },
+        {
+            "csv_name": "Beak Brewery",
+            "name": "Beak Brewery",
+            "brewery_id": 167433,
+            "follower_count": 267,
+            "total_votes": 25279,
+            "rating_score": 3.948,
+            "popularity_this_week": 253,
+            "location_city": "Lewes",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-167433_eff61_hd.jpeg",
+            "beers": [
+                {
+                    "csv_name": "Parade",
+                    "name": "Parade",
+                    "abv": 6,
+                    "description": "Saturated in Citra, Mosaic and Idaho 7 this 6% London Fog IPA is brimming with fruit bubblegum flavours of mango, orange peel, pineapple and ripe flat peaches.",
+                    "beer_id": 3820116,
+                    "rating_score": 4.03342,
+                    "rating_count": 3866,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3820116_a06b5_hd.jpeg"
+                },
+                {
+                    "csv_name": "Locals",
+                    "name": "Locals",
+                    "abv": 6,
+                    "description": "Nelson Sauvin | Citra\r\n\r\nAs part of an ongoing project, we're inviting locals at our Lewes taproom to guest edit labels. The first in the series is designed by ceramicists/illustrators Liv and Dom, who's work aims to celebrate and de-objectify the female form. Check out more of their work at: livanddom.com",
+                    "beer_id": 4093974,
+                    "rating_score": 4.03742,
+                    "rating_count": 1073,
+                    "beer_img": ""
+                },
+                {
+                    "csv_name": "Cabbit",
+                    "name": "Cabbit",
+                    "abv": 8.5,
+                    "description": "We've been honing our technique for our DIPAs and this beer expresses everything we've learned so far: our signature grist incorporating large portions of wheat and oats, cryo-hops utilised during fermentation to accentuate biotransformation, plus a hefty two part post fermentation dry hop with T90 and BBC to complete the hop profile. \n\nHops: Mosaic, Galaxy, Citra.",
+                    "beer_id": 4373183,
+                    "rating_score": 4.18512,
+                    "rating_count": 383,
+                    "beer_img": ""
+                },
+                {
+                    "csv_name": "Popple",
+                    "name": "Popple",
+                    "abv": 5.5,
+                    "description": "World let us introduce you to Popple. This new 5.5% pale ale is the result of a year long journey investigating how to make lower ABV beers sing.\n\nWe are really happy with the results. Brewed with oats, wheat, London Fog yeast and an abundance of Idaho-7, Galaxy and Citra, it\u2019s hazy, pillowy-soft and teeming with ripe, unctuous flavours of peach, passion fruit, mango, pine sap and highly emotional lovelorn lyrics.",
+                    "beer_id": 4399368,
+                    "rating_score": 4.0503,
+                    "rating_count": 334,
+                    "beer_img": ""
+                },
+                {
+                    "csv_name": "Supp",
+                    "name": "Supp",
+                    "abv": 7,
+                    "description": "This India Pale Ale is layered with multiple hot and cold-side additions of Citra, in T90, Cryo and BBC formats for flavours of clementine, grapefruit, Seville marmelade, yuzu and lemon verbena.",
+                    "beer_id": 4345601,
+                    "rating_score": 4.04418,
+                    "rating_count": 601,
+                    "beer_img": ""
+                }
+            ]
+        },
+        {
+            "csv_name": "Other Half",
+            "name": "Other Half Brewing Co.",
+            "brewery_id": 94785,
+            "follower_count": 9592,
+            "total_votes": 3005040,
+            "rating_score": 4.231,
+            "popularity_this_week": 6493,
+            "location_city": "Brooklyn",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-94785_ca64f_hd.jpeg",
+            "beers": [
+                {
+                    "csv_name": "Triple Mosaic Daydream",
+                    "name": "Triple Mosaic Daydream",
+                    "abv": 10.5,
+                    "description": "Triple Mosaic Daydream is an Imperial Oat Cream IPA in all its oat laden creamy goodness glory. It is triple dry hopped with delicious Mosaic and Mosaic Lupulin powder. This beer contains hints of lactose sugar with a boat load of oats. ",
+                    "beer_id": 2629302,
+                    "rating_score": 4.45633,
+                    "rating_count": 11796,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2629302_573bf_hd.jpeg"
+                },
+                {
+                    "csv_name": "Brocoli Special Reserve",
+                    "name": "Broccoli Special Reserve",
+                    "abv": 8.3,
+                    "description": "This special edition of Broccoli is a slightly amped up version of our original but with the Cascade hops swapped out for Citra. Brewed with 2-row, oats, and wheat and hopped with Citra, Mosaic, Simcoe, and Blanc. ",
+                    "beer_id": 2986240,
+                    "rating_score": 4.40359,
+                    "rating_count": 6636,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2986240_d275b_hd.jpeg"
+                },
+                {
+                    "csv_name": "DDH Citra & Galaxy",
+                    "name": "Double Dry Hopped Citra + Galaxy",
+                    "abv": 8.5,
+                    "description": "Double Dry Hopped Citra + Galaxy is an Imperial IPA with a combo of two of the best hops ever grown. Period. This iteration was double dry hopped with Citra Lupulin powder and Galaxy.",
+                    "beer_id": 2344176,
+                    "rating_score": 4.3748,
+                    "rating_count": 9165,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2344176_2d4b3_hd.jpeg"
+                },
+                {
+                    "csv_name": "DDH Green Down to the Socks",
+                    "name": "Double Dry Hopped Green Down To The Socks",
+                    "abv": 8.2,
+                    "description": "Double Dry Hopped Green Down to the Socks is hopped with Mosaic, Motueka, XJA (a South African experimental hop), and Cascade. Then we slam it with another dry hop addition.",
+                    "beer_id": 2073538,
+                    "rating_score": 4.25795,
+                    "rating_count": 8638,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2073538_5f032_hd.jpeg"
+                },
+                {
+                    "csv_name": "DDH Space Dream",
+                    "name": "Double Dry Hopped Space Dream",
+                    "abv": 6,
+                    "description": "Double Dry hopped oat cream ipa brewed with 100% galaxy hops",
+                    "beer_id": 2536765,
+                    "rating_score": 4.24209,
+                    "rating_count": 14226,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2536765_ed9f6_hd.jpeg"
+                },
+                {
+                    "csv_name": "Triple Citra Daydream",
+                    "name": "Triple Citra Daydream",
+                    "abv": 10.5,
+                    "description": "Triple Citra Daydream! You know the drill: oats, lactose and triple dry hopped with Citra and Citra Lupulin powder.",
+                    "beer_id": 2674794,
+                    "rating_score": 4.49253,
+                    "rating_count": 18321,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2674794_51367_hd.jpeg"
+                },
+                {
+                    "csv_name": "I can't C What You Sea",
+                    "name": "I Can't C What You Sea",
+                    "abv": 8,
+                    "description": "Our homies @vitaminseabrewing rolled in on that New England fog to help us drop this hop bomb hopped with our favorite C hops. Big doses of Citra, Callista, Cashmere with some support from Cascade, Centennial, Chinook and Columbus.",
+                    "beer_id": 4334361,
+                    "rating_score": 4.17922,
+                    "rating_count": 1203,
+                    "beer_img": ""
+                },
+                {
+                    "csv_name": "DDH Green City",
+                    "name": "Double Dry Hopped Green City",
+                    "abv": 7,
+                    "description": "Double Dry Hopped version of our 7.0% IPA brewed with Citra, Centennial, and Simcoe.",
+                    "beer_id": 3727003,
+                    "rating_score": 4.18173,
+                    "rating_count": 15387,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3727003_79f5e_hd.jpeg"
+                },
+                {
+                    "csv_name": "Blue Crab",
+                    "name": "Blue Crab",
+                    "abv": 6.5,
+                    "description": "A tribute to one of the best things (ok, the best thing) you can pull from the Chesapeake Bay. We used some decidedly classic US grown hops, Citra, Mosaic and Simcoe, all hand selected for maximum incredibleness.",
+                    "beer_id": 4058979,
+                    "rating_score": 4.13195,
+                    "rating_count": 2995,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4058979_cd9aa_hd.jpeg"
+                }
+            ]
+        },
+        {
+            "csv_name": "Aslin",
+            "name": "Aslin Beer Company",
+            "brewery_id": 170844,
+            "follower_count": 5743,
+            "total_votes": 876495,
+            "rating_score": 4.115,
+            "popularity_this_week": 1884,
+            "location_city": "Alexandria",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-170844_327db_hd.jpeg",
+            "beers": [
+                {
+                    "csv_name": "Brewer Series #5",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "Bringing Sexy Back",
+                    "name": "Bringing Sexy Back",
+                    "abv": 6.4,
+                    "description": "This beer was born in Memphis, TN in 1981. After a short stint on a children\u2019s television show, this beer moved on to be the lead vocalist of a popular boy band. And eventually with it\u2019s self titled single made it to number 1 on the top 100. Since the peak of his career he has gone on hiatus. Spending long hours replicating his essence and spreading them to the masses, Bringing Sexy Back has mosaic-bombed his way into your mouth. So, as you look longingly into that can, waiting for one more taste of of this sexual fortitude, be humble and remember\u2026 you can be from TN and not a total weirdo.",
+                    "beer_id": 1414228,
+                    "rating_score": 4.08271,
+                    "rating_count": 9701,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-1414228_500ab_hd.jpeg"
+                },
+                {
+                    "csv_name": "Glasses of Nerdicon",
+                    "name": "Glasses of Nerdicon",
+                    "abv": 8.4,
+                    "description": "Double India Pale Ale Dry-Hopped with Galaxy",
+                    "beer_id": 4339903,
+                    "rating_score": 3.91011,
+                    "rating_count": 717,
+                    "beer_img": ""
+                },
+                {
+                    "csv_name": "Mind the Hop",
+                    "name": "Mind the Hop",
+                    "abv": 9.4,
+                    "description": "This beer really hits home for us. One of the first beers we ever made and it is one of our favorites. This is a Double India Pale Ale with Citra. On first taste you will get a citrus fruit salad followed by some dankness and light bitterness to round the flavor out. The neckbeards can't deny.",
+                    "beer_id": 1233912,
+                    "rating_score": 4.198,
+                    "rating_count": 14016,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-1233912_4841f_hd.jpeg"
+                },
+                {
+                    "csv_name": "Orange Starfish",
+                    "name": "Double Orange Starfish",
+                    "abv": 8.3,
+                    "description": "Double India Pale Ale Double Dry Hopped with Citra & Galaxy!",
+                    "beer_id": 1611103,
+                    "rating_score": 4.29578,
+                    "rating_count": 21376,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-1611103_2280f_hd.jpeg"
+                },
+                {
+                    "csv_name": "Double Orange Starfish",
+                    "name": "Double Orange Starfish",
+                    "abv": 8.3,
+                    "description": "Double India Pale Ale Double Dry Hopped with Citra & Galaxy!",
+                    "beer_id": 1611103,
+                    "rating_score": 4.29578,
+                    "rating_count": 21376,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-1611103_2280f_hd.jpeg"
+                },
+                {
+                    "csv_name": "She",
+                    "name": "Shenanigans",
+                    "abv": 9.1,
+                    "description": "Shenanigans is a Double India Pale (DIPA) that is fermented on one of our house yeasts which produces strong citrus esters. The DIPA is then dry hopped with Nelson, Waimea, & Citra.",
+                    "beer_id": 2202763,
+                    "rating_score": 4.14176,
+                    "rating_count": 552,
+                    "beer_img": ""
+                },
+                {
+                    "csv_name": "Suburban Home",
+                    "name": "Suburban Home",
+                    "abv": 8.3,
+                    "description": "An incredibly smooth & juicy IPA, with a heavy dry-hop treatment of Citra packing a ton of tangerine, peach, & mango flavors. Cashmere that smells of lemon and lime and tastes like all the candied fruits. BUT ALSO \u2026  Riwaka boasting a huge aroma of strawberry and grapefruit juice!",
+                    "beer_id": 4286226,
+                    "rating_score": 4.01438,
+                    "rating_count": 713,
+                    "beer_img": ""
+                },
+                {
+                    "csv_name": "Wink Wink",
+                    "name": "Wink Wink",
+                    "abv": 7,
+                    "description": "This is a west coast styled \"clear-boi\"... Here is our nod to the beers of yester-years. The high bitterness of those pallet wrecking, hard biting, lip smacking beers we all love. This one has a bit of a twist.... it's full of fruity tropical flavors that make you want to sip again and again.",
+                    "beer_id": 4300522,
+                    "rating_score": 3.88256,
+                    "rating_count": 493,
+                    "beer_img": ""
+                },
+                {
+                    "csv_name": "Rubber Walrus Protector",
+                    "name": "Rubber Walrus Protector",
+                    "abv": 6.5,
+                    "description": "IPA brewed w/ Galaxy, Mosaic, Amarillo, & Milk Sugar. Get ready for creamy mouthfeel with boundless tropical, citrus and stone fruit bursts.\r\nNo walruses (walrusi?) were harmed in the making of this beer. They were protected. With Rubber. Obviously. ",
+                    "beer_id": 4374809,
+                    "rating_score": 3.93173,
+                    "rating_count": 312,
+                    "beer_img": ""
+                }
+            ]
+        },
+        {
+            "csv_name": "Tripping Animals",
+            "name": "Tripping Animals Brewing Co.",
+            "brewery_id": 309155,
+            "follower_count": 1101,
+            "total_votes": 111865,
+            "rating_score": 4.089,
+            "popularity_this_week": 917,
+            "location_city": "Doral",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-309155_30519_hd.jpeg",
+            "beers": [
+                {
+                    "csv_name": "Ever Haze",
+                    "name": "Ever Haze",
+                    "abv": 7,
+                    "description": "Ever Haze is an India Pale Ale brewed w/ Cashmere, Citra, and Amarillo",
+                    "beer_id": 3683004,
+                    "rating_score": 4.00763,
+                    "rating_count": 5457,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3683004_fb198_hd.jpeg"
+                },
+                {
+                    "csv_name": "Shoobie",
+                    "name": "Shoobie",
+                    "abv": 8.5,
+                    "description": "SHOOBIE is a beer we brewed in collaboration with our amigos from Woven Water. This beer is aDouble India Pale Ale Hopped with Strata and Nelson Sauvin ",
+                    "beer_id": 4410104,
+                    "rating_score": 3.92348,
+                    "rating_count": 66,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4410104_f322a_hd.jpeg"
+                },
+                {
+                    "csv_name": "Lobsters & Pina Coladas",
+                    "name": "Lobster And Pi\u00f1a Coladas",
+                    "abv": 10,
+                    "description": "Our homies over Definitive Brewing share the same love for pi\u00f1a and lobsters, so we got together and had a rock lobster fiesta, then brewed a deep ocean TIPA and made sure it had loads of pineapple \r\n\r\nAnd coconut, because Pina coladas are as Miami as Miami gets \r\n\r\nLOBSTER AND PI\u00d1A COLADA\r\n\r\nTRIPLE INDIA PALE ALE WITH PINEAPPLE AND COCONUT.\r\n",
+                    "beer_id": 4431490,
+                    "rating_score": 0,
+                    "rating_count": 7,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4431490_0a384_hd.jpeg"
+                },
+                {
+                    "csv_name": "Super Duper Nice",
+                    "name": "Super Duper Nice",
+                    "abv": 6,
+                    "description": "This three-headed unicorn is a big Sour Ale conditioned with Strawberry, Mandarin, Peach, and Blackcurrant. ",
+                    "beer_id": 4049185,
+                    "rating_score": 4.20811,
+                    "rating_count": 549,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4049185_18ffc_hd.jpeg"
+                },
+                {
+                    "csv_name": "Otters & O's",
+                    "name": "Otters And O's",
+                    "abv": 6,
+                    "description": "How much do you know about Otter\u2019s?\r\n\r\nOther than they\u2019re damn cute, they like to float on their backs when munchin... and maybe that they love milkshake sours?\r\n\r\nWithout haste, we\u2019re bringing you animals the second installment of our TRIPPY SHAKES sour series, a homage to all things milkshakes and beyond\r\n\r\nLet's stay trippy with it.. like maybe throwing  PEANUT BUTTER into the mix. So grab your stash and blow your O\u2019s\r\n\r\nOTTERS AND O\u2019s.\r\nMilkshake Inspired Sour Ale Conditioned with Banana, Blueberry, Blackberry, Peanut Butter, Vanilla, and Milk Sugar\u2028",
+                    "beer_id": 4398255,
+                    "rating_score": 4.05496,
+                    "rating_count": 343,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4398255_951c4_hd.jpeg"
+                },
+                {
+                    "csv_name": "King Louie's Pie",
+                    "name": "King Louie's Pie",
+                    "abv": 6,
+                    "description": "KING LOUIE\u2019S PIE\r\n\r\nPie-Inspired Sour Ale Conditioned with Blueberry, Sweet Cherry, Cherry, Graham Cracker, Almonds, and Milk Sugar ",
+                    "beer_id": 4425369,
+                    "rating_score": 4.10909,
+                    "rating_count": 22,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4425369_9c195_hd.jpeg"
+                }
+            ]
+        },
+        {
+            "csv_name": "The Answer",
+            "name": "The Answer",
+            "brewery_id": 114660,
+            "follower_count": 6357,
+            "total_votes": 503700,
+            "rating_score": 4.33,
+            "popularity_this_week": 675,
+            "location_city": "Richmond",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-114660_56d8b_hd.jpeg",
+            "beers": [
+                {
+                    "csv_name": "In Russia Beer Brew You",
+                    "name": "In Russia Beer Brew You!",
+                    "abv": 9,
+                    "description": "A tropical Super DIPA at 9% abv, featuring a triple dry hop treatment of Nelson Sauvin, El Dorado, and Galaxy",
+                    "beer_id": 4336306,
+                    "rating_score": 4.20252,
+                    "rating_count": 119,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4336306_af891_hd.jpeg"
+                },
+                {
+                    "csv_name": "Galactic Oats",
+                    "name": "Galactic Oats",
+                    "abv": 6,
+                    "description": "NEIPA with a galactic amount of oats!",
+                    "beer_id": 4297839,
+                    "rating_score": 4.03725,
+                    "rating_count": 204,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4297839_4bb22_hd.jpeg"
+                },
+                {
+                    "csv_name": "Nothing But Illustrious Hops",
+                    "name": "Nothing But Illustrious Hops",
+                    "abv": 8,
+                    "description": "Illustriously triple dry hopped DIPA w/ Citra, Mosaic, and Nelson Sauvin hops.",
+                    "beer_id": 3804408,
+                    "rating_score": 4.13399,
+                    "rating_count": 659,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3804408_4fcf0_hd.jpeg"
+                },
+                {
+                    "csv_name": "Lookin Problem",
+                    "name": "Lookin' Problem",
+                    "abv": 7.99,
+                    "description": "This hazy Not-DIPA was made to bring awareness to the millions who suffer from a lookin' problem. Our own Mr. Corey has a lookin' problem. He just can't help but look at this triple dry-hopped beauty. Sad.",
+                    "beer_id": 4052330,
+                    "rating_score": 4.06072,
+                    "rating_count": 527,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4052330_fdf36_hd.jpeg"
+                }
+            ]
+        },
+        {
+            "csv_name": "Vitamin Sea",
+            "name": "Vitamin Sea Brewing",
+            "brewery_id": 238531,
+            "follower_count": 1692,
+            "total_votes": 148717,
+            "rating_score": 4.204,
+            "popularity_this_week": 699,
+            "location_city": "East Weymouth",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-238531_a18a4_hd.jpeg",
+            "beers": [
+                {
+                    "csv_name": "Alone & Adrift",
+                    "name": "Alone And Adrift",
+                    "abv": 7,
+                    "description": "Citra / Nelson hopped IPA. ",
+                    "beer_id": 1965731,
+                    "rating_score": 4.22107,
+                    "rating_count": 2492,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-1965731_d2486_hd.jpeg"
+                },
+                {
+                    "csv_name": "Broken Promises",
+                    "name": "Broken Promises",
+                    "abv": 6.8,
+                    "description": "Our NEIPA hopped with Nelson Sauvin and Motueka",
+                    "beer_id": 4306632,
+                    "rating_score": 4.30556,
+                    "rating_count": 18,
+                    "beer_img": ""
+                },
+                {
+                    "csv_name": "Foil",
+                    "name": "Foil",
+                    "abv": 7.2,
+                    "description": "NEIPA with Citra and Mistral hops",
+                    "beer_id": 4150412,
+                    "rating_score": 4.21032,
+                    "rating_count": 441,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4150412_32b13_hd.jpeg"
+                },
+                {
+                    "csv_name": "More Cans, Less Cans",
+                    "name": "More Cans Less Cans",
+                    "abv": 6.2,
+                    "description": "Our Oated Single Hop IPA with Citra",
+                    "beer_id": 3269527,
+                    "rating_score": 4.16733,
+                    "rating_count": 1050,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3269527_0302c_hd.jpeg"
+                },
+                {
+                    "csv_name": "Nice & Easy",
+                    "name": "Nice And Easy",
+                    "abv": 4.9,
+                    "description": "Our latest easy drinking single IPA that\u2019s hopped with Citra",
+                    "beer_id": 3947223,
+                    "rating_score": 4.15374,
+                    "rating_count": 601,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3947223_222af_hd.jpeg"
+                },
+                {
+                    "csv_name": "Peninsula",
+                    "name": "Peninsula",
+                    "abv": 6,
+                    "description": "Single Hop NEIPA with Citra",
+                    "beer_id": 3292516,
+                    "rating_score": 4.11775,
+                    "rating_count": 800,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3292516_2f3f5_hd.jpeg"
+                },
+                {
+                    "csv_name": "Ramble & Roam Lime",
+                    "name": "Ramble And Roam with Lime Zest",
+                    "abv": 4.2,
+                    "description": "",
+                    "beer_id": 3187707,
+                    "rating_score": 3.6875,
+                    "rating_count": 56,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3187707_d0800_hd.jpeg"
+                },
+                {
+                    "csv_name": "Sour Pipe: Strawberry Pancake",
+                    "name": "Sour Pipe Project - Strawberry Pancake",
+                    "abv": 6,
+                    "description": "Our sour pipe project exploration expands with strawberry pancake",
+                    "beer_id": 3718391,
+                    "rating_score": 4.053,
+                    "rating_count": 1001,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3718391_780e6_hd.jpeg"
+                },
+                {
+                    "csv_name": "Throwing Darts #3",
+                    "name": "Throwing Darts - Batch 3",
+                    "abv": 6.8,
+                    "description": "Our experimental. NEIPA with Simcoe and BRU-1 hops",
+                    "beer_id": 4312167,
+                    "rating_score": 0,
+                    "rating_count": 3,
+                    "beer_img": ""
+                },
+                {
+                    "csv_name": "Throwing Darts #4",
+                    "name": "Throwing Darts - Batch 4",
+                    "abv": 6.8,
+                    "description": "Our experimental NEIPA with Citra Lupomax and Mistral hops",
+                    "beer_id": 4312170,
+                    "rating_score": 4.03529,
+                    "rating_count": 17,
+                    "beer_img": ""
+                }
+            ]
+        },
+        {
+            "csv_name": "Great Notion",
+            "name": "Great Notion Brewing",
+            "brewery_id": 232077,
+            "follower_count": 6644,
+            "total_votes": 608500,
+            "rating_score": 4.18,
+            "popularity_this_week": 2303,
+            "location_city": "Portland",
+            "brewery_img": "",
+            "beers": [
+                {
+                    "csv_name": "Passionfruit Mochi",
+                    "name": "Passion Fruit Mochi",
+                    "abv": 7,
+                    "description": "Passion Fruit Mochi is a thick, juicy fruited IPA fermented with toasted rice, milk sugar, vanilla, and of course Passion Fruit! We dry hopped this one with Mosaic and Citra hops. Enjoy!",
+                    "beer_id": 2526505,
+                    "rating_score": 4.16631,
+                    "rating_count": 7830,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2526505_99664_hd.jpeg"
+                },
+                {
+                    "csv_name": "Over Ripe",
+                    "name": "Over Ripe IPA",
+                    "abv": 7,
+                    "description": "Over-Ripe is an experimental IPA brewed with a unique blend of hops and tropical fruit. This beer is saturated with flavors of over ripe fruit like cantaloupe, guava, pineapple and papaya.",
+                    "beer_id": 1801615,
+                    "rating_score": 4.3521,
+                    "rating_count": 5999,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-1801615_cd94b_hd.jpeg"
+                },
+                {
+                    "csv_name": "The Time Keeper",
+                    "name": "The Time Keeper",
+                    "abv": 7,
+                    "description": "Our tribute to Oregon running legend Steve Prefontaine, Time Keeper is a hazy IPA brewed with Citra and Riwaka hops.",
+                    "beer_id": 4158682,
+                    "rating_score": 4.07394,
+                    "rating_count": 685,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4158682_f16d8_hd.jpeg"
+                },
+                {
+                    "csv_name": "Afterglow",
+                    "name": "Afterglow",
+                    "abv": 7,
+                    "description": "We're not sure if it's the bright rotating hops or the crisp California Ale yeast, but Afterglow keeps us feeling really good after each experience. \r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+                    "beer_id": 3286667,
+                    "rating_score": 3.99518,
+                    "rating_count": 2793,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3286667_2df0f_hd.jpeg"
+                },
+                {
+                    "csv_name": "Return to Space",
+                    "name": "Return to Space",
+                    "abv": 7.2,
+                    "description": "Return to Space was inspired by two of our favorite beers, Space Invader and Return to Innocence. This IPA is blasting off with Southern hemisphere hop fuel. The Galaxy and Enigma hops provide a bit of dankness and loads of cosmic fruit flavor. Our advice... let go of gravity and Return to Space!",
+                    "beer_id": 2655469,
+                    "rating_score": 4.10553,
+                    "rating_count": 3171,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2655469_29a6e_hd.jpeg"
+                }
+            ]
+        },
+        {
+            "csv_name": "Equilibrium",
+            "name": "Equilibrium Brewery",
+            "brewery_id": 198789,
+            "follower_count": 5115,
+            "total_votes": 966631,
+            "rating_score": 4.232,
+            "popularity_this_week": 3358,
+            "location_city": "Middletown",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-198789_b4401_hd.jpeg",
+            "beers": [
+                {
+                    "csv_name": "Photon ",
+                    "name": "Photon",
+                    "abv": 4.8,
+                    "description": "Photon is our light and crushable American Pale Ale loaded with pacific northwest hops. It pours a very hazy orange, releasing well-blended notes of apricot, tangerine, peach, mango, and pineapple. It tastes of soft juicy tropical fruits, hop resins, and a hint of biscuit. A smooth rounded bitterness with a touch of dryness ensures you\u2019re ready for the next sip. This drinking experience is further enhanced with a soft and billowy mouth-feel that has made this the go to ale for the Equilibrium crew, especially when a productive day needs to follow a fun night.",
+                    "beer_id": 1082018,
+                    "rating_score": 4.0263,
+                    "rating_count": 26907,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-1082018_85b76_hd.jpeg"
+                },
+                {
+                    "csv_name": "Photon Citrus",
+                    "name": "Photon Citrus",
+                    "abv": 4.8,
+                    "description": "Photon Citrus is our beloved Photon American Pale Ale conditioned on fresh grapefruit, lime, lemon, tangerine, and orange zest. It is everything photon is with a balanced touch of citrus; this citric delight is perfect to welcome the summer weather.",
+                    "beer_id": 2076624,
+                    "rating_score": 3.99314,
+                    "rating_count": 5134,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2076624_5aef9_hd.jpeg"
+                },
+                {
+                    "csv_name": "Astrophysics",
+                    "name": "Astrophysics",
+                    "abv": 6.5,
+                    "description": "Astrophysics pours a vibrant milky yellow with heavy aromas of starfruit, passionfruit, tangerine Pez, and dank hops. Flavors of sweet orange flesh, passionfruit juice, cantaloupe, and gummy peach rings transition to notes of berry and yuzu before a Big Bang of our #EQjuice rainbow melon finish. This beer is very soft, round, and full the pallet.",
+                    "beer_id": 4314721,
+                    "rating_score": 4.03236,
+                    "rating_count": 1607,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4314721_d537e_hd.jpeg"
+                },
+                {
+                    "csv_name": "Wavelength",
+                    "name": "Wavelength",
+                    "abv": 6.5,
+                    "description": "A wavelength is the distance between identical points in the adjacent cycles of a waveform signal propagated in space and describes the flow of Photons\r\n\r\nWe started with oats and white wheat for a base before adding Simcoe and Mosaic to the whirlpool. To get some berry medley notes going we dry hopped with Mosaic and Citra at a 2:1 ratio. Wavelength pours bright yellow with aromas of citrus and stone fruit with crushable flavors of mango and berry with a light refreshing finish.",
+                    "beer_id": 3684327,
+                    "rating_score": 4.10918,
+                    "rating_count": 24256,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3684327_f5768_hd.jpeg"
+                },
+                {
+                    "csv_name": "DHOP33",
+                    "name": "DHop33",
+                    "abv": 8.5,
+                    "description": "Our latest iteration in our experimental dHop series focuses on the effect of terroir on hop character. dHop 33 starts with flaked oats and flaked wheat, has an Idaho7, mosaic, and citra WP, and a large dose of special New Zealand Cascade. New Zealand Cascade is much more tropical than its ubiquitous counterpart. \r\n\r\nVivid yellow in color, dHop33 has aromas of guava, dank grass, and melon with a fun flavor profile featuring notes of zippy blood orange, guava juice, passionfruit, lime, grapefruit, and melon nectar that reminds one of early morning citrus punch on the patio. The escalating rainbow melon #EQjuice finish greets you just before your next sip.",
+                    "beer_id": 4343126,
+                    "rating_score": 4.1276,
+                    "rating_count": 712,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4343126_c84b4_hd.jpeg"
+                },
+                {
+                    "csv_name": "18 Decillion",
+                    "name": "18 Decillion",
+                    "abv": 8.5,
+                    "description": "We started off with a big base of oats and wheat before a LUPOMAX Idaho7 whirlpool and a tremendous Strata and Galaxy dry hop. 18 Decillion pours murky yellow with aromas of grove stand OJ being enjoyed in a forest made of Starburst (please add to your bucket list if you haven\u2019t experienced this). 18 Decillion has flavors that will have you seeing vibrant colors. Tropical melon, orange gummy slices, big papaya, and passion fruit notes with a creamy mango sorbet element lead into a buildup of luscious rainbow melon #EQjuice. While being soft and creamy, this beer has explosive flavors across a broad spectrum and exhibits our version of an artists color palette by way of hops.",
+                    "beer_id": 4329699,
+                    "rating_score": 4.19398,
+                    "rating_count": 1378,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4329699_f0db7_hd.jpeg"
+                }
+            ]
+        },
+        {
+            "csv_name": "Suds & Soda",
+            "name": "Suds & Soda",
+            "brewery_id": 504477,
+            "follower_count": 0,
+            "total_votes": 1,
+            "rating_score": 0,
+            "popularity_this_week": 0,
+            "location_city": "",
+            "brewery_img": "",
+            "beers": [
+                {
+                    "csv_name": "Mountains Walking Grazing Clouds",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "Cloud Curtain Nelson Sauvin",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "DDH Tin Sky",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "Adroit Theory AK #1",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "Heaving Through Corrupted Lungs",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "Death Ronin",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "Brix City Sunrise Juice",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "Just Another Double IPA",
+                    "data": "couldn't locate on untappd"
+                },
+                {
+                    "csv_name": "Cloud of Sound",
+                    "data": "couldn't locate on untappd"
+                }
+            ]
+        },
+        {
+            "csv_name": "Sierra Nevada",
+            "name": "Sierra Nevada Brewing Co.",
+            "brewery_id": 1142,
+            "follower_count": 187034,
+            "total_votes": 6855307,
+            "rating_score": 3.697,
+            "popularity_this_week": 4997,
+            "location_city": "Chico",
+            "brewery_img": "",
+            "beers": [
+                {
+                    "csv_name": "Dankful",
+                    "name": "Dankful IPA",
+                    "abv": 7.4,
+                    "description": "We celebrate #IPADay every year, but this is no ordinary year. Today, we're proud to announce Dankful IPA, a hop-forward West Coast IPA that supports nonprofits working in our communities. The beer has a resinous kick with notes of pine and tropical fruit. Through our Dankful program, we've committed at least $1 million in donations this year, and are kicking things off with a $250,000 donation to @wckitchen. World Central Kitchen has served more than 25 million meals to families facing food insecurity during the COVID crisis through its #ChefsForAmerica program, while also providing jobs for restaurant workers. We're Dankful for that.\r\nMalts:Two-row Pale, Caramelized malts & Rye. Hops:Columbus, Chinook, Mosaic, Ekuanot, Nelson Sauvin, Zappa, Idaho 7",
+                    "beer_id": 3908230,
+                    "rating_score": 3.77956,
+                    "rating_count": 35546,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3908230_f9ec2_hd.jpeg"
+                },
+                {
+                    "csv_name": "Big Little Thing",
+                    "name": "Big Little Thing",
+                    "abv": 9,
+                    "description": "Make way for the Big Little Thing, an Imperial IPA flexing a full malt body, restrained sweetness, and tropical hop flavors of mango, grapefruit, and tangerine.",
+                    "beer_id": 4005175,
+                    "rating_score": 3.78101,
+                    "rating_count": 30115,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4005175_0f59d_hd.jpeg"
+                },
+                {
+                    "csv_name": "Hoptimum",
+                    "name": "Hoptimum",
+                    "abv": 11,
+                    "description": "A group of hop-heads and publicans challenged our Beer Camp brewers to push the extremes of whole-cone hop brewing. The result is this: a 100 IBU, whole-cone hurricane of flavor. Simply put \u2014Hoptimum: the biggest whole-cone IPA we have ever produced. Aggressively hopped, dry-hopped, AND torpedoed with our exclusive new hop varieties for ultra-intense flavors and aromas.\r\n\r\nResinous \u201cnew-school\u201d and exclusive hop varieties carry the bold and aromatic nose. The flavor follows the aroma with layers of aggressive hoppiness, featuring notes of grapefruit rind, rose, lilac, cedar, and tropical fruit\u2014all culminating in a dry and lasting finish.",
+                    "beer_id": 11810,
+                    "rating_score": 3.95736,
+                    "rating_count": 83511,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-11810_7ddcc_hd.jpeg"
+                },
+                {
+                    "csv_name": "Experimental IPA",
+                    "name": "Experimental Hop IPA",
+                    "abv": 6.7,
+                    "description": "West coast-style IPA with piney and citrusy, experimental hops",
+                    "beer_id": 4256089,
+                    "rating_score": 0,
+                    "rating_count": 9,
+                    "beer_img": ""
+                },
+                {
+                    "csv_name": "Torpedo",
+                    "name": "Torpedo Extra IPA",
+                    "abv": 7.2,
+                    "description": "Sierra Nevada Torpedo Ale is a big American IPA; bold, assertive and full of flavor and aromas highlighting the complex citrus, pine and herbal character of whole-cone American hops. Our obsession with harnessing huge hop flavor led to the development of what we call the hop torpedo, a revolutionary method of dry-hopping designed, built, and debuted here at the brewery. Our torpedo is a sleek, stainless-steel piece of hardware that delivers more pure hop aroma than any method of dry-hopping we\u2019ve ever seen.",
+                    "beer_id": 4997,
+                    "rating_score": 3.73017,
+                    "rating_count": 337078,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4997_51e76_hd.jpeg"
+                }
+            ]
+        }
+    ]
+
+}).render(document.getElementById("wrapper"));
+</script>
+</body>
+</html>
