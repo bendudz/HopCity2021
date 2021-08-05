@@ -1,5 +1,10 @@
 # Hop City 2021
 
+EDIT: Currently hosting the webpages for 7 days at:
+
+- [Breweries](https://hopcitybreweries.tiiny.site)
+- [Beers](https://hopcitybeers.tiiny.site)
+
 I knocked up a quick pair of data tables based on the info Northern Monk published on [Twitter](https://twitter.com/HopCityLeeds) about which breweries & beers are going to be at Hop City 2021.
 
 This code can query Untappd & get back the brewery & beer info.
