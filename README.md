@@ -12,7 +12,7 @@ Tried out some OCR, but found they were all useless.
 
 Anyway clone this repo & load up [breweries](brewery.html) or [beer](beer.html). The data contained is static & extracted from Untappd. 
 
-Sorry for any data that is inaccurate!
+Sorry for any data that is inaccurate & for the UI!
 
 See you at [Hop City 2021](https://northernmonk.com/events/hop-city-2021/)!
 

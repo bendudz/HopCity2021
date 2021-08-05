@@ -2,6 +2,7 @@ import json
 import urllib.parse
 
 import pandas as pd
+from pandas import DataFrame
 from jsonpath_ng.ext import parse
 
 import requests
@@ -33,9 +34,10 @@ def run_beer_query(beer_name: str, brewery_name: str):
             return None
 
 
-def get_beer_untappd(beer_id, assumed_beer_name):
+def get_beer_untappd(beer_id, assumed_beer_name, abv):
     if beer_id is None:
-        return dict(csv_name=assumed_beer_name, data="couldn't locate on untappd")
+        return dict(name=assumed_beer_name, abv=abv, description="", beer_id=None, rating_score=0, rating_count=0, beer_img="")
+
 
     url = f"https://api.untappd.com/v4/beer/info/{beer_id}?access_token=875B901EEB88A25C9E8D4F50529462714DFD1FE1&compact=true"
 
@@ -53,7 +55,7 @@ def get_beer_untappd(beer_id, assumed_beer_name):
     description = beer['beer_description']
     rating_score = beer['rating_score']
     rating_count = beer['rating_count']
-    beer_img = beer['beer_label_hd']
+    beer_img = beer['beer_label']
 
     beer_dict = dict(csv_name=assumed_beer_name, name=name, abv=abv, description=description, beer_id=beer_id,
                      rating_score=rating_score, rating_count=rating_count, beer_img=beer_img)
@@ -94,7 +96,7 @@ def run_brewery_query(brewery_name: str):
 
 
 def get_brewery_untappd(brewery_id, assumed_brewery_name):
-    url = f"https://api.untappd.com/v4/brewery/info/{brewery_id}?access_token=875B901EEB88A25C9E8D4F50529462714DFD1FE1"
+    url = f"https://api.untappd.com/v4/brewery/info/{brewery_id}?access_token=875B901EEB88A25C9E8D4F50529462714DFD1FE1&compact=true"
 
     payload = {}
     headers = {}
@@ -111,7 +113,7 @@ def get_brewery_untappd(brewery_id, assumed_brewery_name):
     rating_score = brewery['rating']['rating_score']
     popularity_this_week = brewery['stats']['weekly_count']
     location_city = brewery['location']['brewery_city']
-    brewery_img = brewery['brewery_label_hd']
+    brewery_img = brewery['brewery_label']
 
     brewery_dict = dict(csv_name=assumed_brewery_name, name=name, brewery_id=brewery_id, follower_count=follower_count,
                         total_votes=total_votes,
@@ -132,7 +134,7 @@ def load_csv(csv_location):
     brewery_list = []
     for brewery in breweries:
         brew_data = brewery_data(brewery)
-        brewery_lines = df.loc[df['brewery'] == brewery]
+        brewery_lines: DataFrame = df.loc[df['brewery'] == brewery]
         beer_list = []
         for beer in brewery_lines['beer_name']:
             beer_id = run_beer_query(beer, brew_data['name'])
@@ -141,7 +143,7 @@ def load_csv(csv_location):
                 if beer_id is None:
                     print(f"Couldn't find beer: {beer} from {brew_data['name']}")
 
-            beer_list.append(get_beer_untappd(beer_id, beer))
+            beer_list.append(get_beer_untappd(beer_id, beer, brewery_lines.loc[df['beer_name'] == beer].iloc[0]['abv']))
         brew_data['beers'] = beer_list
         brewery_list.append(brew_data)
 
@@ -172,4 +174,17 @@ def brewery_data(brewery_name):
 
 
 if __name__ == '__main__':
-    load_csv("beer.csv")
+    brewery_list, beer_list = load_csv("beer.csv")
+    with open("scraped_data.json", mode="w") as scraped_data:
+        scraped_data.write(json.dumps(brewery_list, indent=4))
+
+    with open("beer_data.json", mode="w") as beer_data:
+        beer_data.write(json.dumps(beer_list, indent=4))
+
+    print(json.dumps(brewery_list, indent=4))
+    print(json.dumps(beer_list, indent=4))
+
+    # run_brewery_query('Apex Brewing Company')
+    # get_brewery_untappd(363333, 'Apex Brewing Company')
+    # run_beer_query('Dankful IPA', 'Sierra Nevada')
+    # get_beer_untappd(3908230,'Dankful IPA',3.0)

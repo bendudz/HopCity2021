@@ -10,13 +10,21 @@
 <div id="wrapper"></div>
 
 <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
-<script>new gridjs.Grid({
+<script>
+    // import { Grid, html } from "gridjs";
+    const grid = new gridjs.Grid({
     columns: [{
+        id: 'brewery_img',
+        name: 'Brewery Image',
+        formatter: (cell) => gridjs.html(`<img src="${cell}" width="100">`)
+    },{
         id: 'name',
-        name: 'Name'
+        name: 'Name',
+        // formatter: (cell) => gridjs.html(`<b>${cell}</b>`)
     }, {
         id: 'follower_count',
-        name: 'Followers'
+        name: 'Followers',
+        // formatter: (cell) => cell + "%"
     }, {
         id: 'rating_score',
         name: 'Rating'
@@ -31,11 +39,11 @@
             "name": "FrauGruber Brewing",
             "brewery_id": 287279,
             "follower_count": 1417,
-            "total_votes": 242275,
+            "total_votes": 242425,
             "rating_score": 3.894,
-            "popularity_this_week": 720,
+            "popularity_this_week": 1036,
             "location_city": "Gundelfingen a.d.Donau",
-            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-287279_2ce5f_hd.jpeg",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-287279_3b47b.jpeg",
             "beers": [
                 {
                     "csv_name": "Weak As I Am",
@@ -45,7 +53,7 @@
                     "beer_id": 4431107,
                     "rating_score": 4.32333,
                     "rating_count": 15,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4431107_800ca_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4431107_6bb81_sm.jpeg"
                 },
                 {
                     "csv_name": "Art Of Work",
@@ -55,7 +63,7 @@
                     "beer_id": 4156487,
                     "rating_score": 3.96008,
                     "rating_count": 784,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4156487_51e59_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4156487_5968e_sm.jpeg"
                 },
                 {
                     "csv_name": "Covered in Sunshine",
@@ -65,7 +73,7 @@
                     "beer_id": 4375274,
                     "rating_score": 3.73374,
                     "rating_count": 246,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4375274_5c16e_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4375274_84edf_sm.jpeg"
                 },
                 {
                     "csv_name": "Fruits on Dope",
@@ -75,7 +83,7 @@
                     "beer_id": 4375277,
                     "rating_score": 4.09252,
                     "rating_count": 481,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4375277_29388_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4375277_a366d_sm.jpeg"
                 },
                 {
                     "csv_name": "Pils",
@@ -85,11 +93,16 @@
                     "beer_id": 4409644,
                     "rating_score": 3.78293,
                     "rating_count": 41,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4409644_618ee_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4409644_088fb_sm.jpeg"
                 },
                 {
-                    "csv_name": "Fraugruber x Sauve & Sons",
-                    "data": "couldn't locate on untappd"
+                    "name": "Fraugruber x Sauve & Sons",
+                    "abv": 6.8,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 }
             ]
         },
@@ -97,12 +110,12 @@
             "csv_name": "Apex",
             "name": "Apex Brewing Company",
             "brewery_id": 363333,
-            "follower_count": 1916,
-            "total_votes": 179413,
+            "follower_count": 1920,
+            "total_votes": 179595,
             "rating_score": 4.045,
-            "popularity_this_week": 937,
+            "popularity_this_week": 1471,
             "location_city": "Nora",
-            "brewery_img": "",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-363333_5b0a9.jpeg",
             "beers": [
                 {
                     "csv_name": "Doomrider",
@@ -112,7 +125,7 @@
                     "beer_id": 4308507,
                     "rating_score": 4.1577,
                     "rating_count": 1169,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4308507_84ab0_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4308507_ad1de_sm.jpeg"
                 },
                 {
                     "csv_name": "New Pyramids",
@@ -122,7 +135,7 @@
                     "beer_id": 4308980,
                     "rating_score": 4.16751,
                     "rating_count": 1182,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4308980_89257_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4308980_edbe1_sm.jpeg"
                 },
                 {
                     "csv_name": "Clair Obscure",
@@ -132,7 +145,7 @@
                     "beer_id": 4320809,
                     "rating_score": 4.18854,
                     "rating_count": 890,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4320809_df4bb_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4320809_8abd9_sm.jpeg"
                 },
                 {
                     "csv_name": "Trident",
@@ -142,7 +155,7 @@
                     "beer_id": 4260527,
                     "rating_score": 4.01066,
                     "rating_count": 2612,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4260527_ee227_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4260527_ee227_sm.jpeg"
                 },
                 {
                     "csv_name": "NE Mosaic Simcoe",
@@ -152,7 +165,7 @@
                     "beer_id": 2822994,
                     "rating_score": 3.91269,
                     "rating_count": 10368,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2822994_84acb_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-2822994_e8f71_sm.jpeg"
                 },
                 {
                     "csv_name": "Culmination",
@@ -162,7 +175,7 @@
                     "beer_id": 3758871,
                     "rating_score": 4.25826,
                     "rating_count": 2046,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3758871_32592_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-3758871_e1170_sm.jpeg"
                 },
                 {
                     "csv_name": "Asmodeus",
@@ -172,7 +185,7 @@
                     "beer_id": 3496558,
                     "rating_score": 4.11306,
                     "rating_count": 10379,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3496558_98384_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-3496558_96325_sm.jpeg"
                 },
                 {
                     "csv_name": "Vertigo",
@@ -182,7 +195,7 @@
                     "beer_id": 3966971,
                     "rating_score": 4.11883,
                     "rating_count": 1431,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3966971_e7d1a_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-3966971_2597d_sm.jpeg"
                 }
             ]
         },
@@ -190,12 +203,12 @@
             "csv_name": "\u00c5ben",
             "name": "\u00c5BEN",
             "brewery_id": 344882,
-            "follower_count": 198,
-            "total_votes": 30120,
+            "follower_count": 200,
+            "total_votes": 30162,
             "rating_score": 3.589,
-            "popularity_this_week": 145,
+            "popularity_this_week": 183,
             "location_city": "Kolding",
-            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-344882_f2e9e_hd.jpeg",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-344882_56cab.jpeg",
             "beers": [
                 {
                     "csv_name": "Max Q",
@@ -205,7 +218,7 @@
                     "beer_id": 3920226,
                     "rating_score": 3.9527,
                     "rating_count": 1187,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3920226_03f5f_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-3920226_a5107_sm.jpeg"
                 },
                 {
                     "csv_name": "Cloudless",
@@ -215,7 +228,7 @@
                     "beer_id": 3629858,
                     "rating_score": 3.60039,
                     "rating_count": 1159,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3629858_2ad94_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-3629858_483e5_sm.jpeg"
                 },
                 {
                     "csv_name": "Scattering of Light",
@@ -225,7 +238,7 @@
                     "beer_id": 4355939,
                     "rating_score": 3.34826,
                     "rating_count": 86,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4355939_a5da5_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4355939_a5da5_sm.jpeg"
                 },
                 {
                     "csv_name": "4 Year Anniversary",
@@ -235,7 +248,7 @@
                     "beer_id": 4354524,
                     "rating_score": 3.57211,
                     "rating_count": 147,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4354524_38b56_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4354524_59625_sm.jpeg"
                 },
                 {
                     "csv_name": "Focal Point",
@@ -245,7 +258,7 @@
                     "beer_id": 4355899,
                     "rating_score": 3.68639,
                     "rating_count": 147,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 },
                 {
                     "csv_name": "Diffuse",
@@ -255,7 +268,7 @@
                     "beer_id": 4363621,
                     "rating_score": 3.87467,
                     "rating_count": 229,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4363621_69d4e_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4363621_71929_sm.jpeg"
                 },
                 {
                     "csv_name": "Bryg 61",
@@ -265,7 +278,7 @@
                     "beer_id": 2208808,
                     "rating_score": 3.65172,
                     "rating_count": 2300,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2208808_39601_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-2208808_60674_sm.jpeg"
                 },
                 {
                     "csv_name": "Specular",
@@ -275,7 +288,7 @@
                     "beer_id": 4363584,
                     "rating_score": 4.07896,
                     "rating_count": 259,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4363584_2a80c_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4363584_0f745_sm.jpeg"
                 }
             ]
         },
@@ -284,11 +297,11 @@
             "name": "Whiplash",
             "brewery_id": 259639,
             "follower_count": 950,
-            "total_votes": 148976,
+            "total_votes": 149064,
             "rating_score": 3.858,
-            "popularity_this_week": 510,
+            "popularity_this_week": 732,
             "location_city": "Dublin",
-            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-259639_ccdc0_hd.jpeg",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-259639_6b421.jpeg",
             "beers": [
                 {
                     "csv_name": "Setting Sun",
@@ -298,7 +311,7 @@
                     "beer_id": 2994774,
                     "rating_score": 4.11627,
                     "rating_count": 2831,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2994774_5ebd1_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-2994774_2d621_sm.jpeg"
                 },
                 {
                     "csv_name": "Its No Spirit",
@@ -308,7 +321,7 @@
                     "beer_id": 4408959,
                     "rating_score": 4.3125,
                     "rating_count": 12,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4408959_39f49_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4408959_0adc1_sm.jpeg"
                 },
                 {
                     "csv_name": "Reckoner",
@@ -318,7 +331,7 @@
                     "beer_id": 3745507,
                     "rating_score": 3.90287,
                     "rating_count": 2089,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3745507_71f20_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-3745507_24afb_sm.jpeg"
                 },
                 {
                     "csv_name": "Water Jump",
@@ -328,11 +341,16 @@
                     "beer_id": 3936562,
                     "rating_score": 3.96083,
                     "rating_count": 1030,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3936562_9d282_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-3936562_043f1_sm.jpeg"
                 },
                 {
-                    "csv_name": "Walk the Night",
-                    "data": "couldn't locate on untappd"
+                    "name": "Walk the Night",
+                    "abv": 6.6,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 },
                 {
                     "csv_name": "Prisoner of Love",
@@ -342,7 +360,7 @@
                     "beer_id": 4277578,
                     "rating_score": 3.96531,
                     "rating_count": 552,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4277578_1c133_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4277578_85f0a_sm.jpeg"
                 },
                 {
                     "csv_name": "Doom City",
@@ -352,7 +370,7 @@
                     "beer_id": 4408955,
                     "rating_score": 4.04688,
                     "rating_count": 16,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4408955_34825_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4408955_a2e2e_sm.jpeg"
                 },
                 {
                     "csv_name": "Northern Lights",
@@ -362,7 +380,7 @@
                     "beer_id": 2577515,
                     "rating_score": 3.76826,
                     "rating_count": 7161,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2577515_22f66_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-2577515_7e7b2_sm.jpeg"
                 }
             ]
         },
@@ -371,11 +389,11 @@
             "name": "Zagovor Brewery",
             "brewery_id": 135208,
             "follower_count": 3429,
-            "total_votes": 304988,
+            "total_votes": 305185,
             "rating_score": 4.027,
-            "popularity_this_week": 900,
+            "popularity_this_week": 1320,
             "location_city": "Moscow",
-            "brewery_img": "",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-135208_51cc2.jpeg",
             "beers": [
                 {
                     "csv_name": "Indwell",
@@ -385,7 +403,7 @@
                     "beer_id": 4043344,
                     "rating_score": 4.02824,
                     "rating_count": 2546,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4043344_a9dd8_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4043344_bf0b5_sm.jpeg"
                 },
                 {
                     "csv_name": "Prozess",
@@ -395,7 +413,7 @@
                     "beer_id": 4212676,
                     "rating_score": 4.05131,
                     "rating_count": 1952,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4212676_7b35e_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4212676_e3af4_sm.jpeg"
                 },
                 {
                     "csv_name": "Overhype: Proper Hops",
@@ -405,7 +423,7 @@
                     "beer_id": 4381141,
                     "rating_score": 4.20534,
                     "rating_count": 1292,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4381141_bca8e_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4381141_c3288_sm.jpeg"
                 },
                 {
                     "csv_name": "Sadwave",
@@ -415,7 +433,7 @@
                     "beer_id": 2446110,
                     "rating_score": 4.01023,
                     "rating_count": 5663,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2446110_a1880_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-2446110_85fcd_sm.jpeg"
                 },
                 {
                     "csv_name": "Revival Never goes out of Style",
@@ -425,7 +443,7 @@
                     "beer_id": 4344607,
                     "rating_score": 3.96265,
                     "rating_count": 1154,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4344607_e42dd_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4344607_23997_sm.jpeg"
                 }
             ]
         },
@@ -433,12 +451,12 @@
             "csv_name": "Arpus",
             "name": "\u0100rpus Brewing Co.",
             "brewery_id": 380185,
-            "follower_count": 642,
-            "total_votes": 115480,
+            "follower_count": 643,
+            "total_votes": 115650,
             "rating_score": 3.957,
-            "popularity_this_week": 857,
+            "popularity_this_week": 1213,
             "location_city": "Eimuri",
-            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-380185_3a7db_hd.jpeg",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-380185_f49ab.jpeg",
             "beers": [
                 {
                     "csv_name": "DDH Idaho 7 DIPA",
@@ -448,7 +466,7 @@
                     "beer_id": 4351620,
                     "rating_score": 4.02683,
                     "rating_count": 643,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4351620_fbafd_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4351620_a8da9_sm.jpeg"
                 },
                 {
                     "csv_name": "DDH Nelson x Vic Secret IPA",
@@ -458,7 +476,7 @@
                     "beer_id": 4351622,
                     "rating_score": 4.06011,
                     "rating_count": 786,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4351622_6755a_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4351622_7d518_sm.jpeg"
                 },
                 {
                     "csv_name": "DDH Citra x Belma Pale Ale",
@@ -468,7 +486,7 @@
                     "beer_id": 4330428,
                     "rating_score": 3.98247,
                     "rating_count": 636,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4330428_d11c8_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4330428_e0ef6_sm.jpeg"
                 },
                 {
                     "csv_name": "DDH Nelson x Galaxy TIPA",
@@ -478,7 +496,7 @@
                     "beer_id": 4369317,
                     "rating_score": 4.01918,
                     "rating_count": 662,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4369317_f22e0_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4369317_30479_sm.jpeg"
                 },
                 {
                     "csv_name": "DDH TRI2304CR Cryo DIPA",
@@ -488,7 +506,7 @@
                     "beer_id": 4367600,
                     "rating_score": 4.04502,
                     "rating_count": 562,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4367600_0e13e_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4367600_0e13e_sm.jpeg"
                 },
                 {
                     "csv_name": "DDH Mosaic x Citra Lupomax IPA",
@@ -498,7 +516,7 @@
                     "beer_id": 4356079,
                     "rating_score": 3.97275,
                     "rating_count": 701,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4356079_aedb5_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4356079_d6f83_sm.jpeg"
                 },
                 {
                     "csv_name": "DDH Citra Spectrum x Strata QIPA",
@@ -508,7 +526,7 @@
                     "beer_id": 4387887,
                     "rating_score": 4.24349,
                     "rating_count": 806,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4387887_67423_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4387887_a0347_sm.jpeg"
                 },
                 {
                     "csv_name": "DDH Galaxy Pale Ale",
@@ -518,7 +536,7 @@
                     "beer_id": 4367579,
                     "rating_score": 3.95701,
                     "rating_count": 528,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4367579_ec0d0_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4367579_06882_sm.jpeg"
                 }
             ]
         },
@@ -527,11 +545,11 @@
             "name": "Stigbergets Bryggeri",
             "brewery_id": 56652,
             "follower_count": 5539,
-            "total_votes": 698027,
+            "total_votes": 698513,
             "rating_score": 3.791,
-            "popularity_this_week": 1964,
+            "popularity_this_week": 2946,
             "location_city": "Gothenburg",
-            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-56652_8bc63_hd.jpeg",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-56652_15a32.jpeg",
             "beers": [
                 {
                     "csv_name": "Non Plus Ultra",
@@ -541,7 +559,7 @@
                     "beer_id": 4357812,
                     "rating_score": 3.86315,
                     "rating_count": 2030,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 },
                 {
                     "csv_name": "Existens Essens Transcendens",
@@ -551,11 +569,16 @@
                     "beer_id": 4080143,
                     "rating_score": 3.81369,
                     "rating_count": 11530,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4080143_7316a_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4080143_7316a_sm.jpeg"
                 },
                 {
-                    "csv_name": "Barnaby Pils",
-                    "data": "couldn't locate on untappd"
+                    "name": "Barnaby Pils",
+                    "abv": 5.6,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 },
                 {
                     "csv_name": "Api Lairepmi",
@@ -565,11 +588,16 @@
                     "beer_id": 1753570,
                     "rating_score": 3.95988,
                     "rating_count": 4186,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-1753570_53313_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-1753570_d17a6_sm.jpeg"
                 },
                 {
-                    "csv_name": "DDH WC",
-                    "data": "couldn't locate on untappd"
+                    "name": "DDH WC",
+                    "abv": 6.5,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 },
                 {
                     "csv_name": "Just as Amazing",
@@ -579,7 +607,7 @@
                     "beer_id": 3822984,
                     "rating_score": 3.67019,
                     "rating_count": 1597,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3822984_bc8ab_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-3822984_1e6c0_sm.jpeg"
                 },
                 {
                     "csv_name": "Children's Village",
@@ -589,7 +617,7 @@
                     "beer_id": 4433860,
                     "rating_score": 3.825,
                     "rating_count": 36,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 },
                 {
                     "csv_name": "Margeaux",
@@ -599,7 +627,7 @@
                     "beer_id": 4416765,
                     "rating_score": 3.46408,
                     "rating_count": 71,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 }
             ]
         },
@@ -608,11 +636,11 @@
             "name": "WarPigs Brewpub",
             "brewery_id": 186232,
             "follower_count": 858,
-            "total_votes": 374087,
+            "total_votes": 374234,
             "rating_score": 3.829,
-            "popularity_this_week": 683,
+            "popularity_this_week": 954,
             "location_city": "Copenhagen",
-            "brewery_img": "",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-186232_885f2.jpeg",
             "beers": [
                 {
                     "csv_name": "Frank the Tank",
@@ -622,7 +650,7 @@
                     "beer_id": 1952959,
                     "rating_score": 3.8587,
                     "rating_count": 8405,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 },
                 {
                     "csv_name": "Mo'saic Mo Problems",
@@ -632,11 +660,16 @@
                     "beer_id": 1383094,
                     "rating_score": 3.83565,
                     "rating_count": 5708,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 },
                 {
-                    "csv_name": "IPA - American",
-                    "data": "couldn't locate on untappd"
+                    "name": "IPA - American",
+                    "abv": 6.8,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 },
                 {
                     "csv_name": "Angle of Repose",
@@ -646,7 +679,7 @@
                     "beer_id": 4355695,
                     "rating_score": 3.84,
                     "rating_count": 60,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 }
             ]
         },
@@ -654,12 +687,12 @@
             "csv_name": "To \u00d8l",
             "name": "To \u00d8l",
             "brewery_id": 2241,
-            "follower_count": 24005,
-            "total_votes": 1584991,
+            "follower_count": 24006,
+            "total_votes": 1585462,
             "rating_score": 3.705,
-            "popularity_this_week": 2204,
+            "popularity_this_week": 3257,
             "location_city": "Copenhagen",
-            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-2241_5115f_hd.jpeg",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-2241_bb819.jpeg",
             "beers": [
                 {
                     "csv_name": "Amarilload",
@@ -669,11 +702,16 @@
                     "beer_id": 4352578,
                     "rating_score": 3.71223,
                     "rating_count": 94,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 },
                 {
-                    "csv_name": "Dank A Roo Doo",
-                    "data": "couldn't locate on untappd"
+                    "name": "Dank A Roo Doo",
+                    "abv": 8.7,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 },
                 {
                     "csv_name": "Hazy Answe",
@@ -683,7 +721,7 @@
                     "beer_id": 4321080,
                     "rating_score": 3.75909,
                     "rating_count": 55,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 },
                 {
                     "csv_name": "House of Haze",
@@ -693,7 +731,7 @@
                     "beer_id": 3934287,
                     "rating_score": 3.70205,
                     "rating_count": 731,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3934287_62a34_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-3934287_62a34_sm.jpeg"
                 }
             ]
         },
@@ -702,15 +740,20 @@
             "name": "Pomona Island Brew Co.",
             "brewery_id": 371306,
             "follower_count": 820,
-            "total_votes": 152487,
+            "total_votes": 152607,
             "rating_score": 3.919,
-            "popularity_this_week": 657,
+            "popularity_this_week": 956,
             "location_city": "Salford",
-            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-371306_cf54f_hd.jpeg",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-371306_ea735.jpeg",
             "beers": [
                 {
-                    "csv_name": "My Name Is Carnival",
-                    "data": "couldn't locate on untappd"
+                    "name": "My Name Is Carnival",
+                    "abv": 8.0,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 },
                 {
                     "csv_name": "Plastic Palace Alice",
@@ -720,11 +763,16 @@
                     "beer_id": 4432054,
                     "rating_score": 0,
                     "rating_count": 3,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4432054_a2004_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4432054_57892_sm.jpeg"
                 },
                 {
-                    "csv_name": "Pie for Maureen Round her Shed",
-                    "data": "couldn't locate on untappd"
+                    "name": "Pie for Maureen Round her Shed",
+                    "abv": 6.5,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 },
                 {
                     "csv_name": "HMS Thunder Child",
@@ -734,7 +782,7 @@
                     "beer_id": 4432057,
                     "rating_score": 0,
                     "rating_count": 2,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4432057_fe96d_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4432057_299bb_sm.jpeg"
                 },
                 {
                     "csv_name": "Very Eavy, Very Umble",
@@ -744,7 +792,7 @@
                     "beer_id": 4422342,
                     "rating_score": 0,
                     "rating_count": 8,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4422342_cc9ec_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4422342_cc9ec_sm.jpeg"
                 },
                 {
                     "csv_name": "Choose The Ball",
@@ -754,7 +802,7 @@
                     "beer_id": 4422346,
                     "rating_score": 4.04762,
                     "rating_count": 42,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4422346_f6d75_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4422346_1eb8f_sm.jpeg"
                 },
                 {
                     "csv_name": "Too Weird to Live, Too Rare to Die",
@@ -764,7 +812,7 @@
                     "beer_id": 4432053,
                     "rating_score": 0,
                     "rating_count": 4,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4432053_fc42f_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4432053_9bb10_sm.jpeg"
                 },
                 {
                     "csv_name": "Alpha Beta Psychedelic Funkin'",
@@ -774,7 +822,7 @@
                     "beer_id": 4380950,
                     "rating_score": 4.08831,
                     "rating_count": 278,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4380950_1ed08_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4380950_d5865_sm.jpeg"
                 }
             ]
         },
@@ -783,11 +831,11 @@
             "name": "Mikkeller Brewpub London",
             "brewery_id": 470168,
             "follower_count": 48,
-            "total_votes": 4101,
-            "rating_score": 3.742,
-            "popularity_this_week": 57,
+            "total_votes": 4114,
+            "rating_score": 3.741,
+            "popularity_this_week": 75,
             "location_city": "City of London",
-            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-470168_b6204_hd.jpeg",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-470168_07060.jpeg",
             "beers": [
                 {
                     "csv_name": "What a Time to be Alive",
@@ -797,7 +845,7 @@
                     "beer_id": 4374241,
                     "rating_score": 4.09444,
                     "rating_count": 45,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4374241_da0c8_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4374241_9dd1b_sm.jpeg"
                 },
                 {
                     "csv_name": "Behold Frostillicus",
@@ -807,7 +855,7 @@
                     "beer_id": 4408588,
                     "rating_score": 3.92941,
                     "rating_count": 34,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4408588_35427_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4408588_2266e_sm.jpeg"
                 },
                 {
                     "csv_name": "Risk Assessment",
@@ -817,7 +865,7 @@
                     "beer_id": 4342855,
                     "rating_score": 3.99906,
                     "rating_count": 53,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4342855_95783_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4342855_fa5df_sm.jpeg"
                 },
                 {
                     "csv_name": "Moon Mist",
@@ -827,7 +875,7 @@
                     "beer_id": 4374237,
                     "rating_score": 3.99167,
                     "rating_count": 36,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4374237_feefa_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4374237_f1423_sm.jpeg"
                 }
             ]
         },
@@ -835,16 +883,21 @@
             "csv_name": "Verdant",
             "name": "Verdant Brewing Co",
             "brewery_id": 211325,
-            "follower_count": 4514,
-            "total_votes": 519171,
+            "follower_count": 4515,
+            "total_votes": 519471,
             "rating_score": 4.063,
-            "popularity_this_week": 1580,
+            "popularity_this_week": 2214,
             "location_city": "Penryn",
-            "brewery_img": "",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-211325_2ba94.jpeg",
             "beers": [
                 {
-                    "csv_name": "Cornish Creatives: Mudwig Has a Beef System",
-                    "data": "couldn't locate on untappd"
+                    "name": "Cornish Creatives: Mudwig Has a Beef System",
+                    "abv": 6.5,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 },
                 {
                     "csv_name": "Planets Don't Twinkle",
@@ -854,7 +907,7 @@
                     "beer_id": 3573999,
                     "rating_score": 4.13143,
                     "rating_count": 1096,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3573999_42abf_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-3573999_7729f_sm.jpeg"
                 },
                 {
                     "csv_name": "Unlike Stars",
@@ -864,7 +917,7 @@
                     "beer_id": 2674229,
                     "rating_score": 4.20265,
                     "rating_count": 2600,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2674229_c0eb1_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-2674229_8ca51_sm.jpeg"
                 },
                 {
                     "csv_name": "Transient Comfort Object",
@@ -874,7 +927,7 @@
                     "beer_id": 4443298,
                     "rating_score": 0,
                     "rating_count": 0,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 }
             ]
         },
@@ -883,11 +936,11 @@
             "name": "BOXCAR",
             "brewery_id": 334149,
             "follower_count": 206,
-            "total_votes": 22774,
+            "total_votes": 22793,
             "rating_score": 3.824,
-            "popularity_this_week": 122,
+            "popularity_this_week": 166,
             "location_city": "Bethnal Green",
-            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-334149_f4603_hd.jpeg",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-334149_83981.jpeg",
             "beers": [
                 {
                     "csv_name": "Ekuanot Meditations",
@@ -897,7 +950,7 @@
                     "beer_id": 4402695,
                     "rating_score": 3.70823,
                     "rating_count": 79,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 },
                 {
                     "csv_name": "Dark Mild",
@@ -907,7 +960,7 @@
                     "beer_id": 3088413,
                     "rating_score": 3.63637,
                     "rating_count": 1508,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3088413_f7922_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-3088413_7d2a5_sm.jpeg"
                 },
                 {
                     "csv_name": "Emerald Sky",
@@ -917,7 +970,7 @@
                     "beer_id": 3865937,
                     "rating_score": 3.81552,
                     "rating_count": 348,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3865937_7448f_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-3865937_34dab_sm.jpeg"
                 },
                 {
                     "csv_name": "Grapefruit IPA",
@@ -927,7 +980,7 @@
                     "beer_id": 1390411,
                     "rating_score": 0,
                     "rating_count": 5,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-1390411_5d4a8_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-1390411_2e28a_sm.jpeg"
                 }
             ]
         },
@@ -936,11 +989,11 @@
             "name": "Bundobust Brewery",
             "brewery_id": 469642,
             "follower_count": 6,
-            "total_votes": 780,
-            "rating_score": 3.678,
-            "popularity_this_week": 40,
+            "total_votes": 786,
+            "rating_score": 3.68,
+            "popularity_this_week": 54,
             "location_city": "Manchester",
-            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-469642_11547_hd.jpeg",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-469642_11547.jpeg",
             "beers": [
                 {
                     "csv_name": "East is East",
@@ -950,7 +1003,7 @@
                     "beer_id": 4399392,
                     "rating_score": 3.85392,
                     "rating_count": 153,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4399392_4e5d3_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4399392_1cd91_sm.jpeg"
                 },
                 {
                     "csv_name": "West is West",
@@ -960,7 +1013,7 @@
                     "beer_id": 4433484,
                     "rating_score": 3.70286,
                     "rating_count": 35,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4433484_60e21_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4433484_c67a7_sm.jpeg"
                 },
                 {
                     "csv_name": "Peela",
@@ -970,11 +1023,16 @@
                     "beer_id": 4366843,
                     "rating_score": 3.68944,
                     "rating_count": 213,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4366843_5df9d_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4366843_9c72c_sm.jpeg"
                 },
                 {
-                    "csv_name": "Andhera",
-                    "data": "couldn't locate on untappd"
+                    "name": "Andhera",
+                    "abv": 5.5,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 }
             ]
         },
@@ -982,20 +1040,30 @@
             "csv_name": "Track",
             "name": "Track Brewing Company",
             "brewery_id": 182149,
-            "follower_count": 1168,
-            "total_votes": 176417,
+            "follower_count": 1169,
+            "total_votes": 176497,
             "rating_score": 3.95,
-            "popularity_this_week": 354,
+            "popularity_this_week": 558,
             "location_city": "Manchester",
-            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-182149_9ce32_hd.jpeg",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-182149_d7f42.jpeg",
             "beers": [
                 {
-                    "csv_name": "Meet me in the Middle // Gold Top",
-                    "data": "couldn't locate on untappd"
+                    "name": "Meet me in the Middle // Gold Top",
+                    "abv": 8.5,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 },
                 {
-                    "csv_name": "Another Lifetime: Gold Top",
-                    "data": "couldn't locate on untappd"
+                    "name": "Another Lifetime: Gold Top",
+                    "abv": 8.5,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 },
                 {
                     "csv_name": "Dreaming of Big Skies",
@@ -1005,19 +1073,34 @@
                     "beer_id": 4175968,
                     "rating_score": 4.1143,
                     "rating_count": 437,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4175968_2b642_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4175968_44c99_sm.jpeg"
                 },
                 {
-                    "csv_name": "Lost on the Way",
-                    "data": "couldn't locate on untappd"
+                    "name": "Lost on the Way",
+                    "abv": 8.0,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 },
                 {
-                    "csv_name": "Changing Tides",
-                    "data": "couldn't locate on untappd"
+                    "name": "Changing Tides",
+                    "abv": 8.0,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 },
                 {
-                    "csv_name": "Cask // Sonoma",
-                    "data": "couldn't locate on untappd"
+                    "name": "Cask // Sonoma",
+                    "abv": 3.8,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 }
             ]
         },
@@ -1025,12 +1108,12 @@
             "csv_name": "Buxton",
             "name": "Buxton Brewery",
             "brewery_id": 3461,
-            "follower_count": 12719,
-            "total_votes": 732411,
+            "follower_count": 12720,
+            "total_votes": 732566,
             "rating_score": 3.859,
-            "popularity_this_week": 773,
+            "popularity_this_week": 1131,
             "location_city": "Buxton",
-            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-3461_88fe2_hd.jpeg",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-3461_3e586.jpeg",
             "beers": [
                 {
                     "csv_name": "Axe Edge",
@@ -1040,11 +1123,16 @@
                     "beer_id": 48269,
                     "rating_score": 3.81003,
                     "rating_count": 28893,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-48269_d2645_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-48269_cb0b8_sm.jpeg"
                 },
                 {
-                    "csv_name": "English Hop Development",
-                    "data": "couldn't locate on untappd"
+                    "name": "English Hop Development",
+                    "abv": 6.5,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 },
                 {
                     "csv_name": "Summer Ale",
@@ -1054,7 +1142,7 @@
                     "beer_id": 3765188,
                     "rating_score": 0,
                     "rating_count": 2,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 },
                 {
                     "csv_name": "King Slayer",
@@ -1064,7 +1152,7 @@
                     "beer_id": 3146976,
                     "rating_score": 3.92651,
                     "rating_count": 11173,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3146976_3c504_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-3146976_63ef0_sm.jpeg"
                 }
             ]
         },
@@ -1073,11 +1161,11 @@
             "name": "Kirkstall Brewery",
             "brewery_id": 11609,
             "follower_count": 1059,
-            "total_votes": 81857,
+            "total_votes": 81884,
             "rating_score": 3.616,
-            "popularity_this_week": 200,
+            "popularity_this_week": 320,
             "location_city": "Leeds",
-            "brewery_img": "",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-11609_297ff.jpeg",
             "beers": [
                 {
                     "csv_name": "Virtuous",
@@ -1087,7 +1175,7 @@
                     "beer_id": 2251095,
                     "rating_score": 3.52206,
                     "rating_count": 8911,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2251095_f9544_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-2251095_88671_sm.jpeg"
                 },
                 {
                     "csv_name": "Perpetuous",
@@ -1097,7 +1185,7 @@
                     "beer_id": 3122697,
                     "rating_score": 3.53111,
                     "rating_count": 6386,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3122697_52e1b_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-3122697_8d809_sm.jpeg"
                 },
                 {
                     "csv_name": "Providence",
@@ -1107,7 +1195,7 @@
                     "beer_id": 2577009,
                     "rating_score": 3.70412,
                     "rating_count": 7350,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2577009_e2c00_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-2577009_8cfbf_sm.jpeg"
                 },
                 {
                     "csv_name": "Impunity",
@@ -1117,7 +1205,7 @@
                     "beer_id": 4101222,
                     "rating_score": 3.87737,
                     "rating_count": 137,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 }
             ]
         },
@@ -1126,11 +1214,11 @@
             "name": "Amity Brew Co",
             "brewery_id": 466245,
             "follower_count": 106,
-            "total_votes": 7866,
+            "total_votes": 7874,
             "rating_score": 3.721,
-            "popularity_this_week": 54,
+            "popularity_this_week": 72,
             "location_city": "Leeds",
-            "brewery_img": "",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-466245_bc579.jpeg",
             "beers": [
                 {
                     "csv_name": "Survival",
@@ -1140,7 +1228,7 @@
                     "beer_id": 4391304,
                     "rating_score": 4.27941,
                     "rating_count": 17,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4391304_405dd_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4391304_5d446_sm.jpeg"
                 },
                 {
                     "csv_name": "Infinite Loop",
@@ -1150,7 +1238,7 @@
                     "beer_id": 4391293,
                     "rating_score": 4,
                     "rating_count": 11,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4391293_e3be9_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4391293_abcb3_sm.jpeg"
                 },
                 {
                     "csv_name": "Amity IPA v2",
@@ -1160,7 +1248,7 @@
                     "beer_id": 4343029,
                     "rating_score": 3.97642,
                     "rating_count": 53,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4343029_c3593_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4343029_2aaa8_sm.jpeg"
                 },
                 {
                     "csv_name": "Chorusses",
@@ -1170,7 +1258,7 @@
                     "beer_id": 4407703,
                     "rating_score": 4.31778,
                     "rating_count": 45,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4407703_a6f87_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4407703_73977_sm.jpeg"
                 }
             ]
         },
@@ -1179,11 +1267,11 @@
             "name": "Overtone Brewing Co",
             "brewery_id": 400105,
             "follower_count": 859,
-            "total_votes": 90215,
+            "total_votes": 90334,
             "rating_score": 3.936,
-            "popularity_this_week": 565,
+            "popularity_this_week": 851,
             "location_city": "Glasgow",
-            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-400105_31838_hd.jpeg",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-400105_8c02c.jpeg",
             "beers": [
                 {
                     "csv_name": "Pearl Clouds",
@@ -1193,7 +1281,7 @@
                     "beer_id": 4375473,
                     "rating_score": 4.42136,
                     "rating_count": 529,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4375473_57d3a_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4375473_faa4c_sm.jpeg"
                 },
                 {
                     "csv_name": "Chufft",
@@ -1203,7 +1291,7 @@
                     "beer_id": 4396630,
                     "rating_score": 4.21885,
                     "rating_count": 305,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4396630_6eea7_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4396630_c9eee_sm.jpeg"
                 },
                 {
                     "csv_name": "Plur",
@@ -1213,7 +1301,7 @@
                     "beer_id": 4149103,
                     "rating_score": 4.23132,
                     "rating_count": 1057,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4149103_f9818_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4149103_48a0a_sm.jpeg"
                 },
                 {
                     "csv_name": "Ella-Mentary",
@@ -1223,7 +1311,7 @@
                     "beer_id": 4081286,
                     "rating_score": 4.05981,
                     "rating_count": 703,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4081286_f1c87_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4081286_0871a_sm.jpeg"
                 },
                 {
                     "csv_name": "Smash It!",
@@ -1233,7 +1321,7 @@
                     "beer_id": 4412952,
                     "rating_score": 3.93196,
                     "rating_count": 158,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4412952_c92c2_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4412952_09dc2_sm.jpeg"
                 }
             ]
         },
@@ -1244,9 +1332,9 @@
             "follower_count": 83,
             "total_votes": 5265,
             "rating_score": 3.703,
-            "popularity_this_week": 6,
+            "popularity_this_week": 8,
             "location_city": "Kirklees",
-            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-201451_060f2_hd.jpeg",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-201451_00b77.jpeg",
             "beers": [
                 {
                     "csv_name": "Zapatapale - Motueka",
@@ -1256,7 +1344,7 @@
                     "beer_id": 4397187,
                     "rating_score": 3.45345,
                     "rating_count": 29,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 },
                 {
                     "csv_name": "Oco",
@@ -1266,11 +1354,16 @@
                     "beer_id": 4422921,
                     "rating_score": 0,
                     "rating_count": 8,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 },
                 {
-                    "csv_name": "Zapatapale - Ekuanot BBC",
-                    "data": "couldn't locate on untappd"
+                    "name": "Zapatapale - Ekuanot BBC",
+                    "abv": 5.5,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 },
                 {
                     "csv_name": "Delegate Zero",
@@ -1280,7 +1373,7 @@
                     "beer_id": 1075264,
                     "rating_score": 3.66525,
                     "rating_count": 354,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-1075264_8d623_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-1075264_4dffe_sm.jpeg"
                 },
                 {
                     "csv_name": "Shoom",
@@ -1290,7 +1383,7 @@
                     "beer_id": 3868649,
                     "rating_score": 3.57,
                     "rating_count": 145,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3868649_c982c_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-3868649_1a270_sm.jpeg"
                 }
             ]
         },
@@ -1298,12 +1391,12 @@
             "csv_name": "Northern Monk",
             "name": "Northern Monk",
             "brewery_id": 71828,
-            "follower_count": 8081,
-            "total_votes": 1114759,
+            "follower_count": 8082,
+            "total_votes": 1115256,
             "rating_score": 3.867,
-            "popularity_this_week": 2656,
+            "popularity_this_week": 3945,
             "location_city": "",
-            "brewery_img": "",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-71828_20573.jpeg",
             "beers": [
                 {
                     "csv_name": "Glory",
@@ -1313,7 +1406,7 @@
                     "beer_id": 4344541,
                     "rating_score": 4.31051,
                     "rating_count": 1066,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4344541_0c9c4_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4344541_73259_sm.jpeg"
                 },
                 {
                     "csv_name": "Faith",
@@ -1323,7 +1416,7 @@
                     "beer_id": 970642,
                     "rating_score": 3.75045,
                     "rating_count": 52383,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-970642_d744b_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-970642_0828a_sm.jpeg"
                 },
                 {
                     "csv_name": "Heathen",
@@ -1333,7 +1426,7 @@
                     "beer_id": 1514437,
                     "rating_score": 3.92871,
                     "rating_count": 22170,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-1514437_6fb47_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-1514437_bdc43_sm.jpeg"
                 },
                 {
                     "csv_name": "Hop City // The Resurrection",
@@ -1343,7 +1436,7 @@
                     "beer_id": 4377054,
                     "rating_score": 4.16162,
                     "rating_count": 2096,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4377054_d5b3e_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4377054_b046f_sm.jpeg"
                 },
                 {
                     "csv_name": "OFS046",
@@ -1353,7 +1446,7 @@
                     "beer_id": 4440082,
                     "rating_score": 0,
                     "rating_count": 4,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4440082_258b2_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4440082_6bfb6_sm.jpeg"
                 },
                 {
                     "csv_name": "OFS047",
@@ -1363,7 +1456,7 @@
                     "beer_id": 3991690,
                     "rating_score": 4.01795,
                     "rating_count": 1061,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3991690_03441_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-3991690_61695_sm.jpeg"
                 },
                 {
                     "csv_name": "OFS048",
@@ -1373,7 +1466,7 @@
                     "beer_id": 4027797,
                     "rating_score": 3.46379,
                     "rating_count": 914,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4027797_5ce22_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4027797_f06e0_sm.jpeg"
                 },
                 {
                     "csv_name": "Fresh IPA 003",
@@ -1383,7 +1476,7 @@
                     "beer_id": 4430853,
                     "rating_score": 4.42199,
                     "rating_count": 141,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4430853_43806_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4430853_fb395_sm.jpeg"
                 },
                 {
                     "csv_name": "The Awakening",
@@ -1393,7 +1486,7 @@
                     "beer_id": 4398793,
                     "rating_score": 4.16333,
                     "rating_count": 514,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4398793_dc21c_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4398793_837e5_sm.jpeg"
                 },
                 {
                     "csv_name": "Crowd for the Summer",
@@ -1403,7 +1496,7 @@
                     "beer_id": 4419825,
                     "rating_score": 4.0496,
                     "rating_count": 377,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4419825_9d922_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4419825_58fa5_sm.jpeg"
                 },
                 {
                     "csv_name": "OFS043",
@@ -1413,7 +1506,7 @@
                     "beer_id": 4404491,
                     "rating_score": 3.7836,
                     "rating_count": 186,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4404491_694b6_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4404491_70b39_sm.jpeg"
                 },
                 {
                     "csv_name": "OFS044",
@@ -1423,7 +1516,7 @@
                     "beer_id": 4419827,
                     "rating_score": 3.64385,
                     "rating_count": 187,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4419827_07118_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4419827_07118_sm.jpeg"
                 },
                 {
                     "csv_name": "Honour",
@@ -1433,31 +1526,61 @@
                     "beer_id": 4419826,
                     "rating_score": 4.025,
                     "rating_count": 120,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4419826_bfd3f_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4419826_7bf95_sm.jpeg"
                 },
                 {
-                    "csv_name": "West Coast Routes #3",
-                    "data": "couldn't locate on untappd"
+                    "name": "West Coast Routes #3",
+                    "abv": 7.0,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 },
                 {
-                    "csv_name": "Ubuntu, WDYTM?",
-                    "data": "couldn't locate on untappd"
+                    "name": "Ubuntu, WDYTM?",
+                    "abv": 8.2,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 },
                 {
-                    "csv_name": "Cask // Faith",
-                    "data": "couldn't locate on untappd"
+                    "name": "Cask // Faith",
+                    "abv": 5.4,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 },
                 {
-                    "csv_name": "Cask // Striding Edge",
-                    "data": "couldn't locate on untappd"
+                    "name": "Cask // Striding Edge",
+                    "abv": 2.8,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 },
                 {
-                    "csv_name": "Cask // Mangoes on with Faith",
-                    "data": "couldn't locate on untappd"
+                    "name": "Cask // Mangoes on with Faith",
+                    "abv": 5.4,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 },
                 {
-                    "csv_name": "Cask // Scafell",
-                    "data": "couldn't locate on untappd"
+                    "name": "Cask // Scafell",
+                    "abv": 6.5,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 }
             ]
         },
@@ -1466,11 +1589,11 @@
             "name": "Donzoko Brewing Company",
             "brewery_id": 357805,
             "follower_count": 140,
-            "total_votes": 16209,
+            "total_votes": 16211,
             "rating_score": 3.754,
-            "popularity_this_week": 25,
+            "popularity_this_week": 55,
             "location_city": "Hartlepool",
-            "brewery_img": "",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-357805_5a02e.jpeg",
             "beers": [
                 {
                     "csv_name": "Northern Helles",
@@ -1480,19 +1603,34 @@
                     "beer_id": 2326253,
                     "rating_score": 3.63643,
                     "rating_count": 3884,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2326253_05a89_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-2326253_078f0_sm.jpeg"
                 },
                 {
-                    "csv_name": "Gravity Keg // Northern Helles",
-                    "data": "couldn't locate on untappd"
+                    "name": "Gravity Keg // Northern Helles",
+                    "abv": 4.2,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 },
                 {
-                    "csv_name": "Gravity Keg // Big Foam",
-                    "data": "couldn't locate on untappd"
+                    "name": "Gravity Keg // Big Foam",
+                    "abv": 5.0,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 },
                 {
-                    "csv_name": "Bigger Foam",
-                    "data": "couldn't locate on untappd"
+                    "name": "Bigger Foam",
+                    "abv": 5.0,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 },
                 {
                     "csv_name": "Brett A Manger",
@@ -1502,7 +1640,7 @@
                     "beer_id": 4021269,
                     "rating_score": 3.45247,
                     "rating_count": 365,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4021269_9246e_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4021269_c89ad_sm.jpeg"
                 },
                 {
                     "csv_name": "Letting the days go by Cherry",
@@ -1512,11 +1650,16 @@
                     "beer_id": 4105078,
                     "rating_score": 3.90729,
                     "rating_count": 96,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 },
                 {
-                    "csv_name": "Tied Vines",
-                    "data": "couldn't locate on untappd"
+                    "name": "Tied Vines",
+                    "abv": 8.0,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 },
                 {
                     "csv_name": "Cloud Beer",
@@ -1526,7 +1669,7 @@
                     "beer_id": 4425086,
                     "rating_score": 3.53857,
                     "rating_count": 35,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 }
             ]
         },
@@ -1539,11 +1682,16 @@
             "rating_score": 3.968,
             "popularity_this_week": 0,
             "location_city": "",
-            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-441896_f5eda_hd.jpeg",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-441896_968c4.jpeg",
             "beers": [
                 {
-                    "csv_name": "Ballroom on Glass",
-                    "data": "couldn't locate on untappd"
+                    "name": "Ballroom on Glass",
+                    "abv": 8.1,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 }
             ]
         },
@@ -1551,12 +1699,12 @@
             "csv_name": "Newtown Park",
             "name": "Newtown Park Brewing Co.",
             "brewery_id": 484135,
-            "follower_count": 34,
-            "total_votes": 3489,
-            "rating_score": 3.799,
-            "popularity_this_week": 68,
+            "follower_count": 35,
+            "total_votes": 3497,
+            "rating_score": 3.8,
+            "popularity_this_week": 90,
             "location_city": "Bristol",
-            "brewery_img": "",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-484135_e6714.jpeg",
             "beers": [
                 {
                     "csv_name": "Five Point Six",
@@ -1566,7 +1714,7 @@
                     "beer_id": 4215044,
                     "rating_score": 3.7614,
                     "rating_count": 215,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 }
             ]
         },
@@ -1575,11 +1723,11 @@
             "name": "Neon Raptor Brewing Co.",
             "brewery_id": 267674,
             "follower_count": 1619,
-            "total_votes": 133797,
+            "total_votes": 133857,
             "rating_score": 4.015,
-            "popularity_this_week": 326,
+            "popularity_this_week": 530,
             "location_city": "Nottingham",
-            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-267674_2c6ba_hd.jpeg",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-267674_2e2d3.jpeg",
             "beers": [
                 {
                     "csv_name": "Rob's Shoes",
@@ -1589,7 +1737,7 @@
                     "beer_id": 4413883,
                     "rating_score": 3.80628,
                     "rating_count": 207,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4413883_4126e_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4413883_8fda7_sm.jpeg"
                 },
                 {
                     "csv_name": "Naughty Luggage",
@@ -1599,7 +1747,7 @@
                     "beer_id": 2100976,
                     "rating_score": 4.05643,
                     "rating_count": 3617,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2100976_b753e_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-2100976_d598c_sm.jpeg"
                 },
                 {
                     "csv_name": "Use it or Lose It",
@@ -1609,7 +1757,7 @@
                     "beer_id": 4400235,
                     "rating_score": 4.08987,
                     "rating_count": 153,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4400235_a34b9_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4400235_03d93_sm.jpeg"
                 },
                 {
                     "csv_name": "Open the Door",
@@ -1619,7 +1767,7 @@
                     "beer_id": 4435337,
                     "rating_score": 0,
                     "rating_count": 0,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4435337_e41a4_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4435337_0d2f5_sm.jpeg"
                 }
             ]
         },
@@ -1627,12 +1775,12 @@
             "csv_name": "Deya",
             "name": "DEYA Brewing Company",
             "brewery_id": 220918,
-            "follower_count": 2453,
-            "total_votes": 303794,
+            "follower_count": 2454,
+            "total_votes": 303951,
             "rating_score": 4.034,
-            "popularity_this_week": 961,
+            "popularity_this_week": 1572,
             "location_city": "Cheltenham",
-            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-220918_678f9_hd.jpeg",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-220918_e3284.jpeg",
             "beers": [
                 {
                     "csv_name": "Steady Rolling Man",
@@ -1642,7 +1790,7 @@
                     "beer_id": 1202873,
                     "rating_score": 4.01762,
                     "rating_count": 24171,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-1202873_93c9d_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-1202873_2bf59_sm.jpeg"
                 },
                 {
                     "csv_name": "I do this all the Time",
@@ -1652,7 +1800,7 @@
                     "beer_id": 4411608,
                     "rating_score": 3.52321,
                     "rating_count": 112,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4411608_fdfa5_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4411608_26b98_sm.jpeg"
                 },
                 {
                     "csv_name": "Saturated Simcoe",
@@ -1662,7 +1810,7 @@
                     "beer_id": 2561698,
                     "rating_score": 4.21941,
                     "rating_count": 4279,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2561698_8fb3b_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-2561698_b8381_sm.jpeg"
                 },
                 {
                     "csv_name": "Momentary Bliss",
@@ -1672,7 +1820,7 @@
                     "beer_id": 2521927,
                     "rating_score": 4.24514,
                     "rating_count": 1112,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2521927_0c4c9_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-2521927_b75af_sm.jpeg"
                 },
                 {
                     "csv_name": "Sunshine",
@@ -1682,7 +1830,7 @@
                     "beer_id": 3784617,
                     "rating_score": 4.14835,
                     "rating_count": 3451,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3784617_ce9d1_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-3784617_bf049_sm.jpeg"
                 },
                 {
                     "csv_name": "Brett Pils",
@@ -1692,15 +1840,26 @@
                     "beer_id": 3790357,
                     "rating_score": 3.97697,
                     "rating_count": 241,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3790357_152f9_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-3790357_48a99_sm.jpeg"
                 },
                 {
                     "csv_name": "Something Good 15",
-                    "data": "couldn't locate on untappd"
+                    "name": "Something Good 15",
+                    "abv": 6.2,
+                    "description": "Something Good is a rotating IPA series where we explore new ingredients, techniques, processes with the hope of hitting on something good... \r\n\r\nFor the 15th iteration in this IPA series we have experimented with a new hop product from YCH: Cryo Pop. Hopped exclusively in the whirlpool with Cryo Pop Original Blend and dry hopped with Citra and Cryo Pop Original Blend... fruity banger ensues!",
+                    "beer_id": 4443841,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4443841_103e5_sm.jpeg"
                 },
                 {
-                    "csv_name": "Cask // Man is the Most Secret Animal on Earth",
-                    "data": "couldn't locate on untappd"
+                    "name": "Cask // Man is the Most Secret Animal on Earth",
+                    "abv": 4.5,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 }
             ]
         },
@@ -1709,15 +1868,20 @@
             "name": "Mash Gang",
             "brewery_id": 473602,
             "follower_count": 15,
-            "total_votes": 330,
-            "rating_score": 3.388,
-            "popularity_this_week": 11,
+            "total_votes": 333,
+            "rating_score": 3.386,
+            "popularity_this_week": 15,
             "location_city": "City of London",
-            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-473602_5c418_hd.jpeg",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-473602_c0e09.jpeg",
             "beers": [
                 {
-                    "csv_name": "Stoop Lager",
-                    "data": "couldn't locate on untappd"
+                    "name": "Stoop Lager",
+                    "abv": 0.5,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 },
                 {
                     "csv_name": "Spirritual Journey",
@@ -1727,7 +1891,7 @@
                     "beer_id": 4296062,
                     "rating_score": 3.59396,
                     "rating_count": 91,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 },
                 {
                     "csv_name": "Dead Mall",
@@ -1737,11 +1901,16 @@
                     "beer_id": 4322508,
                     "rating_score": 4.08333,
                     "rating_count": 21,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 },
                 {
-                    "csv_name": "Terp City",
-                    "data": "couldn't locate on untappd"
+                    "name": "Terp City",
+                    "abv": 0.5,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 },
                 {
                     "csv_name": "Tahiti Treat",
@@ -1751,7 +1920,7 @@
                     "beer_id": 4020081,
                     "rating_score": 0,
                     "rating_count": 5,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 }
             ]
         },
@@ -1759,12 +1928,12 @@
             "csv_name": "Alpha Delta",
             "name": "Alpha Delta Brewing",
             "brewery_id": 446842,
-            "follower_count": 326,
-            "total_votes": 41623,
+            "follower_count": 327,
+            "total_votes": 41658,
             "rating_score": 3.907,
-            "popularity_this_week": 177,
+            "popularity_this_week": 225,
             "location_city": "Newburn",
-            "brewery_img": "",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-446842_2b8c4.jpeg",
             "beers": [
                 {
                     "csv_name": "Achlys",
@@ -1774,7 +1943,7 @@
                     "beer_id": 3526905,
                     "rating_score": 4.15189,
                     "rating_count": 2699,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3526905_281ac_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-3526905_281ac_sm.jpeg"
                 },
                 {
                     "csv_name": "Erebus",
@@ -1784,7 +1953,7 @@
                     "beer_id": 4421648,
                     "rating_score": 3.73696,
                     "rating_count": 23,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 },
                 {
                     "csv_name": "Pontus",
@@ -1794,7 +1963,7 @@
                     "beer_id": 4426468,
                     "rating_score": 3.48036,
                     "rating_count": 28,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 },
                 {
                     "csv_name": "Methe",
@@ -1804,7 +1973,7 @@
                     "beer_id": 4424268,
                     "rating_score": 4.06406,
                     "rating_count": 32,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 }
             ]
         },
@@ -1813,11 +1982,11 @@
             "name": "Floc. Brewing Project",
             "brewery_id": 478259,
             "follower_count": 31,
-            "total_votes": 1372,
+            "total_votes": 1373,
             "rating_score": 3.871,
-            "popularity_this_week": 3,
+            "popularity_this_week": 5,
             "location_city": "Margate",
-            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-478259_04366_hd.jpeg",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-478259_2d554.jpeg",
             "beers": [
                 {
                     "csv_name": "Easy Way Out",
@@ -1827,15 +1996,25 @@
                     "beer_id": 4090445,
                     "rating_score": 3.96932,
                     "rating_count": 44,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4090445_b6bd7_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4090445_c31ad_sm.jpeg"
                 },
                 {
-                    "csv_name": "If We Were",
-                    "data": "couldn't locate on untappd"
+                    "name": "If We Were",
+                    "abv": 6.5,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 },
                 {
-                    "csv_name": "Ever So",
-                    "data": "couldn't locate on untappd"
+                    "name": "Ever So",
+                    "abv": 6.2,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 }
             ]
         },
@@ -1844,11 +2023,11 @@
             "name": "North Brewing Co.",
             "brewery_id": 202720,
             "follower_count": 3066,
-            "total_votes": 426304,
+            "total_votes": 426458,
             "rating_score": 3.872,
-            "popularity_this_week": 799,
+            "popularity_this_week": 1187,
             "location_city": "Leeds",
-            "brewery_img": "",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-202720_f71da.jpeg",
             "beers": [
                 {
                     "csv_name": "Watching Light Move",
@@ -1858,7 +2037,7 @@
                     "beer_id": 4396729,
                     "rating_score": 4.06562,
                     "rating_count": 333,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4396729_84503_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4396729_84503_sm.jpeg"
                 },
                 {
                     "csv_name": "Fading Frontier",
@@ -1868,7 +2047,7 @@
                     "beer_id": 4419037,
                     "rating_score": 4.06149,
                     "rating_count": 161,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4419037_05800_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4419037_bc905_sm.jpeg"
                 },
                 {
                     "csv_name": "The Eighth Chamber",
@@ -1878,7 +2057,7 @@
                     "beer_id": 4361424,
                     "rating_score": 3.7742,
                     "rating_count": 471,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4361424_bed40_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4361424_bed40_sm.jpeg"
                 },
                 {
                     "csv_name": "Springwell Pils",
@@ -1888,7 +2067,7 @@
                     "beer_id": 4140433,
                     "rating_score": 3.66936,
                     "rating_count": 1281,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4140433_582c8_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4140433_2049a_sm.jpeg"
                 },
                 {
                     "csv_name": "Transmission",
@@ -1898,7 +2077,7 @@
                     "beer_id": 1083661,
                     "rating_score": 3.82539,
                     "rating_count": 23611,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-1083661_9574e_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-1083661_4f69d_sm.jpeg"
                 }
             ]
         },
@@ -1907,11 +2086,11 @@
             "name": "Pipeline Brewing Co",
             "brewery_id": 375922,
             "follower_count": 134,
-            "total_votes": 5593,
+            "total_votes": 5599,
             "rating_score": 3.977,
-            "popularity_this_week": 28,
+            "popularity_this_week": 50,
             "location_city": "Saint Agnes",
-            "brewery_img": "",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-375922_1720b.jpeg",
             "beers": [
                 {
                     "csv_name": "Galaxy Dreams",
@@ -1921,7 +2100,7 @@
                     "beer_id": 4375360,
                     "rating_score": 3.95696,
                     "rating_count": 79,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4375360_ee4e1_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4375360_373e5_sm.jpeg"
                 },
                 {
                     "csv_name": "Citra Deluxe",
@@ -1931,7 +2110,7 @@
                     "beer_id": 4391009,
                     "rating_score": 4.10163,
                     "rating_count": 92,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4391009_71059_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4391009_00a3c_sm.jpeg"
                 },
                 {
                     "csv_name": "Cryo Pop",
@@ -1941,7 +2120,7 @@
                     "beer_id": 4387873,
                     "rating_score": 4.12907,
                     "rating_count": 86,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4387873_cc913_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4387873_39b6f_sm.jpeg"
                 },
                 {
                     "csv_name": "Hyperdrive",
@@ -1951,7 +2130,7 @@
                     "beer_id": 4413639,
                     "rating_score": 3.97609,
                     "rating_count": 23,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 }
             ]
         },
@@ -1960,11 +2139,11 @@
             "name": "Rivington Brewing Co",
             "brewery_id": 211176,
             "follower_count": 227,
-            "total_votes": 22929,
+            "total_votes": 22945,
             "rating_score": 3.856,
-            "popularity_this_week": 131,
+            "popularity_this_week": 189,
             "location_city": "Chorley",
-            "brewery_img": "",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-211176_f5f33.jpeg",
             "beers": [
                 {
                     "csv_name": "Never Known Fog Like It",
@@ -1974,11 +2153,16 @@
                     "beer_id": 2111377,
                     "rating_score": 4.02365,
                     "rating_count": 2148,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2111377_32332_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-2111377_5bb7f_sm.jpeg"
                 },
                 {
-                    "csv_name": "The Guy Was an Interior Designer",
-                    "data": "couldn't locate on untappd"
+                    "name": "The Guy Was an Interior Designer",
+                    "abv": 5.5,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 },
                 {
                     "csv_name": "They Live",
@@ -1988,7 +2172,7 @@
                     "beer_id": 4433779,
                     "rating_score": 0,
                     "rating_count": 0,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4433779_f99c9_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4433779_103fe_sm.jpeg"
                 },
                 {
                     "csv_name": "Way Before Nirvana",
@@ -1998,11 +2182,16 @@
                     "beer_id": 4400242,
                     "rating_score": 4.17865,
                     "rating_count": 178,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4400242_f2a26_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4400242_2602c_sm.jpeg"
                 },
                 {
-                    "csv_name": "Cask // Beach House",
-                    "data": "couldn't locate on untappd"
+                    "name": "Cask // Beach House",
+                    "abv": 3.8,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 }
             ]
         },
@@ -2010,12 +2199,12 @@
             "csv_name": "Pollys",
             "name": "Polly's Brew Co.",
             "brewery_id": 373345,
-            "follower_count": 1744,
-            "total_votes": 316150,
+            "follower_count": 1747,
+            "total_votes": 316322,
             "rating_score": 3.991,
-            "popularity_this_week": 898,
+            "popularity_this_week": 1398,
             "location_city": "Mold",
-            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-373345_1ae90_hd.jpeg",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-373345_7dec1.jpeg",
             "beers": [
                 {
                     "csv_name": "DDH Spur",
@@ -2025,7 +2214,7 @@
                     "beer_id": 3858304,
                     "rating_score": 4.4652,
                     "rating_count": 1303,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 },
                 {
                     "csv_name": "High Speed Soul",
@@ -2035,7 +2224,7 @@
                     "beer_id": 4423250,
                     "rating_score": 4.08561,
                     "rating_count": 66,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 },
                 {
                     "csv_name": "Extra Scene",
@@ -2045,7 +2234,7 @@
                     "beer_id": 4436255,
                     "rating_score": 4.22917,
                     "rating_count": 12,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 },
                 {
                     "csv_name": "Made For Light",
@@ -2055,7 +2244,7 @@
                     "beer_id": 4423186,
                     "rating_score": 3.95464,
                     "rating_count": 97,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 }
             ]
         },
@@ -2064,11 +2253,11 @@
             "name": "Wylam",
             "brewery_id": 9187,
             "follower_count": 4833,
-            "total_votes": 448116,
+            "total_votes": 448169,
             "rating_score": 3.921,
-            "popularity_this_week": 326,
+            "popularity_this_week": 488,
             "location_city": "Newcastle upon Tyne",
-            "brewery_img": "",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-9187_bd459.jpeg",
             "beers": [
                 {
                     "csv_name": "Tango Till They're Sore",
@@ -2078,7 +2267,7 @@
                     "beer_id": 4408612,
                     "rating_score": 4.07286,
                     "rating_count": 105,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4408612_c7593_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4408612_c537b_sm.jpeg"
                 },
                 {
                     "csv_name": "Betty the Bat",
@@ -2088,7 +2277,7 @@
                     "beer_id": 4440129,
                     "rating_score": 0,
                     "rating_count": 6,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4440129_bb2d2_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4440129_6ab7b_sm.jpeg"
                 },
                 {
                     "csv_name": "Smush",
@@ -2098,7 +2287,7 @@
                     "beer_id": 4384993,
                     "rating_score": 4.21004,
                     "rating_count": 234,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4384993_9a575_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4384993_e8835_sm.jpeg"
                 },
                 {
                     "csv_name": "Crying The Neck",
@@ -2108,11 +2297,16 @@
                     "beer_id": 4419844,
                     "rating_score": 4.11364,
                     "rating_count": 77,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4419844_f36ac_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4419844_427a4_sm.jpeg"
                 },
                 {
-                    "csv_name": "Cask // Jakehead",
-                    "data": "couldn't locate on untappd"
+                    "name": "Cask // Jakehead",
+                    "abv": 6.3,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 }
             ]
         },
@@ -2121,11 +2315,11 @@
             "name": "Beak Brewery",
             "brewery_id": 167433,
             "follower_count": 267,
-            "total_votes": 25279,
+            "total_votes": 25325,
             "rating_score": 3.948,
-            "popularity_this_week": 253,
+            "popularity_this_week": 371,
             "location_city": "Lewes",
-            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-167433_eff61_hd.jpeg",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-167433_16e34.jpeg",
             "beers": [
                 {
                     "csv_name": "Parade",
@@ -2135,7 +2329,7 @@
                     "beer_id": 3820116,
                     "rating_score": 4.03342,
                     "rating_count": 3866,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3820116_a06b5_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-3820116_09c6a_sm.jpeg"
                 },
                 {
                     "csv_name": "Locals",
@@ -2145,7 +2339,7 @@
                     "beer_id": 4093974,
                     "rating_score": 4.03742,
                     "rating_count": 1073,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 },
                 {
                     "csv_name": "Cabbit",
@@ -2155,7 +2349,7 @@
                     "beer_id": 4373183,
                     "rating_score": 4.18512,
                     "rating_count": 383,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 },
                 {
                     "csv_name": "Popple",
@@ -2165,7 +2359,7 @@
                     "beer_id": 4399368,
                     "rating_score": 4.0503,
                     "rating_count": 334,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 },
                 {
                     "csv_name": "Supp",
@@ -2175,7 +2369,7 @@
                     "beer_id": 4345601,
                     "rating_score": 4.04418,
                     "rating_count": 601,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 }
             ]
         },
@@ -2184,11 +2378,11 @@
             "name": "Other Half Brewing Co.",
             "brewery_id": 94785,
             "follower_count": 9592,
-            "total_votes": 3005040,
+            "total_votes": 3006147,
             "rating_score": 4.231,
-            "popularity_this_week": 6493,
+            "popularity_this_week": 9449,
             "location_city": "Brooklyn",
-            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-94785_ca64f_hd.jpeg",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-94785_13f7c.jpeg",
             "beers": [
                 {
                     "csv_name": "Triple Mosaic Daydream",
@@ -2198,7 +2392,7 @@
                     "beer_id": 2629302,
                     "rating_score": 4.45633,
                     "rating_count": 11796,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2629302_573bf_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-2629302_573bf_sm.jpeg"
                 },
                 {
                     "csv_name": "Brocoli Special Reserve",
@@ -2208,7 +2402,7 @@
                     "beer_id": 2986240,
                     "rating_score": 4.40359,
                     "rating_count": 6636,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2986240_d275b_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-2986240_b9fdd_sm.jpeg"
                 },
                 {
                     "csv_name": "DDH Citra & Galaxy",
@@ -2218,7 +2412,7 @@
                     "beer_id": 2344176,
                     "rating_score": 4.3748,
                     "rating_count": 9165,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2344176_2d4b3_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-2344176_89d61_sm.jpeg"
                 },
                 {
                     "csv_name": "DDH Green Down to the Socks",
@@ -2228,7 +2422,7 @@
                     "beer_id": 2073538,
                     "rating_score": 4.25795,
                     "rating_count": 8638,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2073538_5f032_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-2073538_bfbbc_sm.jpeg"
                 },
                 {
                     "csv_name": "DDH Space Dream",
@@ -2238,7 +2432,7 @@
                     "beer_id": 2536765,
                     "rating_score": 4.24209,
                     "rating_count": 14226,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2536765_ed9f6_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-2536765_84fb1_sm.jpeg"
                 },
                 {
                     "csv_name": "Triple Citra Daydream",
@@ -2248,7 +2442,7 @@
                     "beer_id": 2674794,
                     "rating_score": 4.49253,
                     "rating_count": 18321,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2674794_51367_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-2674794_3a033_sm.jpeg"
                 },
                 {
                     "csv_name": "I can't C What You Sea",
@@ -2258,7 +2452,7 @@
                     "beer_id": 4334361,
                     "rating_score": 4.17922,
                     "rating_count": 1203,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 },
                 {
                     "csv_name": "DDH Green City",
@@ -2268,7 +2462,7 @@
                     "beer_id": 3727003,
                     "rating_score": 4.18173,
                     "rating_count": 15387,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3727003_79f5e_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-3727003_813ad_sm.jpeg"
                 },
                 {
                     "csv_name": "Blue Crab",
@@ -2278,7 +2472,7 @@
                     "beer_id": 4058979,
                     "rating_score": 4.13195,
                     "rating_count": 2995,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4058979_cd9aa_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4058979_f37b3_sm.jpeg"
                 }
             ]
         },
@@ -2287,15 +2481,20 @@
             "name": "Aslin Beer Company",
             "brewery_id": 170844,
             "follower_count": 5743,
-            "total_votes": 876495,
+            "total_votes": 876863,
             "rating_score": 4.115,
-            "popularity_this_week": 1884,
+            "popularity_this_week": 2732,
             "location_city": "Alexandria",
-            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-170844_327db_hd.jpeg",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-170844_e2a8f.jpeg",
             "beers": [
                 {
-                    "csv_name": "Brewer Series #5",
-                    "data": "couldn't locate on untappd"
+                    "name": "Brewer Series #5",
+                    "abv": 6.0,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 },
                 {
                     "csv_name": "Bringing Sexy Back",
@@ -2305,7 +2504,7 @@
                     "beer_id": 1414228,
                     "rating_score": 4.08271,
                     "rating_count": 9701,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-1414228_500ab_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-1414228_7cf96_sm.jpeg"
                 },
                 {
                     "csv_name": "Glasses of Nerdicon",
@@ -2315,7 +2514,7 @@
                     "beer_id": 4339903,
                     "rating_score": 3.91011,
                     "rating_count": 717,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 },
                 {
                     "csv_name": "Mind the Hop",
@@ -2325,7 +2524,7 @@
                     "beer_id": 1233912,
                     "rating_score": 4.198,
                     "rating_count": 14016,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-1233912_4841f_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-1233912_40e1e_sm.jpeg"
                 },
                 {
                     "csv_name": "Orange Starfish",
@@ -2335,7 +2534,7 @@
                     "beer_id": 1611103,
                     "rating_score": 4.29578,
                     "rating_count": 21376,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-1611103_2280f_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-1611103_2e19f_sm.jpeg"
                 },
                 {
                     "csv_name": "Double Orange Starfish",
@@ -2345,7 +2544,7 @@
                     "beer_id": 1611103,
                     "rating_score": 4.29578,
                     "rating_count": 21376,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-1611103_2280f_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-1611103_2e19f_sm.jpeg"
                 },
                 {
                     "csv_name": "She",
@@ -2355,7 +2554,7 @@
                     "beer_id": 2202763,
                     "rating_score": 4.14176,
                     "rating_count": 552,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 },
                 {
                     "csv_name": "Suburban Home",
@@ -2365,7 +2564,7 @@
                     "beer_id": 4286226,
                     "rating_score": 4.01438,
                     "rating_count": 713,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 },
                 {
                     "csv_name": "Wink Wink",
@@ -2375,7 +2574,7 @@
                     "beer_id": 4300522,
                     "rating_score": 3.88256,
                     "rating_count": 493,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 },
                 {
                     "csv_name": "Rubber Walrus Protector",
@@ -2385,7 +2584,7 @@
                     "beer_id": 4374809,
                     "rating_score": 3.93173,
                     "rating_count": 312,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 }
             ]
         },
@@ -2394,11 +2593,11 @@
             "name": "Tripping Animals Brewing Co.",
             "brewery_id": 309155,
             "follower_count": 1101,
-            "total_votes": 111865,
+            "total_votes": 112012,
             "rating_score": 4.089,
-            "popularity_this_week": 917,
+            "popularity_this_week": 1363,
             "location_city": "Doral",
-            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-309155_30519_hd.jpeg",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-309155_fdc46.jpeg",
             "beers": [
                 {
                     "csv_name": "Ever Haze",
@@ -2408,7 +2607,7 @@
                     "beer_id": 3683004,
                     "rating_score": 4.00763,
                     "rating_count": 5457,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3683004_fb198_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-3683004_c30c5_sm.jpeg"
                 },
                 {
                     "csv_name": "Shoobie",
@@ -2418,7 +2617,7 @@
                     "beer_id": 4410104,
                     "rating_score": 3.92348,
                     "rating_count": 66,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4410104_f322a_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4410104_f322a_sm.jpeg"
                 },
                 {
                     "csv_name": "Lobsters & Pina Coladas",
@@ -2428,7 +2627,7 @@
                     "beer_id": 4431490,
                     "rating_score": 0,
                     "rating_count": 7,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4431490_0a384_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4431490_1e017_sm.jpeg"
                 },
                 {
                     "csv_name": "Super Duper Nice",
@@ -2438,7 +2637,7 @@
                     "beer_id": 4049185,
                     "rating_score": 4.20811,
                     "rating_count": 549,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4049185_18ffc_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4049185_33a11_sm.jpeg"
                 },
                 {
                     "csv_name": "Otters & O's",
@@ -2448,7 +2647,7 @@
                     "beer_id": 4398255,
                     "rating_score": 4.05496,
                     "rating_count": 343,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4398255_951c4_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4398255_5790f_sm.jpeg"
                 },
                 {
                     "csv_name": "King Louie's Pie",
@@ -2458,7 +2657,7 @@
                     "beer_id": 4425369,
                     "rating_score": 4.10909,
                     "rating_count": 22,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4425369_9c195_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4425369_ef071_sm.jpeg"
                 }
             ]
         },
@@ -2467,11 +2666,11 @@
             "name": "The Answer",
             "brewery_id": 114660,
             "follower_count": 6357,
-            "total_votes": 503700,
+            "total_votes": 503819,
             "rating_score": 4.33,
-            "popularity_this_week": 675,
+            "popularity_this_week": 971,
             "location_city": "Richmond",
-            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-114660_56d8b_hd.jpeg",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-114660_9396c.jpeg",
             "beers": [
                 {
                     "csv_name": "In Russia Beer Brew You",
@@ -2481,7 +2680,7 @@
                     "beer_id": 4336306,
                     "rating_score": 4.20252,
                     "rating_count": 119,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4336306_af891_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4336306_7a39e_sm.jpeg"
                 },
                 {
                     "csv_name": "Galactic Oats",
@@ -2491,7 +2690,7 @@
                     "beer_id": 4297839,
                     "rating_score": 4.03725,
                     "rating_count": 204,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4297839_4bb22_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4297839_dec00_sm.jpeg"
                 },
                 {
                     "csv_name": "Nothing But Illustrious Hops",
@@ -2501,7 +2700,7 @@
                     "beer_id": 3804408,
                     "rating_score": 4.13399,
                     "rating_count": 659,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3804408_4fcf0_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-3804408_3cb6b_sm.jpeg"
                 },
                 {
                     "csv_name": "Lookin Problem",
@@ -2511,7 +2710,7 @@
                     "beer_id": 4052330,
                     "rating_score": 4.06072,
                     "rating_count": 527,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4052330_fdf36_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4052330_2c115_sm.jpeg"
                 }
             ]
         },
@@ -2519,12 +2718,12 @@
             "csv_name": "Vitamin Sea",
             "name": "Vitamin Sea Brewing",
             "brewery_id": 238531,
-            "follower_count": 1692,
-            "total_votes": 148717,
+            "follower_count": 1693,
+            "total_votes": 148872,
             "rating_score": 4.204,
-            "popularity_this_week": 699,
+            "popularity_this_week": 946,
             "location_city": "East Weymouth",
-            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-238531_a18a4_hd.jpeg",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-238531_806fe.jpeg",
             "beers": [
                 {
                     "csv_name": "Alone & Adrift",
@@ -2534,7 +2733,7 @@
                     "beer_id": 1965731,
                     "rating_score": 4.22107,
                     "rating_count": 2492,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-1965731_d2486_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-1965731_1e523_sm.jpeg"
                 },
                 {
                     "csv_name": "Broken Promises",
@@ -2544,7 +2743,7 @@
                     "beer_id": 4306632,
                     "rating_score": 4.30556,
                     "rating_count": 18,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 },
                 {
                     "csv_name": "Foil",
@@ -2554,7 +2753,7 @@
                     "beer_id": 4150412,
                     "rating_score": 4.21032,
                     "rating_count": 441,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4150412_32b13_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4150412_1ab62_sm.jpeg"
                 },
                 {
                     "csv_name": "More Cans, Less Cans",
@@ -2564,7 +2763,7 @@
                     "beer_id": 3269527,
                     "rating_score": 4.16733,
                     "rating_count": 1050,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3269527_0302c_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-3269527_f7290_sm.jpeg"
                 },
                 {
                     "csv_name": "Nice & Easy",
@@ -2574,7 +2773,7 @@
                     "beer_id": 3947223,
                     "rating_score": 4.15374,
                     "rating_count": 601,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3947223_222af_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-3947223_e2bbf_sm.jpeg"
                 },
                 {
                     "csv_name": "Peninsula",
@@ -2584,7 +2783,7 @@
                     "beer_id": 3292516,
                     "rating_score": 4.11775,
                     "rating_count": 800,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3292516_2f3f5_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-3292516_2f3f5_sm.jpeg"
                 },
                 {
                     "csv_name": "Ramble & Roam Lime",
@@ -2594,7 +2793,7 @@
                     "beer_id": 3187707,
                     "rating_score": 3.6875,
                     "rating_count": 56,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3187707_d0800_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-3187707_1135c_sm.jpeg"
                 },
                 {
                     "csv_name": "Sour Pipe: Strawberry Pancake",
@@ -2604,7 +2803,7 @@
                     "beer_id": 3718391,
                     "rating_score": 4.053,
                     "rating_count": 1001,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3718391_780e6_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-3718391_479d5_sm.jpeg"
                 },
                 {
                     "csv_name": "Throwing Darts #3",
@@ -2614,7 +2813,7 @@
                     "beer_id": 4312167,
                     "rating_score": 0,
                     "rating_count": 3,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 },
                 {
                     "csv_name": "Throwing Darts #4",
@@ -2624,7 +2823,7 @@
                     "beer_id": 4312170,
                     "rating_score": 4.03529,
                     "rating_count": 17,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 }
             ]
         },
@@ -2632,12 +2831,12 @@
             "csv_name": "Great Notion",
             "name": "Great Notion Brewing",
             "brewery_id": 232077,
-            "follower_count": 6644,
-            "total_votes": 608500,
+            "follower_count": 6648,
+            "total_votes": 608860,
             "rating_score": 4.18,
-            "popularity_this_week": 2303,
+            "popularity_this_week": 3517,
             "location_city": "Portland",
-            "brewery_img": "",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-232077_5284b.jpeg",
             "beers": [
                 {
                     "csv_name": "Passionfruit Mochi",
@@ -2647,7 +2846,7 @@
                     "beer_id": 2526505,
                     "rating_score": 4.16631,
                     "rating_count": 7830,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2526505_99664_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-2526505_441a1_sm.jpeg"
                 },
                 {
                     "csv_name": "Over Ripe",
@@ -2657,7 +2856,7 @@
                     "beer_id": 1801615,
                     "rating_score": 4.3521,
                     "rating_count": 5999,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-1801615_cd94b_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-1801615_1cdf0_sm.jpeg"
                 },
                 {
                     "csv_name": "The Time Keeper",
@@ -2667,7 +2866,7 @@
                     "beer_id": 4158682,
                     "rating_score": 4.07394,
                     "rating_count": 685,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4158682_f16d8_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4158682_986e0_sm.jpeg"
                 },
                 {
                     "csv_name": "Afterglow",
@@ -2677,7 +2876,7 @@
                     "beer_id": 3286667,
                     "rating_score": 3.99518,
                     "rating_count": 2793,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3286667_2df0f_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-3286667_2c683_sm.jpeg"
                 },
                 {
                     "csv_name": "Return to Space",
@@ -2687,7 +2886,7 @@
                     "beer_id": 2655469,
                     "rating_score": 4.10553,
                     "rating_count": 3171,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2655469_29a6e_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-2655469_dba81_sm.jpeg"
                 }
             ]
         },
@@ -2695,12 +2894,12 @@
             "csv_name": "Equilibrium",
             "name": "Equilibrium Brewery",
             "brewery_id": 198789,
-            "follower_count": 5115,
-            "total_votes": 966631,
+            "follower_count": 5114,
+            "total_votes": 967312,
             "rating_score": 4.232,
-            "popularity_this_week": 3358,
+            "popularity_this_week": 5088,
             "location_city": "Middletown",
-            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos_hd/brewery-198789_b4401_hd.jpeg",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-198789_9cb30.jpeg",
             "beers": [
                 {
                     "csv_name": "Photon ",
@@ -2710,7 +2909,7 @@
                     "beer_id": 1082018,
                     "rating_score": 4.0263,
                     "rating_count": 26907,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-1082018_85b76_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-1082018_85b76_sm.jpeg"
                 },
                 {
                     "csv_name": "Photon Citrus",
@@ -2720,7 +2919,7 @@
                     "beer_id": 2076624,
                     "rating_score": 3.99314,
                     "rating_count": 5134,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-2076624_5aef9_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-2076624_c400b_sm.jpeg"
                 },
                 {
                     "csv_name": "Astrophysics",
@@ -2730,7 +2929,7 @@
                     "beer_id": 4314721,
                     "rating_score": 4.03236,
                     "rating_count": 1607,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4314721_d537e_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4314721_4845f_sm.jpeg"
                 },
                 {
                     "csv_name": "Wavelength",
@@ -2740,7 +2939,7 @@
                     "beer_id": 3684327,
                     "rating_score": 4.10918,
                     "rating_count": 24256,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3684327_f5768_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-3684327_1624e_sm.jpeg"
                 },
                 {
                     "csv_name": "DHOP33",
@@ -2750,7 +2949,7 @@
                     "beer_id": 4343126,
                     "rating_score": 4.1276,
                     "rating_count": 712,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4343126_c84b4_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4343126_74946_sm.jpeg"
                 },
                 {
                     "csv_name": "18 Decillion",
@@ -2760,7 +2959,7 @@
                     "beer_id": 4329699,
                     "rating_score": 4.19398,
                     "rating_count": 1378,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4329699_f0db7_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4329699_850cc_sm.jpeg"
                 }
             ]
         },
@@ -2773,43 +2972,88 @@
             "rating_score": 0,
             "popularity_this_week": 0,
             "location_city": "",
-            "brewery_img": "",
+            "brewery_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-brewery-default.png",
             "beers": [
                 {
-                    "csv_name": "Mountains Walking Grazing Clouds",
-                    "data": "couldn't locate on untappd"
+                    "name": "Mountains Walking Grazing Clouds",
+                    "abv": 7.0,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 },
                 {
-                    "csv_name": "Cloud Curtain Nelson Sauvin",
-                    "data": "couldn't locate on untappd"
+                    "name": "Cloud Curtain Nelson Sauvin",
+                    "abv": 8.5,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 },
                 {
-                    "csv_name": "DDH Tin Sky",
-                    "data": "couldn't locate on untappd"
+                    "name": "DDH Tin Sky",
+                    "abv": 8.0,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 },
                 {
-                    "csv_name": "Adroit Theory AK #1",
-                    "data": "couldn't locate on untappd"
+                    "name": "Adroit Theory AK #1",
+                    "abv": 8.0,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 },
                 {
-                    "csv_name": "Heaving Through Corrupted Lungs",
-                    "data": "couldn't locate on untappd"
+                    "name": "Heaving Through Corrupted Lungs",
+                    "abv": 8.0,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 },
                 {
-                    "csv_name": "Death Ronin",
-                    "data": "couldn't locate on untappd"
+                    "name": "Death Ronin",
+                    "abv": 6.5,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 },
                 {
-                    "csv_name": "Brix City Sunrise Juice",
-                    "data": "couldn't locate on untappd"
+                    "name": "Brix City Sunrise Juice",
+                    "abv": 8.0,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 },
                 {
-                    "csv_name": "Just Another Double IPA",
-                    "data": "couldn't locate on untappd"
+                    "name": "Just Another Double IPA",
+                    "abv": 8.0,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 },
                 {
-                    "csv_name": "Cloud of Sound",
-                    "data": "couldn't locate on untappd"
+                    "name": "Cloud of Sound",
+                    "abv": 5.5,
+                    "description": "",
+                    "beer_id": null,
+                    "rating_score": 0,
+                    "rating_count": 0,
+                    "beer_img": ""
                 }
             ]
         },
@@ -2817,12 +3061,12 @@
             "csv_name": "Sierra Nevada",
             "name": "Sierra Nevada Brewing Co.",
             "brewery_id": 1142,
-            "follower_count": 187034,
-            "total_votes": 6855307,
+            "follower_count": 187035,
+            "total_votes": 6856064,
             "rating_score": 3.697,
-            "popularity_this_week": 4997,
+            "popularity_this_week": 7151,
             "location_city": "Chico",
-            "brewery_img": "",
+            "brewery_img": "https://untappd.akamaized.net/site/brewery_logos/brewery-1142_ddcfe.jpeg",
             "beers": [
                 {
                     "csv_name": "Dankful",
@@ -2832,7 +3076,7 @@
                     "beer_id": 3908230,
                     "rating_score": 3.77956,
                     "rating_count": 35546,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-3908230_f9ec2_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-3908230_89a47_sm.jpeg"
                 },
                 {
                     "csv_name": "Big Little Thing",
@@ -2842,7 +3086,7 @@
                     "beer_id": 4005175,
                     "rating_score": 3.78101,
                     "rating_count": 30115,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4005175_0f59d_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4005175_bdae6_sm.jpeg"
                 },
                 {
                     "csv_name": "Hoptimum",
@@ -2852,7 +3096,7 @@
                     "beer_id": 11810,
                     "rating_score": 3.95736,
                     "rating_count": 83511,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-11810_7ddcc_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-11810_7e986_sm.jpeg"
                 },
                 {
                     "csv_name": "Experimental IPA",
@@ -2862,7 +3106,7 @@
                     "beer_id": 4256089,
                     "rating_score": 0,
                     "rating_count": 9,
-                    "beer_img": ""
+                    "beer_img": "https://untappd.akamaized.net/site/assets/images/temp/badge-beer-default.png"
                 },
                 {
                     "csv_name": "Torpedo",
@@ -2872,11 +3116,25 @@
                     "beer_id": 4997,
                     "rating_score": 3.73017,
                     "rating_count": 337078,
-                    "beer_img": "https://untappd.akamaized.net/site/beer_logos_hd/beer-4997_51e76_hd.jpeg"
+                    "beer_img": "https://untappd.akamaized.net/site/beer_logos/beer-4997_fe560_sm.jpeg"
                 }
             ]
         }
-    ]
+    ],
+    style: {
+        table: {
+            border: '3px solid #ccc'
+        },
+        th: {
+            'background-color': 'rgba(0, 0, 0, 0.1)',
+            color: '#000',
+            'border-bottom': '3px solid #ccc',
+            'text-align': 'center'
+        },
+        td: {
+            'text-align': 'center'
+        }
+    }
 
 }).render(document.getElementById("wrapper"));
 </script>
